@@ -21,7 +21,7 @@ Below is a list of my working papers and publications.
       [<a href="https://arxiv.org/pdf/2506.18188v1" target="_blank">Paper</a>] 
       [<a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&raw=1" target="_blank">Slides – World Congress</a>] 
       <i>(Submitted)</i>
-    </span><br><br>
+    </span><br>
 
     <details>
       <summary>
