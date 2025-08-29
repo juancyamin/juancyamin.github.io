@@ -7,3 +7,5 @@ author_profile: true
 ---
 
 Below is a list of my working papers and publications.
+
+- [Poverty Targeting with Imperfect Information](/research/poverty-targeting)
