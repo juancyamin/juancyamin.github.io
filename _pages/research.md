@@ -39,4 +39,32 @@ Below is a list of my working papers and publications.
       </p>
     </details>
   </li>
+  
+  <li style="margin-bottom: 2em;">
+    <b style="font-size: 110%;">When and How to Pilot: Statistical Decision Theory for Two-Wave Experiments</b><br>
+    <span style="font-size: small;">Juan C. Yamin</span><br>
+
+    <span style="font-size: small;">
+      [<i>Draft coming soon</i>]  
+      [<a href="https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&raw=1" target="_blank">Slides – AFE 2025</a>]
+    </span><br>
+
+    <details style="margin-top: 0.3em;">
+      <summary>
+        <span style="font-size: small; color: #9e2a11;">Abstract [+]</span>
+      </summary>
+      <p style="margin-top: 0.3em;">
+        <span style="font-size: small;">
+          This paper develops a statistical decision theory framework for selecting the treatment assignment probability in two-wave experimental designs with finite samples.
+          While the Neyman allocation minimizes the estimator's variance when outcome variances are known, its feasible version, estimated from a small pilot sample, can perform poorly.
+          I show that the minimax regret-optimal rule corresponds to balanced assignment, entirely ignoring pilot data.
+          Building on this insight, I propose a Confidence-Calibrated Minimax Regret (CCMR) rule that uses the pilot to construct a data-driven set of plausible variance configurations and then minimizes worst-case regret over that restricted space.
+          The CCMR rule coincides with the balanced assignment when the pilot is uninformative, but converges to the feasible Neyman allocation (FNA) with increasing pilot size.
+          This structure guarantees, with high probability, uniformly bounded regret in finite samples and vanishing regret in the limit.
+          I extend the framework in three directions: (i) incorporating known variance ordering; (ii) generalizing to multi-arm designs; and (iii) selecting the optimal pilot sample size.
+          Simulations show that the CCMR rule consistently outperforms the FNA, particularly when the pilot sample is small.
+        </span>
+      </p>
+    </details>
+  </li>
 </ul>
