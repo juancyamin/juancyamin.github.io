@@ -15,12 +15,9 @@ Below is a list of my working papers and publications.
 <ul>
   <li>
     <b>Poverty Targeting with Imperfect Information</b><br>
-    <span style="font-size:small;">Juan C. Yamin</span><br>
-
     <span style="font-size:small;">
-      <a href="https://arxiv.org/pdf/2506.18188v1">[Paper]</a> 
-      <a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&raw=1">[Slides (World Congress of the Econometric Society)]</a> 
-      (Job Market Paper)
+      <a href="https://arxiv.org/pdf/2506.18188v1">Paper</a> 
+      <a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&raw=1">Slides (World Congress of the Econometric Society)</a> 
     </span><br>
 
     <details>
