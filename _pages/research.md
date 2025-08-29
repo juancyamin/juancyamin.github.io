@@ -67,4 +67,34 @@ Below is a list of my working papers and publications.
       </p>
     </details>
   </li>
+  
+  <li style="margin-bottom: 2em;">
+    <b style="font-size: 110%;">Political Incentives and Corruption: Evidence from Ghost Students</b><br>
+    <span style="font-size: small;"> Leopoldo Fergusson, Arturo Harker, Carlos Molina, and Juan C. Yamin </span><br>
+
+    <span style="font-size: small;">
+      [<a href="https://www.dropbox.com/scl/fi/wpyvxgtuq7xiflndk1v7w/paperv20.pdf?rlkey=u8clxfy1u019hgy65qakawja7&raw=1" target="_blank">Paper</a>] 
+      <i>(R&amp;R APSR)</i>
+    </span><br>
+
+    <details style="margin-top: 0.3em;">
+      <summary>
+        <span style="font-size: small; color: #9e2a11;">Abstract [+]</span>
+      </summary>
+      <p style="margin-top: 0.3em;">
+        <span style="font-size: small;">
+          We examine how political connections (measured as partisan alignment) influence corruption in clientelistic environments, 
+          focusing on the fabrication of “ghost” students to inflate education transfers to local governments in Colombia. 
+          Using a Regression Discontinuity Design, we find that partisan alignment between mayors and governors increases ghost students 
+          by 0.3 standard deviations, without improving genuine enrollment or student performance. 
+          Political connections also lead to more discretionary hiring, patronage-based outsourcing, and increased electoral fraud risk. 
+          The effects are strongest in municipalities with weaker institutions and entrenched clientelism. 
+          These findings support a privately-driven model of corruption, where resource diversion benefits politicians with few benefits for local constituencies. 
+          Connected politicians also experience better future electoral prospects, suggesting a breakdown in accountability. 
+          Our results highlight how clientelistic networks distort public service delivery, reinforcing the persistence of political corruption.
+        </span>
+      </p>
+    </details>
+  </li>
+  
 </ul>
