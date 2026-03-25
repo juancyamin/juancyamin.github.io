@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am Ph.D. student in the Department of Economics at Brown University. 
+Welcome! I am a Ph.D. candidate in the Department of Economics at Brown University.
 
-My research focuses on applied econometrics and statistical decision theory. I aim to develop methods that help researchers and policymakers make better use of data for real-world decisions. My current work centers on **poverty targeting** and **experimental design**.
+My research lies at the intersection of applied econometrics and statistical decision theory. I aim to develop methods that help researchers and policymakers make better use of data for real-world decisions. My current work includes projects on poverty targeting under imperfect information, experimental design for two-wave experiments, and empirical Bayes methods for two-way effects models. Before starting the Ph.D., I worked on questions in the political economy of development, and that applied perspective continues to shape my research.
 
 This website includes my [CV](/files/cv.pdf), current [research](/research), and other materials related to my work.
 
