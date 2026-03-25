@@ -9,26 +9,25 @@ author_profile: true
 
 Below is a list of my working papers and publications.
 
-<h2>Working Papers</h2>
 <hr />
 
 <ul>
-  <li style="margin-bottom: 2em;">
-    <b style="font-size: 110%;">Poverty Targeting with Imperfect Information</b><br>
-    <span style="font-size: small;">Juan C. Yamin</span><br>
+  <li style=”margin-bottom: 2em;”>
+    <b style=”font-size: 110%;”>Poverty Targeting with Imperfect Information</b><br>
+    <span style=”font-size: small;”>Juan C. Yamin</span><br>
 
-    <span style="font-size: small;">
-      [<a href="https://arxiv.org/pdf/2506.18188v1" target="_blank">Paper</a>] 
-      [<a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&raw=1" target="_blank">Slides – World Congress</a>] 
+    <span style=”font-size: small;”>
+      [<a href=”https://arxiv.org/pdf/2506.18188v1” target=”_blank”>Paper</a>]
+      [<a href=”https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&raw=1” target=”_blank”>Slides – World Congress</a>]
       <i>(Submitted)</i>
     </span><br>
 
     <details>
       <summary>
-        <span style="font-size: small; color: #9e2a11;">Abstract [+]</span>
+        <span style=”font-size: small; color: #9e2a11;”>Abstract [+]</span>
       </summary>
-      <p style="margin-top: 0.5em;">
-        <span style="font-size: small;">
+      <p style=”margin-top: 0.5em;”>
+        <span style=”font-size: small;”>
           A key challenge for targeted antipoverty programs in developing countries is that policymakers must rely on estimated rather than observed income, which leads to substantial targeting errors.
           I propose a statistical decision framework in which a benevolent planner, subject to a budget constraint and equipped only with noisy income estimates, allocates cash transfers to the poorest individuals.
           In this setting, the commonly used plug-in rule, which allocates transfers based on point estimates, is inadmissible and uniformly dominated by a shrinkage-based alternative.
@@ -39,22 +38,46 @@ Below is a list of my working papers and publications.
       </p>
     </details>
   </li>
-  
-  <li style="margin-bottom: 2em;">
-    <b style="font-size: 110%;">When and How to Pilot: Statistical Decision Theory for Two-Wave Experiments</b><br>
-    <span style="font-size: small;">Juan C. Yamin</span><br>
 
-    <span style="font-size: small;">
-      [<i>Draft coming soon</i>]  
-      [<a href="https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&raw=1" target="_blank">Slides – AFE 2025</a>]
+  <li style=”margin-bottom: 2em;”>
+    <b style=”font-size: 110%;”>Two-Way Effects Models: a Nonparametric Empirical Bayes Approach</b><br>
+    <span style=”font-size: small;”>Cole Davis and Juan C. Yamin</span><br>
+
+    <span style=”font-size: small;”>
+      [<i>Draft coming soon</i>]
     </span><br>
 
-    <details style="margin-top: 0.3em;">
+    <details style=”margin-top: 0.3em;”>
       <summary>
-        <span style="font-size: small; color: #9e2a11;">Abstract [+]</span>
+        <span style=”font-size: small; color: #9e2a11;”>Abstract [+]</span>
       </summary>
-      <p style="margin-top: 0.3em;">
-        <span style="font-size: small;">
+      <p style=”margin-top: 0.3em;”>
+        <span style=”font-size: small;”>
+          Researchers estimate two-way effects models to decompose outcomes into unit and cluster components, such as workers and firms, teachers and schools, or individuals and regions.
+          Existing empirical Bayes approaches for this setting rely on parametric prior assumptions.
+          We develop a nonparametric empirical Bayes framework that allows the distribution of unit effects to vary with latent cluster effects, so unit and cluster components need not be independent and units within a cluster can be correlated.
+          We propose a feasible estimation procedure and characterize the resulting shrinkage rules.
+          Simulations show mean squared error close to an oracle benchmark and improvements over i.i.d.-based methods.
+        </span>
+      </p>
+    </details>
+  </li>
+
+  <li style=”margin-bottom: 2em;”>
+    <b style=”font-size: 110%;”>When and How to Pilot: Statistical Decision Theory for Two-Wave Experiments</b><br>
+    <span style=”font-size: small;”>Juan C. Yamin</span><br>
+
+    <span style=”font-size: small;”>
+      [<i>Draft coming soon</i>]
+      [<a href=”https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&raw=1” target=”_blank”>Slides – AFE 2025</a>]
+    </span><br>
+
+    <details style=”margin-top: 0.3em;”>
+      <summary>
+        <span style=”font-size: small; color: #9e2a11;”>Abstract [+]</span>
+      </summary>
+      <p style=”margin-top: 0.3em;”>
+        <span style=”font-size: small;”>
           This paper develops a statistical decision theory framework for selecting the treatment assignment probability in two-wave experimental designs with finite samples.
           While the Neyman allocation minimizes the estimator's variance when outcome variances are known, its feasible version, estimated from a small pilot sample, can perform poorly.
           I show that the minimax regret-optimal rule corresponds to balanced assignment, entirely ignoring pilot data.
@@ -67,34 +90,33 @@ Below is a list of my working papers and publications.
       </p>
     </details>
   </li>
-  
-  <li style="margin-bottom: 2em;">
-    <b style="font-size: 110%;">Political Incentives and Corruption: Evidence from Ghost Students</b><br>
-    <span style="font-size: small;"> Leopoldo Fergusson, Arturo Harker, Carlos Molina, and Juan C. Yamin </span><br>
 
-    <span style="font-size: small;">
-      [<a href="https://www.dropbox.com/scl/fi/wpyvxgtuq7xiflndk1v7w/paperv20.pdf?rlkey=u8clxfy1u019hgy65qakawja7&raw=1" target="_blank">Paper</a>] 
-      <i>(R&amp;R APSR)</i>
+  <li style=”margin-bottom: 2em;”>
+    <b style=”font-size: 110%;”>Birds of a Feather Collude Together: Subnational Alignment and Corruption</b><br>
+    <span style=”font-size: small;”> Leopoldo Fergusson, Arturo Harker, Carlos Molina, and Juan C. Yamin </span><br>
+
+    <span style=”font-size: small;”>
+      [<a href=”https://www.dropbox.com/scl/fi/wpyvxgtuq7xiflndk1v7w/paperv20.pdf?rlkey=u8clxfy1u019hgy65qakawja7&raw=1” target=”_blank”>Paper</a>]
+      <i>(Conditionally accepted at APSR)</i>
     </span><br>
 
-    <details style="margin-top: 0.3em;">
+    <details style=”margin-top: 0.3em;”>
       <summary>
-        <span style="font-size: small; color: #9e2a11;">Abstract [+]</span>
+        <span style=”font-size: small; color: #9e2a11;”>Abstract [+]</span>
       </summary>
-      <p style="margin-top: 0.3em;">
-        <span style="font-size: small;">
-          We examine how political connections (measured as partisan alignment) influence corruption in clientelistic environments, 
-          focusing on the fabrication of “ghost” students to inflate education transfers to local governments in Colombia. 
-          Using a Regression Discontinuity Design, we find that partisan alignment between mayors and governors increases ghost students 
-          by 0.3 standard deviations, without improving genuine enrollment or student performance. 
-          Political connections also lead to more discretionary hiring, patronage-based outsourcing, and increased electoral fraud risk. 
-          The effects are strongest in municipalities with weaker institutions and entrenched clientelism. 
-          These findings support a privately-driven model of corruption, where resource diversion benefits politicians with few benefits for local constituencies. 
-          Connected politicians also experience better future electoral prospects, suggesting a breakdown in accountability. 
+      <p style=”margin-top: 0.3em;”>
+        <span style=”font-size: small;”>
+          We examine how subnational partisan alignment influences corruption in clientelistic environments, focusing on the fabrication of &#8220;ghost&#8221; students to inflate education transfers to local governments in Colombia.
+          Using a Regression Discontinuity Design, we find that partisan alignment between municipal mayors and departmental governors increases ghost students by 0.3 standard deviations, without improving genuine enrollment or student performance.
+          Alignment also leads to more discretionary hiring, patronage-based outsourcing, and increased electoral fraud risk.
+          The effects are strongest in municipalities with weaker institutions and entrenched clientelism.
+          Alignment also raises the likelihood that mayors&#8217; relatives are appointed to departmental posts and governors&#8217; relatives to municipal posts, consistent with reciprocal patronage.
+          These findings support the view that resource diversion benefits politicians with few benefits for local constituencies.
+          Aligned politicians also experience better future electoral prospects, suggesting a breakdown in accountability.
           Our results highlight how clientelistic networks distort public service delivery, reinforcing the persistence of political corruption.
         </span>
       </p>
     </details>
   </li>
-  
+
 </ul>
