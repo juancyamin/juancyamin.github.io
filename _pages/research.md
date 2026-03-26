@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-Below is a list of my working papers.
+Below are current projects and selected papers.
 
 <hr />
 
@@ -64,7 +64,7 @@ Below is a list of my working papers.
   <li style="margin-bottom: 2em;">
     <b style="font-size: 110%;">When and How to Pilot: Statistical Decision Theory for Two-Wave Experiments</b><br>
     <span style="font-size: small;">
-      [<i>Draft coming soon</i>]
+      [<i>Draft available upon request</i>]
       [<a href="https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&raw=1" target="_blank">Slides – AFE 2025</a>]
     </span><br>
     <details style="margin-top: 0.3em;">
@@ -90,7 +90,7 @@ Below is a list of my working papers.
     <b style="font-size: 110%;">Two-Way Effects Models: a Nonparametric Empirical Bayes Approach</b><br>
     <span style="font-size: small;"><i>Joint with Cole Davis</i></span><br>
     <span style="font-size: small;">
-      [<i>Draft coming soon</i>]
+      [<i>Draft available upon request</i>]
     </span><br>
     <details style="margin-top: 0.3em;">
       <summary>
