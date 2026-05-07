@@ -51,11 +51,12 @@ Below are current projects and selected papers.
       <p style="margin-top: 0.5em;">
         <span style="font-size: small;">
           A key challenge for targeted antipoverty programs in developing countries is that policymakers must rely on estimated rather than observed income, which leads to substantial targeting errors.
-          I propose a statistical decision framework in which a benevolent planner, subject to a budget constraint and equipped only with noisy income estimates, allocates cash transfers to the poorest individuals.
-          In this setting, the commonly used plug-in rule, which allocates transfers based on point estimates, is inadmissible and uniformly dominated by a shrinkage-based alternative.
-          Building on this result, I propose an empirical Bayes (EB) targeting rule.
-          I show that the regret of the empirical Bayes rule converges at the same rate as that of the posterior mean estimator, despite applying a nonsmooth transformation to it.
-          Simulations show that the EB rule delivers large improvements over the plug-in approach in an idealized setting and modest but consistent gains in a more realistic application.
+          The policy problem is not only to predict income, but to decide how noisy income estimates should be translated into feasible transfers.
+          I formulate this as a statistical decision problem in which a policymaker chooses transfers to minimize a poverty-targeting loss subject to a fixed budget and a no-taxation constraint.
+          I show that the standard plug-in rule, which treats estimated incomes as true, is inadmissible.
+          I develop a nonparametric empirical Bayes targeting rule that assigns transfers using posterior distributions of true poverty gaps.
+          Although the budget and no-taxation constraints make the targeting rule nonsmooth, Bayes regret is governed by the accuracy of the posterior functionals that determine the oracle allocation.
+          In simulations using household survey data from nine African countries, the empirical Bayes rule reaches substantially more poor households and systematically improves poverty reduction relative to plug-in OLS and machine-learning benchmarks.
         </span>
       </p>
     </details>
