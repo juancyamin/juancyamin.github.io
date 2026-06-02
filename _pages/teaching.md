@@ -39,7 +39,7 @@ author_profile: true
       <td style="padding: 0.6em 1em 0.6em 0;">ECON 2400 – Applied Econometrics II</td>
       <td style="padding: 0.6em 1em;">Peter Hull</td>
       <td style="padding: 0.6em 1em;">Spring 2026</td>
-      <td style="padding: 0.6em 0;"></td>
+      <td style="padding: 0.6em 0;"><a href="/files/econ2400_evaluation.pdf" target="_blank">PDF</a></td>
     </tr>
   </tbody>
 </table>
@@ -56,6 +56,8 @@ author_profile: true
 
 <b style="font-size: small;">ECON 2400 – Applied Econometrics II</b>
 <ul style="font-size: small; margin-top: 0.4em;">
-  <li><a href="/files/econ2400_ta_session_1.pdf" target="_blank">TA Session 1</a></li>
-  <li><a href="/files/econ2400_ta_session_2.pdf" target="_blank">TA Session 2</a></li>
+  <li><a href="/files/econ2400_ta_session_1.pdf" target="_blank">TA Session 1</a> &mdash; <span style="color: #666;">based on teaching slides by <a href="https://sites.google.com/view/borusyak/home" target="_blank">Kirill Borusyak</a> (<a href="https://github.com/borusyak/are213" target="_blank">github.com/borusyak/are213</a>)</span></li>
+  <li><a href="/files/econ2400_ta_session_2.pdf" target="_blank">TA Session 2</a> &mdash; <span style="color: #666;">based on teaching slides by <a href="https://sites.google.com/view/borusyak/home" target="_blank">Kirill Borusyak</a> (<a href="https://github.com/borusyak/are213" target="_blank">github.com/borusyak/are213</a>)</span></li>
+  <li><a href="/files/econ2400_ta_session_3.pdf" target="_blank">TA Session 3</a> &mdash; <span style="color: #666;">based on <a href="https://www.nber.org/conferences/si-2022-methods-lectures-empirical-bayes-methods-theory-and-application" target="_blank">SI 2022 Methods Lectures – Empirical Bayes Methods, Theory and Application</a> by Jiaying Gu and Christopher R. Walters</span></li>
+  <li><a href="/files/econ2400_ta_session_4.pdf" target="_blank">TA Session 4</a> &mdash; <span style="color: #666;">based on <a href="https://www.nber.org/conferences/si-2022-methods-lectures-empirical-bayes-methods-theory-and-application" target="_blank">SI 2022 Methods Lectures – Empirical Bayes Methods, Theory and Application</a> by Jiaying Gu and Christopher R. Walters</span></li>
 </ul>

@@ -63,7 +63,7 @@ Below are current projects and selected papers.
   </li>
 
   <li style="margin-bottom: 2em;">
-    <b style="font-size: 110%;">When and How to Pilot: Statistical Decision Theory for Two-Wave Experiments</b><br>
+    <b style="font-size: 110%;">When and How to Pilot: Design Rules for Two-Wave Experiments</b><br>
     <span style="font-size: small;">
       [<i>Draft available upon request</i>]
       [<a href="https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&raw=1" target="_blank">Slides – AFE 2025</a>]
@@ -74,14 +74,14 @@ Below are current projects and selected papers.
       </summary>
       <p style="margin-top: 0.5em;">
         <span style="font-size: small;">
-          This paper develops a statistical decision theory framework for selecting the treatment assignment probability in two-wave experimental designs with finite samples.
-          While the Neyman allocation minimizes the estimator's variance when outcome variances are known, its feasible version, estimated from a small pilot sample, can perform poorly.
-          I show that the minimax regret-optimal rule corresponds to balanced assignment, entirely ignoring pilot data.
-          Building on this insight, I propose a Confidence-Calibrated Minimax Regret (CCMR) rule that uses the pilot to construct a data-driven set of plausible variance configurations and then minimizes worst-case regret over that restricted space.
-          The CCMR rule coincides with the balanced assignment when the pilot is uninformative, but converges to the feasible Neyman allocation (FNA) with increasing pilot size.
-          This structure guarantees, with high probability, uniformly bounded regret in finite samples and vanishing regret in the limit.
-          I extend the framework in three directions: (i) incorporating known variance ordering; (ii) generalizing to multi-arm designs; and (iii) selecting the optimal pilot sample size.
-          Simulations show that the CCMR rule consistently outperforms the FNA, particularly when the pilot sample is small.
+          Researchers often run pilots before the main wave of an experiment, but it is unclear how much a small pilot should change the eventual experimental design.
+          This paper studies how pilot evidence should guide treatment assignment probabilities in two-wave experiments.
+          Balanced assignment is safe but cannot adapt to differences in outcome variability across arms.
+          By contrast, feasible Neyman allocation can improve precision but may overreact to noisy pilot estimates in finite samples.
+          I propose a conditional minimax-regret rule that moves away from balance only when the pilot provides defensible evidence to do so.
+          The rule uses a finite-sample confidence set for the variance pair and reports a bound on the remaining precision loss.
+          It is simple to compute, recovers Neyman allocation at the root-pilot rate in regular cases, and matches the uniform minimax-regret rate.
+          I also characterize when a pilot is worth running, and extend the framework to multi-arm, stratified, and cluster-randomized designs.
         </span>
       </p>
     </details>
