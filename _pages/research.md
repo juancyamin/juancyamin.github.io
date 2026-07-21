@@ -65,7 +65,7 @@ Below are current projects and selected papers.
   <li style="margin-bottom: 2em;">
     <b style="font-size: 110%;">When and How to Pilot: Design Rules for Two-Wave Experiments</b><br>
     <span style="font-size: small;">
-      [<i>Draft available upon request</i>]
+      [<a href="https://arxiv.org/pdf/2607.16982" target="_blank">Paper</a>]
       [<a href="https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&raw=1" target="_blank">Slides – AFE 2025</a>]
     </span><br>
     <details style="margin-top: 0.3em;">
@@ -74,14 +74,14 @@ Below are current projects and selected papers.
       </summary>
       <p style="margin-top: 0.5em;">
         <span style="font-size: small;">
-          Researchers often run pilots before the main wave of an experiment, but it is unclear how much a small pilot should change the eventual experimental design.
-          This paper studies how pilot evidence should guide treatment assignment probabilities in two-wave experiments.
-          Balanced assignment is safe but cannot adapt to differences in outcome variability across arms.
-          By contrast, feasible Neyman allocation can improve precision but may overreact to noisy pilot estimates in finite samples.
-          I propose a conditional minimax-regret rule that moves away from balance only when the pilot provides defensible evidence to do so.
-          The rule uses a finite-sample confidence set for the variance pair and reports a bound on the remaining precision loss.
-          It is simple to compute, recovers Neyman allocation at the root-pilot rate in regular cases, and matches the uniform minimax-regret rate.
-          I also characterize when a pilot is worth running, and extend the framework to multi-arm, stratified, and cluster-randomized designs.
+          Experimenters often run pilots, but how much a small pilot should shape the main-wave design has no settled answer.
+          This paper shows how noisy pilot evidence should guide treatment assignment probabilities in two-wave experiments.
+          Two canonical rules mark the extremes.
+          Balanced assignment guards against worst cases but ignores evidence that one arm is noisier.
+          Feasible Neyman allocation adapts, but with a finite pilot it can overreact to noise, producing arbitrarily large precision losses.
+          We propose a Conditional Minimax Regret (CMR) rule that minimizes worst-case regret over a finite-sample confidence set for the treatment and control variances.
+          CMR retains balance&rsquo;s worst-case protection with high probability, converges to the Neyman allocation as the pilot grows, and attains the minimax-regret rate up to constants.
+          It extends to multi-arm and stratified designs, and simulations calibrated to four field experiments show it avoids feasible Neyman&rsquo;s severe small-pilot losses while capturing most of its large-pilot gains.
         </span>
       </p>
     </details>
