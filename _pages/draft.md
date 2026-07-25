@@ -102,9 +102,9 @@ noindex: true
 
   .page__content .d2 p.d2-fields {
     color: #5b5650;
-    font-size: 0.66rem;
+    font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.045em;
     line-height: 1.45;
     margin: 0 0 1.45rem;
     max-width: none;
@@ -294,13 +294,13 @@ noindex: true
     <div class="d2-hero-copy">
       <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
       <h1 id="draft-home-title">Juan C. Yamin</h1>
-      <p class="d2-statement">I develop econometric methods for policy and experimental decisions that depend on estimated quantities.</p>
-      <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
+      <p class="d2-statement">I develop methods that help researchers and policymakers make better use of data for real-world decisions.</p>
+      <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design</p>
       <p class="d2-intro">
         I am an applied econometrician and Ph.D. candidate in Economics at Brown University.
       </p>
       <nav class="d2-link-row" aria-label="Homepage links">
-        <a class="d2-primary" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
+        <a class="d2-primary" href="/research/">Research</a>
         <a href="/files/cv.pdf">CV</a>
         <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
       </nav>
@@ -328,7 +328,6 @@ noindex: true
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
         <a class="d2-primary" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
-        <a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&amp;raw=1">Slides</a>
       </nav>
     </div>
   </section>
@@ -336,20 +335,22 @@ noindex: true
   <section class="d2-section" aria-labelledby="research-agenda-title">
     <div class="d2-section-inner">
       <p class="d2-label">Current Research</p>
-      <h2 id="research-agenda-title">How should decisions respond when the available data are informative but not definitive?</h2>
+      <h2 id="research-agenda-title">Experimental design, empirical Bayes methods, and political economy of development.</h2>
       <div class="d2-copy">
         <p>
-          Beyond the featured paper, my current work spans experimental design, empirical Bayes methods, and the political economy of institutions.
+          Beyond the featured paper, my current work studies how empirical methods can improve decisions in experiments, high-dimensional models, and public institutions.
         </p>
       </div>
       <div class="d2-agenda">
         <article>
           <h3>When and How to Pilot</h3>
-          <p>Design rules for deciding how strongly a small pilot should influence the experiment that follows.</p>
+          <p class="d2-status">Working paper</p>
+          <p>Design rules for two-wave experiments, studying how noisy pilot estimates of treatment and control variances should guide the experiment that follows.</p>
         </article>
         <article>
           <h3>Two-Way Effects Models</h3>
-          <p>A nonparametric empirical Bayes approach to estimating worker and firm effects when the two components may be related.</p>
+          <p class="d2-status">With Cole Davis</p>
+          <p>A nonparametric empirical Bayes approach to estimating worker and firm effects when the distribution of individual effects may vary with latent firm components.</p>
         </article>
         <article>
           <h3>Subnational Alignment and Corruption</h3>
