@@ -34,7 +34,7 @@ noindex: true
   .page__content .d2 {
     color: #201b18;
     margin: -0.5rem auto 0;
-    max-width: 920px;
+    max-width: 980px;
   }
 
   .page__content .d2 a {
@@ -55,16 +55,20 @@ noindex: true
   }
 
   .page__content .d2-hero {
+    align-items: center;
     border-bottom: 1px solid #d8d6cf;
+    display: grid;
+    gap: 3.4rem;
+    grid-template-columns: minmax(0, 1fr) minmax(190px, 240px);
     margin: 0 auto;
-    padding: 4.75rem 0 4.4rem;
-    text-align: center;
+    padding: 4.6rem 0 4.25rem;
+    text-align: left;
   }
 
   .page__content .d2-rule {
     background: #8f1d2c;
     height: 2px;
-    margin: 0 auto 2rem;
+    margin: 0 0 2rem;
     width: 76px;
   }
 
@@ -82,7 +86,7 @@ noindex: true
   .page__content .d2 h1 {
     color: #201b18;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(3rem, 7vw, 3.9rem);
+    font-size: clamp(3rem, 6vw, 3.75rem);
     font-weight: 500;
     letter-spacing: 0;
     line-height: 1;
@@ -92,30 +96,43 @@ noindex: true
   .page__content .d2 p.d2-statement {
     color: #201b18;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.75rem, 4.3vw, 2.35rem);
-    line-height: 1.22;
-    margin: 0 auto 1.35rem;
-    max-width: 760px;
+    font-size: clamp(1.34rem, 2.6vw, 1.78rem);
+    line-height: 1.3;
+    margin: 0 0 1.2rem;
+    max-width: 620px;
   }
 
   .page__content .d2 p.d2-fields {
     color: #5b5650;
-    font-size: 0.9rem;
+    font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 0.055em;
-    line-height: 1.6;
-    margin: 0 auto 1.55rem;
-    max-width: 760px;
+    letter-spacing: 0.045em;
+    line-height: 1.45;
+    margin: 0 0 1.45rem;
+    max-width: none;
     text-transform: uppercase;
+    white-space: nowrap;
   }
 
   .page__content .d2 p.d2-intro {
     color: #46413b;
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.7;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 700px;
+    max-width: 640px;
+  }
+
+  .page__content .d2-photo {
+    background: #ffffff;
+    border: 1px solid #d8d6cf;
+    margin: 0;
+    padding: 0.45rem;
+    width: 100%;
+  }
+
+  .page__content .d2-photo img {
+    display: block;
+    height: auto;
+    width: 100%;
   }
 
   .page__content .d2-link-row {
@@ -123,7 +140,7 @@ noindex: true
     display: flex;
     flex-wrap: wrap;
     gap: 1rem 1.25rem;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 1.7rem;
   }
 
@@ -147,11 +164,11 @@ noindex: true
   .page__content .d2-section {
     border-bottom: 1px solid #d8d6cf;
     padding: 4.25rem 0;
-    text-align: center;
+    text-align: left;
   }
 
   .page__content .d2-section-inner {
-    margin: 0 auto;
+    margin: 0;
     max-width: 760px;
   }
 
@@ -182,15 +199,15 @@ noindex: true
     border-top: 1px solid #d8d6cf;
     color: #2d2824;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.18rem, 2.6vw, 1.45rem);
-    line-height: 1.38;
-    margin: 1.45rem auto 1.65rem;
-    max-width: 680px;
+    font-size: clamp(1.02rem, 2vw, 1.18rem);
+    line-height: 1.45;
+    margin: 1.35rem 0 1.55rem;
+    max-width: 650px;
     padding: 1rem 0;
   }
 
   .page__content .d2-copy {
-    margin: 0 auto;
+    margin: 0;
     max-width: 720px;
     text-align: left;
   }
@@ -203,9 +220,9 @@ noindex: true
     display: grid;
     gap: 1.3rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin: 2.3rem auto 0;
+    margin: 2.3rem 0 0;
     max-width: 900px;
-    text-align: center;
+    text-align: left;
   }
 
   .page__content .d2-agenda article {
@@ -229,21 +246,29 @@ noindex: true
     margin: 0;
   }
 
-  .page__content .d2-software-note {
-    background: #ffffff;
-    border-left: 3px solid #8f1d2c;
-    color: #4a4540;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 1.75rem auto 0;
-    max-width: 640px;
-    padding: 1rem 1.15rem;
-    text-align: left;
+  .page__content .d2-agenda p.d2-status {
+    color: #8f1d2c;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    line-height: 1.35;
+    margin: 0 0 0.45rem;
+    text-transform: uppercase;
   }
 
   @media (max-width: 780px) {
     .page__content .d2-hero {
+      gap: 2rem;
+      grid-template-columns: 1fr;
       padding: 3rem 0 3.2rem;
+    }
+
+    .page__content .d2-photo {
+      max-width: 190px;
+    }
+
+    .page__content .d2 p.d2-fields {
+      white-space: normal;
     }
 
     .page__content .d2-section {
@@ -264,7 +289,6 @@ noindex: true
 
     .page__content .d2-link-row {
       align-items: center;
-      flex-direction: column;
       gap: 0.8rem;
     }
   }
@@ -272,26 +296,31 @@ noindex: true
 
 <main class="d2" id="draft-home">
   <section class="d2-hero" aria-labelledby="draft-home-title">
-    <div class="d2-rule"></div>
-    <p class="d2-kicker">2026-27 Economics Job Market Candidate</p>
-    <h1 id="draft-home-title">Juan C. Yamin</h1>
-    <p class="d2-statement">My research asks how empirical evidence should guide decisions.</p>
-    <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
-    <p class="d2-intro">
-      I am an econometrician and Ph.D. candidate in Economics at Brown University. A common theme across my work is how decisions should respond when the available data are informative but not definitive.
-    </p>
-    <nav class="d2-link-row" aria-label="Homepage links">
-      <a class="d2-primary" href="#featured-research">Featured Research</a>
-      <a href="/files/cv.pdf">CV</a>
-      <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
-    </nav>
+    <div class="d2-hero-copy">
+      <div class="d2-rule"></div>
+      <p class="d2-kicker">2026-27 Economics Job Market Candidate</p>
+      <h1 id="draft-home-title">Juan C. Yamin</h1>
+      <p class="d2-statement">My research asks how empirical evidence should guide decisions.</p>
+      <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design</p>
+      <p class="d2-intro">
+        I am an econometrician and Ph.D. candidate in Economics at Brown University. A common theme across my work is how decisions should respond when the available data are informative but not definitive.
+      </p>
+      <nav class="d2-link-row" aria-label="Homepage links">
+        <a class="d2-primary" href="/files/cv.pdf">CV</a>
+        <a href="/research/">Research</a>
+        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
+      </nav>
+    </div>
+    <figure class="d2-photo">
+      <img src="/images/profile.jpg" alt="Juan C. Yamin">
+    </figure>
   </section>
 
   <section class="d2-section" id="featured-research" aria-labelledby="featured-research-title">
     <div class="d2-section-inner">
       <p class="d2-label">Featured Research</p>
       <h2 id="featured-research-title">Poverty Targeting with Imperfect Information</h2>
-      <p class="d2-meta">Solo-authored working paper</p>
+      <p class="d2-meta">Working paper</p>
       <p class="d2-standfirst">
         The question is not only how to predict need, but how evidence about need should be turned into policy.
       </p>
@@ -305,7 +334,6 @@ noindex: true
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
         <a class="d2-primary" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
-        <a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&amp;raw=1">Slides</a>
       </nav>
     </div>
   </section>
@@ -330,6 +358,7 @@ noindex: true
         </article>
         <article>
           <h3>Subnational Alignment and Corruption</h3>
+          <p class="d2-status">Conditionally accepted at APSR</p>
           <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>
         </article>
       </div>
@@ -353,9 +382,6 @@ noindex: true
         <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
         <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
       </nav>
-      <p class="d2-software-note">
-        This section is intentionally small for now: enough to signal that the method is implemented, without turning the homepage into package documentation.
-      </p>
     </div>
   </section>
 </main>
