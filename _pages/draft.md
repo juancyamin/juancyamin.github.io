@@ -102,9 +102,9 @@ noindex: true
 
   .page__content .d2 p.d2-fields {
     color: #5b5650;
-    font-size: 0.68rem;
+    font-size: 0.66rem;
     font-weight: 700;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     line-height: 1.45;
     margin: 0 0 1.45rem;
     max-width: none;
