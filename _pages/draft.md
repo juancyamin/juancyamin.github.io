@@ -345,7 +345,7 @@ noindex: true
         <article>
           <h3>When and How to Pilot</h3>
           <p class="d2-status">Working paper</p>
-          <p>Design rules for two-wave experiments, studying how noisy pilot estimates of treatment and control variances should guide the experiment that follows.</p>
+          <p>Design rules for two-wave experiments, studying how noisy pilot estimates of treatment and control variances should guide later allocation while guarding against overreaction to small-sample noise.</p>
         </article>
         <article>
           <h3>Two-Way Effects Models</h3>
