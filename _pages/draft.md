@@ -154,8 +154,36 @@ noindex: true
     color: #8f1d2c;
   }
 
-  .page__content .d2-link-row a.d2-primary:after {
+  .page__content .d2-link-row a.d2-internal {
+    color: #8f1d2c;
+  }
+
+  .page__content .d2-link-row a.d2-primary.d2-internal:after {
     content: " \2192";
+  }
+
+  .page__content .d2-profile-row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.1rem 1.1rem;
+    margin-top: 0.55rem;
+  }
+
+  .page__content .d2-profile-row a {
+    align-items: center;
+    border-bottom: 1px solid currentColor;
+    color: #201b18;
+    display: inline-flex;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.35;
+    min-height: 2.25rem;
+    padding: 0.32rem 0 0.18rem;
+  }
+
+  .page__content .d2-profile-row a:hover {
+    color: #5e111c;
   }
 
   .page__content .d2-section {
@@ -252,10 +280,6 @@ noindex: true
     margin: 0 0 0.45rem;
   }
 
-  .page__content .d2-agenda p.d2-status-muted {
-    color: #6b6660;
-  }
-
   .page__content .d2-agenda p.d2-status em {
     font-style: italic;
   }
@@ -299,15 +323,17 @@ noindex: true
     <div class="d2-hero-copy">
       <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
       <h1 id="draft-home-title">Juan C. Yamin</h1>
-      <p class="d2-statement">I develop econometric methods for translating statistical evidence into policy choices and experimental designs.</p>
-      <p class="d2-fields">Econometrics &middot; Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
+      <p class="d2-statement">I develop econometric methods for translating empirical evidence into policy decisions and experimental designs.</p>
+      <p class="d2-fields">Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
       <p class="d2-intro">
-        I am an econometrician and Ph.D. candidate in Economics at Brown University.
+        I am an econometrician and Ph.D. candidate in Economics at Brown University. Before the Ph.D., I received an M.A. in Economics from Universidad de los Andes in 2019 and worked as a research assistant for Leopoldo Fergusson.
       </p>
       <nav class="d2-link-row" aria-label="Homepage links">
-        <a class="d2-primary" href="/research/">Research</a>
-        <a href="/files/cv.pdf">CV</a>
-        <a href="mailto:juan_yamin_silva@brown.edu">juan_yamin_silva@brown.edu</a>
+        <a class="d2-primary d2-internal" href="/research/">Research</a>
+        <a class="d2-internal" href="/files/cv.pdf">CV</a>
+      </nav>
+      <nav class="d2-profile-row" aria-label="Contact and profile links">
+        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
         <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ&amp;hl=en&amp;gmla=AO4B3jvU0ea8xlcdjZDt3jmXDpREVfqIekmzTzcNEBzSgwb9r4mDXUTTO8D-agRImB34K9ewyWjT75LG84wgrWmoie3uz5Mfh9Er5WdQ3twrTQ">Google Scholar</a>
         <a href="https://github.com/juancyamin">GitHub</a>
         <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
@@ -335,7 +361,7 @@ noindex: true
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
-        <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper</a>
+        <a href="https://arxiv.org/abs/2506.18188">Paper</a>
       </nav>
     </div>
   </section>
@@ -353,7 +379,7 @@ noindex: true
         <article>
           <h3>When and How to Pilot</h3>
           <p class="d2-status">Working paper</p>
-          <p>Design rules for two-wave experiments and A/B testing, studying how small pilot estimates of treatment and control variances should guide later allocation while guarding against overreaction to small-sample variation.</p>
+          <p>Design rules for two-wave experiments, studying how small pilot estimates of treatment and control variances should guide later allocation while guarding against overreaction to small-sample variation.</p>
         </article>
         <article>
           <h3>Two-Way Effects Models</h3>
@@ -362,12 +388,12 @@ noindex: true
         </article>
         <article>
           <h3>Subnational Alignment and Corruption</h3>
-          <p class="d2-status d2-status-muted">Conditionally accepted at the <em>American Political Science Review</em></p>
+          <p class="d2-status">Conditionally accepted at the <em>American Political Science Review</em></p>
           <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>
         </article>
       </div>
       <nav class="d2-link-row" aria-label="Research links">
-        <a class="d2-primary" href="/research/">All research</a>
+        <a class="d2-primary d2-internal" href="/research/">All research</a>
       </nav>
     </div>
   </section>
@@ -378,11 +404,11 @@ noindex: true
       <h2 id="software-title">cmrdesign</h2>
       <div class="d2-copy">
         <p>
-          Open-source R and Python tools for using pilot data to choose treatment allocations in two-wave experiments.
+          Open-source R and Python tools for using pilot data to choose treatment allocations in two-wave experiments, including A/B testing settings.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Software links">
-        <a class="d2-primary" href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
+        <a class="d2-primary d2-internal" href="/cmrdesign/">Documentation</a>
         <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
         <a href="https://juancyamin.r-universe.dev/cmrdesign">R Package</a>
         <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
