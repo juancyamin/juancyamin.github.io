@@ -284,6 +284,13 @@ noindex: true
     font-style: italic;
   }
 
+  .page__content .d2-agenda p.d2-credit {
+    color: #6b6660;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    margin: -0.15rem 0 0.45rem;
+  }
+
   @media (max-width: 780px) {
     .page__content .d2-hero {
       gap: 2rem;
@@ -326,7 +333,7 @@ noindex: true
       <p class="d2-statement">I develop econometric methods for translating empirical evidence into policy decisions and experimental designs.</p>
       <p class="d2-fields">Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
       <p class="d2-intro">
-        I am an econometrician and Ph.D. candidate in Economics at Brown University. Before the Ph.D., I received an M.A. in Economics from Universidad de los Andes in 2019 and worked as a research assistant for Leopoldo Fergusson.
+        I am an econometrician and Ph.D. candidate in Economics at Brown University.
       </p>
       <nav class="d2-link-row" aria-label="Homepage links">
         <a class="d2-primary d2-internal" href="/research/">Research</a>
@@ -334,7 +341,7 @@ noindex: true
       </nav>
       <nav class="d2-profile-row" aria-label="Contact and profile links">
         <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ&amp;hl=en&amp;gmla=AO4B3jvU0ea8xlcdjZDt3jmXDpREVfqIekmzTzcNEBzSgwb9r4mDXUTTO8D-agRImB34K9ewyWjT75LG84wgrWmoie3uz5Mfh9Er5WdQ3twrTQ">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ">Google Scholar</a>
         <a href="https://github.com/juancyamin">GitHub</a>
         <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
       </nav>
@@ -357,11 +364,11 @@ noindex: true
           Cash transfer programs often target households using income estimates from surveys, censuses, or proxy means tests. The standard approach takes those estimates at face value and allocates transfers to the households that look poorest. But extreme estimates can reflect noise as well as extreme poverty, causing programs to concentrate scarce transfers on too few households and miss others who are genuinely poor.
         </p>
         <p>
-          I show that this plug-in rule is inadmissible: there is a uniformly better way to allocate transfers. I develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
+          I show that this plug-in rule is inadmissible: another rule does at least as well in every case, and strictly better in some. I develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
-        <a href="https://arxiv.org/abs/2506.18188">Paper</a>
+        <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper</a>
       </nav>
     </div>
   </section>
@@ -384,6 +391,7 @@ noindex: true
         <article>
           <h3>Two-Way Effects Models</h3>
           <p class="d2-status">Working paper</p>
+          <p class="d2-credit">with Cole Davis</p>
           <p>A nonparametric empirical Bayes approach to estimating worker and firm effects when the distribution of individual effects may vary with latent firm components.</p>
         </article>
         <article>
@@ -404,7 +412,7 @@ noindex: true
       <h2 id="software-title">cmrdesign</h2>
       <div class="d2-copy">
         <p>
-          Open-source R and Python tools for using pilot data to choose treatment allocations in two-wave experiments, including A/B testing settings.
+          Open-source R and Python tools for using pilot data to choose treatment allocations in two-wave experiments. The same structure appears in digital experiments when a small ramp-up precedes the full experiment.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Software links">
