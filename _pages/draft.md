@@ -8,380 +8,354 @@ noindex: true
 ---
 
 <style>
-  :root {
-    --global-bg-color: #f7f3ec;
-    --global-footer-bg-color: #efe7dc;
+  html,
+  html[data-theme="dark"] {
+    --global-bg-color: #f7f7f4;
+    --global-footer-bg-color: #efeee9;
     --global-link-color: #8f1d2c;
     --global-link-color-hover: #5e111c;
     --global-link-color-visited: #8f1d2c;
     --global-masthead-link-color: #201b18;
     --global-masthead-link-color-hover: #8f1d2c;
     --global-text-color: #201b18;
-    --global-text-color-light: #6f6760;
-    --global-border-color: #dfd4c6;
+    --global-text-color-light: #6b6660;
+    --global-border-color: #d8d6cf;
+    color-scheme: light;
   }
 
   body {
-    background: #f7f3ec;
+    background: #f7f7f4;
   }
 
   .masthead {
-    background: rgba(247, 243, 236, 0.96);
+    background: rgba(247, 247, 244, 0.96);
   }
 
-  .draft-home {
+  .page__content .d2 {
     color: #201b18;
-    font-size: 1.03rem;
-    line-height: 1.65;
-    margin: -0.75rem auto 0;
-    max-width: 1100px;
+    margin: -0.5rem auto 0;
+    max-width: 920px;
   }
 
-  .draft-home a {
+  .page__content .d2 a {
     color: #8f1d2c;
     text-decoration: none;
   }
 
-  .draft-home a:hover {
+  .page__content .d2 a:hover {
     color: #5e111c;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
-  .draft-hero {
-    display: grid;
-    gap: 2.5rem;
-    grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
-    min-height: 470px;
-    padding: 3.75rem 0 3.25rem;
-    align-items: center;
-    border-bottom: 1px solid #dfd4c6;
+  .page__content .d2 p {
+    color: #3f3a35;
+    font-size: 1rem;
+    line-height: 1.65;
+    margin: 0 0 1rem;
   }
 
-  .draft-kicker,
-  .draft-section-label {
+  .page__content .d2-hero {
+    border-bottom: 1px solid #d8d6cf;
+    margin: 0 auto;
+    padding: 4.75rem 0 4.4rem;
+    text-align: center;
+  }
+
+  .page__content .d2-rule {
+    background: #8f1d2c;
+    height: 2px;
+    margin: 0 auto 2rem;
+    width: 76px;
+  }
+
+  .page__content .d2 p.d2-kicker,
+  .page__content .d2 p.d2-label {
     color: #8f1d2c;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 700;
-    letter-spacing: 0.08em;
-    margin: 0 0 0.9rem;
+    letter-spacing: 0.1em;
+    line-height: 1.3;
+    margin: 0 0 1.05rem;
     text-transform: uppercase;
   }
 
-  .draft-hero h1 {
+  .page__content .d2 h1 {
     color: #201b18;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(2.6rem, 7vw, 5.2rem);
+    font-size: clamp(3rem, 7vw, 3.9rem);
     font-weight: 500;
-    line-height: 0.98;
-    margin: 0 0 1.15rem;
-  }
-
-  .draft-fields {
-    color: #3d3631;
-    font-size: 1.05rem;
-    font-weight: 650;
-    margin: 0 0 1.6rem;
-  }
-
-  .draft-statement {
-    color: #2b2521;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.45rem, 3vw, 2.15rem);
-    line-height: 1.25;
-    margin: 0 0 1.2rem;
-    max-width: 780px;
-  }
-
-  .draft-intro {
-    color: #514942;
-    max-width: 720px;
-  }
-
-  .draft-actions,
-  .draft-link-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.85rem;
-    margin-top: 1.8rem;
-  }
-
-  .draft-button,
-  .draft-text-link {
-    align-items: center;
-    border-radius: 999px;
-    display: inline-flex;
-    font-weight: 700;
+    letter-spacing: 0;
     line-height: 1;
-    min-height: 2.45rem;
-    padding: 0.72rem 1rem;
+    margin: 0 0 1.35rem;
   }
 
-  .draft-button {
-    background: #8f1d2c;
-    color: #fff !important;
-  }
-
-  .draft-button:hover {
-    background: #5e111c;
-    color: #fff !important;
-    text-decoration: none !important;
-  }
-
-  .draft-text-link {
-    border: 1px solid #cbbbaa;
-    color: #201b18 !important;
-  }
-
-  .draft-text-link:hover {
-    border-color: #8f1d2c;
-    color: #8f1d2c !important;
-    text-decoration: none !important;
-  }
-
-  .draft-portrait {
-    justify-self: end;
-    position: relative;
-    width: min(320px, 100%);
-  }
-
-  .draft-portrait:before {
-    background: #b5975b;
-    content: "";
-    height: 100%;
-    left: -18px;
-    position: absolute;
-    top: 18px;
-    width: 100%;
-    z-index: 0;
-  }
-
-  .draft-portrait img {
-    aspect-ratio: 4 / 5;
-    display: block;
-    object-fit: cover;
-    object-position: center top;
-    position: relative;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .draft-band {
-    background: #fffaf3;
-    border-bottom: 1px solid #dfd4c6;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    padding: 3rem calc(50vw - 50%);
-  }
-
-  .draft-section {
-    border-bottom: 1px solid #dfd4c6;
-    padding: 3rem 0;
-  }
-
-  .draft-section h2 {
-    border: 0;
+  .page__content .d2 p.d2-statement {
     color: #201b18;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.7rem, 3.5vw, 2.6rem);
-    font-weight: 500;
-    line-height: 1.1;
-    margin: 0 0 1rem;
-    padding: 0;
-  }
-
-  .draft-paper-meta {
-    color: #6f6760;
-    font-size: 0.96rem;
-    font-weight: 650;
-    margin: -0.3rem 0 1.25rem;
-  }
-
-  .draft-feature-grid,
-  .draft-agenda-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: minmax(0, 0.95fr) minmax(260px, 0.55fr);
-  }
-
-  .draft-feature-copy p,
-  .draft-section p {
+    font-size: clamp(1.75rem, 4.3vw, 2.35rem);
+    line-height: 1.22;
+    margin: 0 auto 1.35rem;
     max-width: 760px;
   }
 
-  .draft-note {
-    border-left: 4px solid #8f1d2c;
-    color: #453d37;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.25rem;
+  .page__content .d2 p.d2-fields {
+    color: #5b5650;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.055em;
+    line-height: 1.6;
+    margin: 0 auto 1.55rem;
+    max-width: 760px;
+    text-transform: uppercase;
+  }
+
+  .page__content .d2 p.d2-intro {
+    color: #46413b;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+  }
+
+  .page__content .d2-link-row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.25rem;
+    justify-content: center;
+    margin-top: 1.7rem;
+  }
+
+  .page__content .d2-link-row a {
+    border-bottom: 1px solid currentColor;
+    color: #201b18;
+    font-size: 0.95rem;
+    font-weight: 700;
     line-height: 1.35;
-    margin: 0;
-    padding-left: 1.2rem;
+    padding-bottom: 0.08rem;
   }
 
-  .draft-mini-list {
-    display: grid;
-    gap: 1.35rem;
-    margin-top: 0.35rem;
+  .page__content .d2-link-row a.d2-primary {
+    color: #8f1d2c;
   }
 
-  .draft-mini-item h3 {
+  .page__content .d2-link-row a.d2-primary:after {
+    content: " \2192";
+  }
+
+  .page__content .d2-section {
+    border-bottom: 1px solid #d8d6cf;
+    padding: 4.25rem 0;
+    text-align: center;
+  }
+
+  .page__content .d2-section-inner {
+    margin: 0 auto;
+    max-width: 760px;
+  }
+
+  .page__content .d2 h2 {
+    border: 0;
     color: #201b18;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.25rem;
-    line-height: 1.2;
-    margin: 0 0 0.35rem;
+    font-size: clamp(1.9rem, 4vw, 2.55rem);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.12;
+    margin: 0 0 0.8rem;
+    padding: 0;
   }
 
-  .draft-mini-item p {
-    color: #5c544d;
-    font-size: 0.96rem;
-    margin: 0;
+  .page__content .d2 p.d2-meta {
+    color: #6b6660;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    line-height: 1.4;
+    margin: 0 0 1.3rem;
+    text-transform: uppercase;
   }
 
-  .draft-software {
+  .page__content .d2 p.d2-standfirst {
+    border-bottom: 1px solid #d8d6cf;
+    border-top: 1px solid #d8d6cf;
+    color: #2d2824;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.18rem, 2.6vw, 1.45rem);
+    line-height: 1.38;
+    margin: 1.45rem auto 1.65rem;
+    max-width: 680px;
+    padding: 1rem 0;
+  }
+
+  .page__content .d2-copy {
+    margin: 0 auto;
+    max-width: 720px;
+    text-align: left;
+  }
+
+  .page__content .d2-copy p {
+    color: #3f3a35;
+  }
+
+  .page__content .d2-agenda {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: minmax(0, 0.7fr) minmax(260px, 0.8fr);
+    gap: 1.3rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin: 2.3rem auto 0;
+    max-width: 900px;
+    text-align: center;
   }
 
-  .draft-code-sample {
-    background: #201b18;
-    color: #f7f3ec;
-    font-family: Monaco, Consolas, "Lucida Console", monospace;
-    font-size: 0.82rem;
-    line-height: 1.6;
+  .page__content .d2-agenda article {
+    border-top: 2px solid #8f1d2c;
+    padding-top: 1rem;
+  }
+
+  .page__content .d2-agenda h3 {
+    color: #201b18;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0 0 0.55rem;
+  }
+
+  .page__content .d2-agenda p {
+    color: #5b5650;
+    font-size: 0.9rem;
+    line-height: 1.55;
     margin: 0;
-    overflow-x: auto;
-    padding: 1.2rem;
   }
 
-  @media (max-width: 850px) {
-    .draft-hero,
-    .draft-feature-grid,
-    .draft-agenda-grid,
-    .draft-software {
+  .page__content .d2-software-note {
+    background: #ffffff;
+    border-left: 3px solid #8f1d2c;
+    color: #4a4540;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 1.75rem auto 0;
+    max-width: 640px;
+    padding: 1rem 1.15rem;
+    text-align: left;
+  }
+
+  @media (max-width: 780px) {
+    .page__content .d2-hero {
+      padding: 3rem 0 3.2rem;
+    }
+
+    .page__content .d2-section {
+      padding: 3.2rem 0;
+    }
+
+    .page__content .d2-agenda {
       grid-template-columns: 1fr;
-    }
-
-    .draft-hero {
-      padding-top: 2rem;
-    }
-
-    .draft-portrait {
-      justify-self: start;
-      max-width: 260px;
+      max-width: 560px;
+      text-align: left;
     }
   }
 
   @media (max-width: 520px) {
-    .draft-home {
-      font-size: 0.98rem;
+    .page__content .d2 {
+      margin-top: 0;
     }
 
-    .draft-actions,
-    .draft-link-row {
-      gap: 0.65rem;
-    }
-
-    .draft-button,
-    .draft-text-link {
-      width: 100%;
-      justify-content: center;
+    .page__content .d2-link-row {
+      align-items: center;
+      flex-direction: column;
+      gap: 0.8rem;
     }
   }
 </style>
 
-<main class="draft-home" id="draft-home">
-  <section class="draft-hero" aria-labelledby="draft-home-title">
-    <div>
-      <p class="draft-kicker">2026-27 Economics Job Market Candidate</p>
-      <h1 id="draft-home-title">Juan C. Yamin</h1>
-      <p class="draft-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
-      <p class="draft-statement">My research asks how empirical evidence should guide decisions.</p>
-      <p class="draft-intro">
-        I am an econometrician and Ph.D. candidate in Economics at Brown University. A common theme across my work is how decisions should respond when the available data are informative but not definitive.
-      </p>
-      <p class="draft-actions">
-        <a class="draft-button" href="#featured-research">Featured Research</a>
-        <a class="draft-text-link" href="/files/cv.pdf">CV</a>
-        <a class="draft-text-link" href="mailto:juan_yamin_silva@brown.edu">Email</a>
-      </p>
-    </div>
-    <figure class="draft-portrait">
-      <img src="/images/profile.jpg" alt="Juan C. Yamin">
-    </figure>
+<main class="d2" id="draft-home">
+  <section class="d2-hero" aria-labelledby="draft-home-title">
+    <div class="d2-rule"></div>
+    <p class="d2-kicker">2026-27 Economics Job Market Candidate</p>
+    <h1 id="draft-home-title">Juan C. Yamin</h1>
+    <p class="d2-statement">My research asks how empirical evidence should guide decisions.</p>
+    <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
+    <p class="d2-intro">
+      I am an econometrician and Ph.D. candidate in Economics at Brown University. A common theme across my work is how decisions should respond when the available data are informative but not definitive.
+    </p>
+    <nav class="d2-link-row" aria-label="Homepage links">
+      <a class="d2-primary" href="#featured-research">Featured Research</a>
+      <a href="/files/cv.pdf">CV</a>
+      <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
+    </nav>
   </section>
 
-  <section class="draft-band" id="featured-research" aria-labelledby="featured-research-title">
-    <div class="draft-feature-grid">
-      <div class="draft-feature-copy">
-        <p class="draft-section-label">Featured Research</p>
-        <h2 id="featured-research-title">Poverty Targeting with Imperfect Information</h2>
-        <p class="draft-paper-meta">Solo-authored working paper</p>
+  <section class="d2-section" id="featured-research" aria-labelledby="featured-research-title">
+    <div class="d2-section-inner">
+      <p class="d2-label">Featured Research</p>
+      <h2 id="featured-research-title">Poverty Targeting with Imperfect Information</h2>
+      <p class="d2-meta">Solo-authored working paper</p>
+      <p class="d2-standfirst">
+        The question is not only how to predict need, but how evidence about need should be turned into policy.
+      </p>
+      <div class="d2-copy">
         <p>
           Targeted antipoverty programs often rely on estimated rather than observed income. I study how a policymaker should translate those estimates into feasible transfers when the goal is to reduce poverty subject to a fixed budget.
         </p>
         <p>
           I formulate the targeting problem as a statistical decision problem and develop a nonparametric empirical Bayes rule that assigns transfers using posterior distributions of poverty gaps. In simulations using household survey data from nine African countries, the rule reaches more poor households and improves poverty reduction relative to plug-in OLS and machine-learning benchmarks.
         </p>
-        <p class="draft-link-row">
-          <a class="draft-button" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
-          <a class="draft-text-link" href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&amp;raw=1">Slides</a>
-        </p>
       </div>
-      <p class="draft-note">
-        The question is not only how to predict need, but how evidence about need should be turned into policy.
-      </p>
+      <nav class="d2-link-row" aria-label="Featured research links">
+        <a class="d2-primary" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
+        <a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&amp;raw=1">Slides</a>
+      </nav>
     </div>
   </section>
 
-  <section class="draft-section" aria-labelledby="research-agenda-title">
-    <div class="draft-agenda-grid">
-      <div>
-        <p class="draft-section-label">Research Agenda</p>
-        <h2 id="research-agenda-title">Decisions from evidence that is useful but uncertain.</h2>
+  <section class="d2-section" aria-labelledby="research-agenda-title">
+    <div class="d2-section-inner">
+      <p class="d2-label">Research Agenda</p>
+      <h2 id="research-agenda-title">Decisions from evidence that is useful but uncertain.</h2>
+      <div class="d2-copy">
         <p>
           My current projects study decision problems in policy targeting, experimental design, and empirical Bayes estimation. Together, they ask how researchers and policymakers should act on evidence that informs a choice without mechanically determining it.
         </p>
-        <p class="draft-link-row">
-          <a class="draft-text-link" href="/research/">All research</a>
-        </p>
       </div>
-      <div class="draft-mini-list">
-        <article class="draft-mini-item">
+      <div class="d2-agenda">
+        <article>
           <h3>When and How to Pilot</h3>
           <p>Design rules for two-wave experiments when pilot evidence is informative but easy to overreact to.</p>
         </article>
-        <article class="draft-mini-item">
+        <article>
           <h3>Two-Way Effects Models</h3>
           <p>A nonparametric empirical Bayes approach to shrinkage in models with unit and cluster components.</p>
         </article>
-        <article class="draft-mini-item">
+        <article>
           <h3>Subnational Alignment and Corruption</h3>
           <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>
         </article>
       </div>
+      <nav class="d2-link-row" aria-label="Research links">
+        <a class="d2-primary" href="/research/">All research</a>
+      </nav>
     </div>
   </section>
 
-  <section class="draft-section" aria-labelledby="software-title">
-    <div class="draft-software">
-      <div>
-        <p class="draft-section-label">Software</p>
-        <h2 id="software-title">cmrdesign</h2>
+  <section class="d2-section" aria-labelledby="software-title">
+    <div class="d2-section-inner">
+      <p class="d2-label">Software</p>
+      <h2 id="software-title">cmrdesign</h2>
+      <div class="d2-copy">
         <p>
           I develop software for conditional minimax-regret experimental design, accompanying my work on two-wave experiments.
         </p>
-        <p class="draft-link-row">
-          <a class="draft-button" href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
-          <a class="draft-text-link" href="https://github.com/juancyamin/cmrdesign">GitHub</a>
-          <a class="draft-text-link" href="https://pypi.org/project/cmrdesign/">Python Package</a>
-        </p>
       </div>
-      <pre class="draft-code-sample"><code>from cmrdesign import cmr_two_arm
-
-allocation = cmr_two_arm(pilot_data)
-print(allocation)</code></pre>
+      <nav class="d2-link-row" aria-label="Software links">
+        <a class="d2-primary" href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
+        <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
+        <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
+      </nav>
+      <p class="d2-software-note">
+        This section is intentionally small for now: enough to signal that the method is implemented, without turning the homepage into package documentation.
+      </p>
     </div>
   </section>
 </main>
