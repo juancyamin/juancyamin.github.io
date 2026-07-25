@@ -73,7 +73,7 @@ noindex: true
   .page__content .d2 p.d2-kicker,
   .page__content .d2 p.d2-label {
     color: #8f1d2c;
-    font-size: 0.76rem;
+    font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1.3;
@@ -107,9 +107,8 @@ noindex: true
     letter-spacing: 0.045em;
     line-height: 1.45;
     margin: 0 0 1.45rem;
-    max-width: none;
+    max-width: 720px;
     text-transform: uppercase;
-    white-space: nowrap;
   }
 
   .page__content .d2 p.d2-intro {
@@ -134,18 +133,21 @@ noindex: true
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem 1.25rem;
+    gap: 0.2rem 1.25rem;
     justify-content: flex-start;
-    margin-top: 1.7rem;
+    margin-top: 1.3rem;
   }
 
   .page__content .d2-link-row a {
     border-bottom: 1px solid currentColor;
     color: #201b18;
+    display: inline-flex;
     font-size: 0.95rem;
     font-weight: 700;
+    min-height: 2.35rem;
+    align-items: center;
     line-height: 1.35;
-    padding-bottom: 0.08rem;
+    padding: 0.38rem 0 0.2rem;
   }
 
   .page__content .d2-link-row a.d2-primary {
@@ -197,13 +199,13 @@ noindex: true
     font-weight: 600;
     line-height: 1.45;
     margin: 1.35rem 0 1.55rem;
-    max-width: 650px;
+    max-width: 640px;
     padding: 0;
   }
 
   .page__content .d2-copy {
     margin: 0;
-    max-width: 720px;
+    max-width: 640px;
     text-align: left;
   }
 
@@ -243,12 +245,19 @@ noindex: true
 
   .page__content .d2-agenda p.d2-status {
     color: #8f1d2c;
-    font-size: 0.76rem;
+    font-size: 0.82rem;
     font-weight: 700;
-    letter-spacing: 0.035em;
+    letter-spacing: 0.02em;
     line-height: 1.35;
     margin: 0 0 0.45rem;
-    text-transform: uppercase;
+  }
+
+  .page__content .d2-agenda p.d2-status-muted {
+    color: #6b6660;
+  }
+
+  .page__content .d2-agenda p.d2-status em {
+    font-style: italic;
   }
 
   @media (max-width: 780px) {
@@ -260,10 +269,6 @@ noindex: true
 
     .page__content .d2-photo {
       max-width: 190px;
-    }
-
-    .page__content .d2 p.d2-fields {
-      white-space: normal;
     }
 
     .page__content .d2-section {
@@ -294,15 +299,18 @@ noindex: true
     <div class="d2-hero-copy">
       <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
       <h1 id="draft-home-title">Juan C. Yamin</h1>
-      <p class="d2-statement">I develop methods that help researchers and policymakers make better use of data for real-world decisions.</p>
-      <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design</p>
+      <p class="d2-statement">I develop econometric methods for translating statistical evidence into policy choices and experimental designs.</p>
+      <p class="d2-fields">Econometrics &middot; Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
       <p class="d2-intro">
-        I am an applied econometrician and Ph.D. candidate in Economics at Brown University.
+        I am an econometrician and Ph.D. candidate in Economics at Brown University.
       </p>
       <nav class="d2-link-row" aria-label="Homepage links">
         <a class="d2-primary" href="/research/">Research</a>
         <a href="/files/cv.pdf">CV</a>
-        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
+        <a href="mailto:juan_yamin_silva@brown.edu">juan_yamin_silva@brown.edu</a>
+        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ&amp;hl=en&amp;gmla=AO4B3jvU0ea8xlcdjZDt3jmXDpREVfqIekmzTzcNEBzSgwb9r4mDXUTTO8D-agRImB34K9ewyWjT75LG84wgrWmoie3uz5Mfh9Er5WdQ3twrTQ">Google Scholar</a>
+        <a href="https://github.com/juancyamin">GitHub</a>
+        <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
       </nav>
     </div>
     <figure class="d2-photo">
@@ -323,38 +331,38 @@ noindex: true
           Cash transfer programs often target households using income estimates from surveys, censuses, or proxy means tests. The standard approach takes those estimates at face value and allocates transfers to the households that look poorest. But extreme estimates can reflect noise as well as extreme poverty, causing programs to concentrate scarce transfers on too few households and miss others who are genuinely poor.
         </p>
         <p>
-          I show that this plug-in rule is inadmissible and develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations across nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under the standard approach&mdash;nearly 80 percent more.
+          I show that this plug-in rule is inadmissible: there is a uniformly better way to allocate transfers. I develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
-        <a class="d2-primary" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
+        <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper</a>
       </nav>
     </div>
   </section>
 
   <section class="d2-section" aria-labelledby="research-agenda-title">
     <div class="d2-section-inner">
-      <p class="d2-label">Current Research</p>
-      <h2 id="research-agenda-title">Experimental design, empirical Bayes methods, and political economy of development.</h2>
+      <p class="d2-label">Research Agenda</p>
+      <h2 id="research-agenda-title">Current Research</h2>
       <div class="d2-copy">
         <p>
-          Beyond the featured paper, my current work studies how empirical methods can improve decisions in experiments, high-dimensional models, and public institutions.
+          Beyond poverty targeting, my current work spans experimental design, empirical Bayes methods, and the political economy of development.
         </p>
       </div>
       <div class="d2-agenda">
         <article>
           <h3>When and How to Pilot</h3>
           <p class="d2-status">Working paper</p>
-          <p>Design rules for two-wave experiments, studying how noisy pilot estimates of treatment and control variances should guide later allocation while guarding against overreaction to small-sample noise.</p>
+          <p>Design rules for two-wave experiments and A/B testing, studying how small pilot estimates of treatment and control variances should guide later allocation while guarding against overreaction to small-sample variation.</p>
         </article>
         <article>
           <h3>Two-Way Effects Models</h3>
-          <p class="d2-status">With Cole Davis</p>
+          <p class="d2-status">Working paper</p>
           <p>A nonparametric empirical Bayes approach to estimating worker and firm effects when the distribution of individual effects may vary with latent firm components.</p>
         </article>
         <article>
           <h3>Subnational Alignment and Corruption</h3>
-          <p class="d2-status">Conditionally accepted at the American Political Science Review</p>
+          <p class="d2-status d2-status-muted">Conditionally accepted at the <em>American Political Science Review</em></p>
           <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>
         </article>
       </div>
