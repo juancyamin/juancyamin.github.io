@@ -31,6 +31,11 @@ noindex: true
     background: rgba(247, 247, 244, 0.96);
   }
 
+  .greedy-nav,
+  #site-nav {
+    background: transparent;
+  }
+
   .page__content .d2 {
     color: #201b18;
     margin: -0.5rem auto 0;
@@ -65,13 +70,6 @@ noindex: true
     text-align: left;
   }
 
-  .page__content .d2-rule {
-    background: #8f1d2c;
-    height: 2px;
-    margin: 0 0 2rem;
-    width: 76px;
-  }
-
   .page__content .d2 p.d2-kicker,
   .page__content .d2 p.d2-label {
     color: #8f1d2c;
@@ -104,9 +102,9 @@ noindex: true
 
   .page__content .d2 p.d2-fields {
     color: #5b5650;
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     font-weight: 700;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.03em;
     line-height: 1.45;
     margin: 0 0 1.45rem;
     max-width: none;
@@ -122,10 +120,7 @@ noindex: true
   }
 
   .page__content .d2-photo {
-    background: #ffffff;
-    border: 1px solid #d8d6cf;
     margin: 0;
-    padding: 0.45rem;
     width: 100%;
   }
 
@@ -169,7 +164,7 @@ noindex: true
 
   .page__content .d2-section-inner {
     margin: 0;
-    max-width: 760px;
+    max-width: none;
   }
 
   .page__content .d2 h2 {
@@ -181,6 +176,7 @@ noindex: true
     letter-spacing: 0;
     line-height: 1.12;
     margin: 0 0 0.8rem;
+    max-width: 820px;
     padding: 0;
   }
 
@@ -195,15 +191,14 @@ noindex: true
   }
 
   .page__content .d2 p.d2-standfirst {
-    border-bottom: 1px solid #d8d6cf;
-    border-top: 1px solid #d8d6cf;
     color: #2d2824;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.02rem, 2vw, 1.18rem);
+    font-size: clamp(1.06rem, 2vw, 1.22rem);
+    font-weight: 600;
     line-height: 1.45;
     margin: 1.35rem 0 1.55rem;
     max-width: 650px;
-    padding: 1rem 0;
+    padding: 0;
   }
 
   .page__content .d2-copy {
@@ -297,17 +292,16 @@ noindex: true
 <main class="d2" id="draft-home">
   <section class="d2-hero" aria-labelledby="draft-home-title">
     <div class="d2-hero-copy">
-      <div class="d2-rule"></div>
-      <p class="d2-kicker">2026-27 Economics Job Market Candidate</p>
+      <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
       <h1 id="draft-home-title">Juan C. Yamin</h1>
-      <p class="d2-statement">My research asks how empirical evidence should guide decisions.</p>
-      <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design</p>
+      <p class="d2-statement">I develop econometric methods for policy and experimental decisions that depend on estimated quantities.</p>
+      <p class="d2-fields">Applied Econometrics &middot; Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
       <p class="d2-intro">
-        I am an econometrician and Ph.D. candidate in Economics at Brown University. A common theme across my work is how decisions should respond when the available data are informative but not definitive.
+        I am an applied econometrician and Ph.D. candidate in Economics at Brown University.
       </p>
       <nav class="d2-link-row" aria-label="Homepage links">
-        <a class="d2-primary" href="/files/cv.pdf">CV</a>
-        <a href="/research/">Research</a>
+        <a class="d2-primary" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
+        <a href="/files/cv.pdf">CV</a>
         <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
       </nav>
     </div>
@@ -320,45 +314,46 @@ noindex: true
     <div class="d2-section-inner">
       <p class="d2-label">Featured Research</p>
       <h2 id="featured-research-title">Poverty Targeting with Imperfect Information</h2>
-      <p class="d2-meta">Working paper</p>
+      <p class="d2-meta">Submitted</p>
       <p class="d2-standfirst">
-        The question is not only how to predict need, but how evidence about need should be turned into policy.
+        Better targeting requires not only better income predictions, but better decisions about how to act on them.
       </p>
       <div class="d2-copy">
         <p>
-          Targeted antipoverty programs often rely on estimated rather than observed income. I study how a policymaker should translate those estimates into feasible transfers when the goal is to reduce poverty subject to a fixed budget.
+          Cash transfer programs often target households using income estimates from surveys, censuses, or proxy means tests. The standard approach takes those estimates at face value and allocates transfers to the households that look poorest. But extreme estimates can reflect noise as well as extreme poverty, causing programs to concentrate scarce transfers on too few households and miss others who are genuinely poor.
         </p>
         <p>
-          I formulate the targeting problem as a statistical decision problem and develop a nonparametric empirical Bayes rule that assigns transfers using posterior distributions of poverty gaps. In simulations using household survey data from nine African countries, the rule reaches more poor households and improves poverty reduction relative to plug-in OLS and machine-learning benchmarks.
+          I show that this plug-in rule is inadmissible and develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations across nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under the standard approach&mdash;nearly 80 percent more.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
         <a class="d2-primary" href="https://arxiv.org/pdf/2506.18188v2">Paper</a>
+        <a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&amp;raw=1">Slides</a>
       </nav>
     </div>
   </section>
 
   <section class="d2-section" aria-labelledby="research-agenda-title">
     <div class="d2-section-inner">
-      <p class="d2-label">Research Agenda</p>
-      <h2 id="research-agenda-title">Decisions from evidence that is useful but uncertain.</h2>
+      <p class="d2-label">Current Research</p>
+      <h2 id="research-agenda-title">How should decisions respond when the available data are informative but not definitive?</h2>
       <div class="d2-copy">
         <p>
-          My current projects study decision problems in policy targeting, experimental design, and empirical Bayes estimation. Together, they ask how researchers and policymakers should act on evidence that informs a choice without mechanically determining it.
+          Beyond the featured paper, my current work spans experimental design, empirical Bayes methods, and the political economy of institutions.
         </p>
       </div>
       <div class="d2-agenda">
         <article>
           <h3>When and How to Pilot</h3>
-          <p>Design rules for two-wave experiments when pilot evidence is informative but easy to overreact to.</p>
+          <p>Design rules for deciding how strongly a small pilot should influence the experiment that follows.</p>
         </article>
         <article>
           <h3>Two-Way Effects Models</h3>
-          <p>A nonparametric empirical Bayes approach to shrinkage in models with unit and cluster components.</p>
+          <p>A nonparametric empirical Bayes approach to estimating worker and firm effects when the two components may be related.</p>
         </article>
         <article>
           <h3>Subnational Alignment and Corruption</h3>
-          <p class="d2-status">Conditionally accepted at APSR</p>
+          <p class="d2-status">Conditionally accepted at the American Political Science Review</p>
           <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>
         </article>
       </div>
@@ -374,12 +369,13 @@ noindex: true
       <h2 id="software-title">cmrdesign</h2>
       <div class="d2-copy">
         <p>
-          I develop software for conditional minimax-regret experimental design, accompanying my work on two-wave experiments.
+          Open-source R and Python tools for using pilot data to choose treatment allocations in two-wave experiments.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Software links">
         <a class="d2-primary" href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
         <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
+        <a href="https://juancyamin.r-universe.dev/cmrdesign">R Package</a>
         <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
       </nav>
     </div>
