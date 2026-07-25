@@ -96,8 +96,8 @@ noindex: true
   .page__content .d2 p.d2-statement {
     color: #201b18;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.34rem, 2.6vw, 1.78rem);
-    line-height: 1.3;
+    font-size: clamp(1.12rem, 2vw, 1.45rem);
+    line-height: 1.35;
     margin: 0 0 1.2rem;
     max-width: 620px;
   }
