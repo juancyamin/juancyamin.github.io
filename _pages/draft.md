@@ -63,8 +63,8 @@ noindex: true
     align-items: center;
     border-bottom: 1px solid #d8d6cf;
     display: grid;
-    gap: 3rem;
-    grid-template-columns: minmax(0, 1fr) minmax(190px, 240px);
+    gap: 2.2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
     margin: 0 auto;
     padding: 4.6rem 0 4.25rem;
     text-align: left;
