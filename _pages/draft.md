@@ -63,8 +63,8 @@ noindex: true
     align-items: center;
     border-bottom: 1px solid #d8d6cf;
     display: grid;
-    gap: 2.2rem;
-    grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
+    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 200px);
     margin: 0 auto;
     padding: 4.6rem 0 4.25rem;
     text-align: left;
@@ -107,7 +107,7 @@ noindex: true
     letter-spacing: 0.045em;
     line-height: 1.45;
     margin: 0 0 1.45rem;
-    max-width: 720px;
+    max-width: 760px;
     text-transform: uppercase;
   }
 
