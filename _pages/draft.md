@@ -397,6 +397,7 @@ noindex: true
         <article>
           <h3>Subnational Alignment and Corruption</h3>
           <p class="d2-status">Conditionally accepted at the <em>American Political Science Review</em></p>
+          <p class="d2-credit">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina</p>
           <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>
         </article>
       </div>
