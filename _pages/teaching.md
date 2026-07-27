@@ -511,7 +511,7 @@ description: "Teaching by Juan C. Yamin."
               <span class="t2-eval-score">4.92</span>
               <span class="t2-eval-meta">Dept. avg. 4.53</span>
               <nav class="t2-links t2-eval-links" aria-label="ECON 2400 evaluation">
-                <a class="t2-internal" href="/files/econ2400_evaluation.pdf">PDF</a>
+                <a class="t2-internal" href="/files/econ2400_evaluation_spring2026.pdf">PDF</a>
               </nav>
             </td>
           </tr>
@@ -555,15 +555,15 @@ description: "Teaching by Juan C. Yamin."
       <h3 id="previous-title">Previous Teaching</h3>
       <div class="t2-previous-row">
         <div>
-          <p class="t2-previous-title">Political Underpinnings of Prosperity and Poverty</p>
-          <p class="t2-previous-meta">Teaching assistant for James Robinson, Universidad de los Andes</p>
+          <p class="t2-previous-title">Advanced Econometrics</p>
+          <p class="t2-previous-meta">Teaching assistant for Raquel Bernal, Universidad de los Andes</p>
         </div>
         <p class="t2-previous-meta">Graduate</p>
       </div>
       <div class="t2-previous-row">
         <div>
-          <p class="t2-previous-title">Advanced Econometrics</p>
-          <p class="t2-previous-meta">Teaching assistant for Raquel Bernal, Universidad de los Andes</p>
+          <p class="t2-previous-title">Political Underpinnings of Prosperity and Poverty</p>
+          <p class="t2-previous-meta">Teaching assistant for James Robinson, Universidad de los Andes</p>
         </div>
         <p class="t2-previous-meta">Graduate</p>
       </div>

@@ -392,14 +392,14 @@ description: "Econometric research by Juan C. Yamin on policy targeting, experim
     </p>
   </header>
 
-  <section class="r2-section r2-section-featured" aria-labelledby="featured-paper-title">
+  <section class="r2-section r2-section-featured" aria-labelledby="poverty-targeting-title">
     <div class="r2-section-head">
-      <h2 class="r2-label" id="featured-paper-title">Featured Paper</h2>
+      <p class="r2-label" id="featured-paper-title">Job Market Paper</p>
     </div>
     <article class="r2-paper r2-paper-featured" id="poverty-targeting">
-      <h3 class="r2-paper-title" id="poverty-targeting-title">Poverty Targeting with Imperfect Information</h3>
+      <h2 class="r2-paper-title" id="poverty-targeting-title">Poverty Targeting with Imperfect Information</h2>
       <p class="r2-status">Submitted</p>
-      <p class="r2-question">How should an anti-poverty transfer budget be allocated when policymakers must rely on estimated incomes?</p>
+      <p class="r2-question">How should an antipoverty transfer budget be allocated when policymakers observe noisy income estimates rather than true income?</p>
       <div class="r2-summary">
         <p>
           I formulate poverty targeting as a statistical decision problem and show that the standard plug-in rule, which treats estimated income as true, is inadmissible: another allocation rule does at least as well in every case, and strictly better in some. I develop a nonparametric empirical Bayes rule that assigns transfers using posterior distributions of poverty gaps. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
@@ -422,11 +422,11 @@ description: "Econometric research by Juan C. Yamin on policy targeting, experim
 
   <section class="r2-section" aria-labelledby="working-papers-title">
     <div class="r2-section-head">
-      <h2 class="r2-label" id="working-papers-title">Working Papers</h2>
+      <p class="r2-label" id="working-papers-title">Working Papers</p>
     </div>
 
     <article class="r2-paper" id="when-and-how-to-pilot">
-      <h3 class="r2-paper-title">When and How to Pilot: Design Rules for Two-Wave Experiments</h3>
+      <h2 class="r2-paper-title">When and How to Pilot: Design Rules for Two-Wave Experiments</h2>
       <p class="r2-status">Working paper</p>
       <p class="r2-question">How much should a small first wave change the experiment that follows?</p>
       <div class="r2-summary">
@@ -450,7 +450,7 @@ description: "Econometric research by Juan C. Yamin on policy targeting, experim
     </article>
 
     <article class="r2-paper" id="two-way-effects">
-      <h3 class="r2-paper-title">Two-Way Effects Models: A Nonparametric Empirical Bayes Approach</h3>
+      <h2 class="r2-paper-title">Two-Way Effects Models: A Nonparametric Empirical Bayes Approach</h2>
       <p class="r2-coauthors">with Cole Davis</p>
       <p class="r2-status">Working paper</p>
       <p class="r2-question">How should two-way effects be estimated when the latent components may be dependent?</p>
@@ -475,17 +475,17 @@ description: "Econometric research by Juan C. Yamin on policy targeting, experim
 
   <section class="r2-section" aria-labelledby="publications-title">
     <div class="r2-section-head">
-      <h2 class="r2-label" id="publications-title">Publications</h2>
+      <p class="r2-label" id="publications-title">Publications</p>
     </div>
 
     <article class="r2-paper" id="birds-of-a-feather">
-      <h3 class="r2-paper-title">Birds of a Feather Collude Together: Subnational Alignment and Corruption</h3>
+      <h2 class="r2-paper-title">Birds of a Feather Collude Together: Subnational Alignment and Corruption</h2>
       <p class="r2-coauthors">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina</p>
       <p class="r2-status">Conditionally accepted at the <em>American Political Science Review</em></p>
       <p class="r2-question">Does partisan alignment across levels of government facilitate corruption?</p>
       <div class="r2-summary">
         <p>
-          We use close elections in Colombia to study how partisan alignment between municipal mayors and departmental governors affects corruption and public-service delivery. Alignment increases reported ghost enrollment by 0.3 standard deviations, without improvements in genuine enrollment or student performance, and also increases discretionary hiring, patronage-based outsourcing, and electoral-fraud risk.
+          We use close elections in Colombia to study how partisan alignment between municipal mayors and departmental governors affects corruption and public service delivery. Alignment increases reported ghost enrollment by 0.3 standard deviations, without improvements in genuine enrollment or student performance, and also increases discretionary hiring, patronage-based outsourcing, and electoral fraud risk.
         </p>
       </div>
       <nav class="r2-links" aria-label="Subnational Alignment and Corruption links">
@@ -504,7 +504,7 @@ description: "Econometric research by Juan C. Yamin on policy targeting, experim
 
   <section class="r2-section" aria-labelledby="presentations-title">
     <div class="r2-section-head">
-      <h2 class="r2-label" id="presentations-title">Selected Presentations</h2>
+      <p class="r2-label" id="presentations-title">Selected Presentations</p>
     </div>
 
     <div class="r2-presentations">

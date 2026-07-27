@@ -480,7 +480,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
       <p class="s2-label">Package</p>
       <h2 id="cmrdesign-title">cmrdesign</h2>
       <p class="s2-status">R package on R-universe &middot; Python alpha on PyPI &middot; MIT License</p>
-      <p class="s2-standfirst">Give the package pilot outcomes and treatment labels; it returns a main-wave allocation and a regret certificate.</p>
+      <p class="s2-standfirst">Give the package pilot outcomes and treatment labels; it recommends a main-wave treatment allocation and reports a finite-sample regret certificate.</p>
     </div>
     <div class="s2-demo" aria-label="cmrdesign quick start">
       <article>
@@ -502,7 +502,7 @@ fit.U_CMR  # regret certificate</code></pre>
     </div>
     <div class="s2-copy">
       <p>
-        <span class="s2-code-name">cmrdesign</span> implements Conditional Minimax Regret design rules from <em>When and How to Pilot</em>. Use it when an initial wave contains the outcome variable and treatment assignment, and the next task is deciding how to allocate treatment in the larger main wave.
+        <span class="s2-code-name">cmrdesign</span> implements Conditional Minimax Regret design rules from <em>When and How to Pilot</em>. Use it when a pilot, staged experiment, or A/B-test ramp-up contains outcomes and treatment labels, and the next task is choosing a treatment allocation for the larger main wave.
       </p>
       <p>
         Balanced assignment ignores pilot variance information; feasible Neyman allocation can overreact to a small pilot. CMR adapts only when the pilot is informative enough. The same workflow applies to field pilots, staged experiments, and A/B tests in which a small ramp-up precedes the full experiment.

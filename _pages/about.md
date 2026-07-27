@@ -367,7 +367,7 @@ redirect_from:
 
   <section class="d2-section" id="featured-research" aria-labelledby="featured-research-title">
     <div class="d2-section-inner">
-      <p class="d2-label">Featured Research</p>
+      <p class="d2-label">Job Market Paper</p>
       <h2 id="featured-research-title"><a href="/research/#poverty-targeting">Poverty Targeting with Imperfect Information</a></h2>
       <p class="d2-meta">Submitted</p>
       <p class="d2-standfirst">
@@ -427,7 +427,7 @@ redirect_from:
       <h2 id="software-title">cmrdesign</h2>
       <div class="d2-copy">
         <p>
-          Open-source R and Python tools for applying Conditional Minimax Regret design rules in two-wave experiments. Given pilot outcomes and assignment labels, the package returns a recommended main-wave allocation and a regret certificate.
+          cmrdesign is open-source R and Python software for pilot-informed experimental design. It uses pilot outcomes and treatment labels to recommend a main-wave treatment allocation and report a finite-sample regret certificate.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Software links">
