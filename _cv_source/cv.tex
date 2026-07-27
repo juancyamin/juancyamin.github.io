@@ -1,0 +1,457 @@
+\documentclass[10pt,letterpaper]{article}
+
+% ---------- Typography and page layout ----------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage[margin=0.68in,top=0.55in,bottom=0.58in]{geometry}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{needspace}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\definecolor{linkblue}{HTML}{1F4E79}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue,
+  pdfauthor={Juan C. Yamin},
+  pdftitle={Curriculum Vitae -- Juan C. Yamin}
+}
+\urlstyle{same}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1.02}
+
+\setlist[itemize]{
+  leftmargin=1.15em,
+  itemsep=0.05em,
+  topsep=0.15em,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\titleformat{\section}
+  {\needspace{4\baselineskip}\large\bfseries\scshape}
+  {}
+  {0pt}
+  {}
+  [\vspace{-0.25em}\titlerule]
+
+\titlespacing*{\section}{0pt}{0.72em}{0.36em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize Juan C. Yamin}
+\fancyfoot[R]{\footnotesize \thepage}
+\setlength{\footskip}{18pt}
+
+% ---------- Reusable commands ----------
+\newcommand{\cvlink}[2]{%
+  \href{#1}{\textcolor{linkblue}{#2}}%
+}
+
+\newcommand{\datedline}[2]{%
+  \begin{tabularx}{\textwidth}{
+    @{}X>{\raggedleft\arraybackslash}p{1.38in}@{}
+  }
+    #1 & #2
+  \end{tabularx}%
+}
+
+\newcommand{\paper}[4]{%
+  \needspace{4\baselineskip}%
+  \textbf{#1}%
+  \if\relax\detokenize{#2#3}\relax
+    \\[-0.03em]%
+  \else
+    \\[-0.08em]
+    {#2%
+     \if\relax\detokenize{#3}\relax
+     \else
+       \hfill #3%
+     \fi}\\[-0.03em]%
+  \fi
+  #4\par\vspace{0.42em}
+}
+
+\newcommand{\experience}[4]{%
+  \needspace{4\baselineskip}%
+  \datedline{\textbf{#1}}{#2}\\[-0.08em]
+  \datedline{\textit{#3}}{}\\[-0.10em]
+  #4\par\vspace{0.42em}
+}
+
+\newcommand{\award}[2]{%
+  \datedline{#2}{#1}\par\vspace{-0.18em}
+}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+  {\LARGE\bfseries Juan C. Yamin}\\[0.12em]
+  Department of Economics, Brown University\\[0.08em]
+  \cvlink{mailto:juan_yamin_silva@brown.edu}{juan\_yamin\_silva@brown.edu}
+  \;\textbar\;
+  \cvlink{https://juancyamin.github.io/}{juancyamin.github.io}\\[0.18em]
+  \textbf{2026--27 Economics Job Market Candidate}
+\end{center}
+
+\vspace{0.12em}
+
+\begin{tabularx}{\textwidth}{
+  @{}>{\bfseries}p{1.18in}X@{}
+}
+Fields:
+  & Econometrics, Development Economics \\
+
+Research interests:
+  & Statistical decision theory, empirical Bayes,
+    experimental design, causal inference
+\end{tabularx}
+
+% ---------- Education ----------
+\section{Education}
+
+\datedline{
+  \textbf{Brown University}, Providence, RI
+}{}\\[-0.15em]
+
+\datedline{
+  Ph.D. in Economics
+}{
+  Expected May 2027
+}\\[-0.15em]
+
+\datedline{
+  M.A. in Economics
+}{
+  May 2022
+}
+
+\vspace{0.25em}
+
+\datedline{
+  \textbf{Universidad de los Andes}, Bogot\'a, Colombia
+}{}\\[-0.15em]
+
+\datedline{
+  M.Sc. in Economics
+}{
+  March 2019
+}\\[-0.15em]
+
+\datedline{
+  B.Sc. in Economics
+}{
+  October 2017
+}
+
+% ---------- Job market paper ----------
+\section{Job Market Paper}
+
+\paper
+  {Poverty Targeting with Imperfect Information}
+  {\textit{Submitted}}
+  {}
+  {
+    How should an antipoverty transfer budget be allocated when
+    policymakers observe noisy income estimates rather than true
+    income? I formulate targeting as a statistical decision problem,
+    show that the standard plug-in rule is inadmissible, and develop
+    a nonparametric empirical Bayes rule that allocates a fixed budget
+    using posterior distributions of poverty gaps. In simulations
+    using household surveys from nine African countries, the rule
+    reaches 45.6 poor households per 1,000 people, compared with 25.5
+    under standard targeting, while systematically improving poverty
+    reduction relative to plug-in OLS and machine-learning benchmarks.
+  }
+
+% ---------- Working papers ----------
+\section{Other Working Papers}
+
+\paper
+  {When and How to Pilot: Design Rules for Two-Wave Experiments}
+  {}
+  {}
+  {
+    Small pilots can inform main-wave treatment assignment, but
+    treating noisy pilot variance estimates as exact can make the
+    resulting design less precise than balanced assignment. I develop
+    a Conditional Minimax Regret rule that minimizes worst-case regret
+    over a finite-sample confidence set for treatment and control
+    variances. The rule retains balance's worst-case protection with
+    high probability, converges to Neyman allocation as the pilot
+    grows, and attains the minimax-regret rate up to constants.
+    Simulations calibrated to four field experiments show that it
+    avoids feasible Neyman's severe small-pilot losses while capturing
+    most of its large-pilot gains.
+  }
+
+\paper
+  {Two-Way Effects Models:
+   A Nonparametric Empirical Bayes Approach}
+  {with Cole Davis}
+  {Draft available upon request}
+  {
+    We develop a nonparametric empirical Bayes framework for
+    decomposing outcomes into unit and cluster components, such as
+    workers and firms, teachers and schools, or individuals and
+    regions. Unlike existing empirical Bayes methods that impose
+    parametric structure or independence between the latent
+    components, the framework allows the distribution of unit effects
+    to vary with latent cluster effects and studies the resulting
+    shrinkage rules.
+  }
+
+% ---------- Conditionally accepted ----------
+\section{Conditionally Accepted Paper}
+
+\paper
+  {Birds of a Feather Collude Together:
+   Subnational Alignment and Corruption}
+  {
+    with Leopoldo Fergusson, Arturo Harker, and Carlos Molina\\
+    \textit{
+      Conditionally accepted at the
+      American Political Science Review
+    }
+  }
+  {}
+  {
+    Using close elections in Colombia, we study how partisan
+    alignment between municipal mayors and departmental governors
+    affects corruption and public-service delivery. Alignment
+    increases reported ghost enrollment, discretionary hiring,
+    patronage-based outsourcing, and electoral-fraud risk, without
+    improving genuine enrollment or student performance.
+  }
+
+% ---------- Software ----------
+\section{Software}
+
+\paper
+  {cmrdesign}
+  {
+    Open-source R and Python software for pilot-informed
+    experimental design
+  }
+  {}
+  {
+    Given pilot outcomes and treatment labels, the package implements
+    Conditional Minimax Regret design rules, returns a recommended
+    main-wave treatment share, and reports a finite-sample regret
+    certificate.
+  }
+
+% ---------- Presentations ----------
+\section{Presentations}
+
+\datedline{
+  World Congress of the Econometric Society, Seoul
+}{
+  2025
+}\\[-0.12em]
+
+\hspace{0.75em}
+\textit{Poverty Targeting with Imperfect Information}\\[0.12em]
+
+\datedline{
+  Advances with Field Experiments, Chicago
+}{
+  2025
+}\\[-0.12em]
+
+\hspace{0.75em}
+\textit{
+  When and How to Pilot: Design Rules for Two-Wave Experiments
+}
+
+% ---------- Awards ----------
+\section{Awards and Fellowships}
+
+\award{2026}{
+  Merit Dissertation Fellowship,
+  Department of Economics, Brown University
+}
+
+\award{2025}{
+  International Travel Fund,
+  Graduate School, Brown University
+}
+
+\award{2025}{
+  Conference Travel Fund,
+  Graduate School, Brown University
+}
+
+% ---------- Teaching ----------
+\section{Teaching Experience}
+
+\datedline{\textbf{Brown University}}{}\\[-0.10em]
+
+\datedline{
+  Teaching Assistant,
+  \textit{Applied Econometrics II} (Ph.D.),
+  Peter Hull
+}{
+  Spring 2026
+}\\[-0.16em]
+
+\datedline{
+  Teaching Assistant,
+  \textit{Applied Econometrics I} (Ph.D.),
+  Toru Kitagawa
+}{
+  Fall 2024
+}\\[-0.16em]
+
+\datedline{
+  Teaching Assistant,
+  \textit{Using Big Data to Solve Economic and Social Problems},
+  John N. Friedman
+}{
+  Fall 2022, Fall 2023
+}
+
+\vspace{0.35em}
+
+\datedline{\textbf{Universidad de los Andes}}{}\\[-0.10em]
+
+Teaching Assistant,
+\textit{Advanced Econometrics} (graduate),
+Raquel Bernal\\[-0.16em]
+
+Teaching Assistant,
+\textit{Political Underpinnings of Prosperity and Poverty}
+(graduate),
+James A. Robinson\\[-0.16em]
+
+Teaching Assistant,
+\textit{Thinking Problems} (undergraduate),
+Tom\'as Rodr\'iguez
+
+% ---------- Service ----------
+\section{Professional Service}
+
+\datedline{
+  Co-organizer, Brown Metrics Coffee
+}{
+  2024--25
+}
+
+% ---------- Experience ----------
+\section{Selected Research and Industry Experience}
+
+\experience
+  {Amazon, Delivery Experience}
+  {May--August 2025}
+  {Economist Intern, Bellevue, WA}
+  {
+    Developed difference-in-differences and shift-share strategies
+    to estimate the direct and geographic spillover effects of a U.S.
+    delivery-speed program. Combined the estimates to measure the
+    program's total effect on customer delivery experience.
+  }
+
+\experience
+  {Brown University, Department of Economics}
+  {June 2023--present}
+  {Research Assistant to Soonwoo Kwon}
+  {
+    Conducted simulation analyses and empirical applications for
+    research on shrinkage estimation of fixed effects, inference in
+    regression discontinuity designs under monotonicity, and
+    bias-aware inference in regularized regression models.
+  }
+
+\experience
+  {Universidad de los Andes, Department of Economics}
+  {August 2017--July 2021}
+  {
+    Research Assistant to Leopoldo Fergusson and
+    James A. Robinson, Bogot\'a, Colombia
+  }
+  {
+    Conducted empirical research on political economy, conflict,
+    corruption, and state capacity using administrative, archival,
+    geographic, and text data. Contributed to a project subsequently
+    published in the \textit{Review of Economic Studies} and
+    coauthored the conditionally accepted
+    \textit{American Political Science Review} paper listed above.
+    Coordinated large-scale data collection, digitization,
+    econometric analysis, and replication work across multiple
+    projects.
+  }
+
+% ---------- Skills ----------
+\section{Technical Skills and Languages}
+
+\begin{tabularx}{\textwidth}{
+  @{}>{\bfseries}p{1.05in}X@{}
+}
+Programming:
+  & R, Python, Stata, MATLAB, SQL, Git, LaTeX \\
+
+Languages:
+  & Spanish (native), English (fluent), French (fluent)
+\end{tabularx}
+
+% ---------- References ----------
+\section{References}
+
+\begin{tabular}{
+  @{}
+  >{\raggedright\arraybackslash}p{0.30\textwidth}
+  @{\hspace{0.05\textwidth}}
+  >{\raggedright\arraybackslash}p{0.30\textwidth}
+  @{\hspace{0.05\textwidth}}
+  >{\raggedright\arraybackslash}p{0.30\textwidth}
+  @{}
+}
+
+\textbf{
+  \cvlink{https://economics.brown.edu/people/toru-kitagawa}{Toru Kitagawa}
+}
+&
+\textbf{
+  \cvlink{https://soonwookwon.github.io/}{Soonwoo Kwon}
+}
+&
+\textbf{
+  \cvlink{https://economics.brown.edu/people/jonathan-roth}{Jonathan Roth}
+}
+\\
+
+Professor of Economics
+&
+Groos Family Assistant Professor of Economics
+&
+Professor of Economics
+\\
+
+Brown University
+&
+Brown University
+&
+Brown University
+\\
+
+\cvlink{mailto:toru_kitagawa@brown.edu}{toru\_kitagawa@brown.edu}
+&
+\cvlink{mailto:soonwoo_kwon@brown.edu}{soonwoo\_kwon@brown.edu}
+&
+\cvlink{mailto:jonathan_roth@brown.edu}{jonathan\_roth@brown.edu}
+
+\end{tabular}
+
+\end{document}
