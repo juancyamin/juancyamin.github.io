@@ -59,24 +59,24 @@ noindex: true
 
   .page__content .r2 p {
     color: #3f3a35;
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.65;
     margin: 0 0 1rem;
   }
 
   .page__content .r2-header {
     border-bottom: 1px solid #d8d6cf;
-    padding: 4.3rem 0 3.25rem;
+    padding: 3.75rem 0 2.8rem;
   }
 
-  .page__content .r2 p.r2-kicker,
-  .page__content .r2 p.r2-label {
+  .page__content .r2 .r2-label {
     color: #8f1d2c;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 0.88rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1.3;
-    margin: 0 0 1.05rem;
+    margin: 0 0 1.45rem;
     text-transform: uppercase;
   }
 
@@ -93,37 +93,32 @@ noindex: true
   }
 
   .page__content .r2 h1 {
-    font-size: clamp(2.85rem, 6vw, 3.55rem);
+    font-size: clamp(2.35rem, 5vw, 2.45rem);
     line-height: 1;
     margin: 0 0 1.15rem;
   }
 
   .page__content .r2 p.r2-intro {
     color: #46413b;
-    font-size: 1.08rem;
+    font-size: 1rem;
     line-height: 1.7;
-    max-width: 700px;
+    max-width: 640px;
   }
 
   .page__content .r2-section {
     border-bottom: 1px solid #d8d6cf;
-    padding: 3.2rem 0;
+    padding: 2.85rem 0;
   }
 
   .page__content .r2-section-featured {
     border-top: 2px solid #8f1d2c;
-    margin-top: 2.15rem;
-    padding-top: 2.65rem;
+    margin-top: 1.95rem;
+    padding-top: 2.45rem;
   }
 
   .page__content .r2-section-head {
-    margin: 0 0 1.55rem;
-    max-width: 740px;
-  }
-
-  .page__content .r2-section-head h2 {
-    font-size: clamp(2rem, 4vw, 2.45rem);
-    line-height: 1.1;
+    margin: 0;
+    max-width: 640px;
   }
 
   .page__content .r2-paper {
@@ -142,15 +137,15 @@ noindex: true
   }
 
   .page__content .r2-paper-title {
-    font-size: clamp(1.65rem, 3.4vw, 2rem);
-    line-height: 1.12;
+    font-size: clamp(1.55rem, 2.8vw, 1.7rem);
+    line-height: 1.16;
     margin: 0 0 0.75rem;
-    max-width: 860px;
+    max-width: 640px;
   }
 
   .page__content .r2-paper-featured .r2-paper-title {
-    font-size: clamp(2rem, 4.4vw, 2.45rem);
-    max-width: 900px;
+    font-size: clamp(1.65rem, 3vw, 1.75rem);
+    max-width: 640px;
   }
 
   .page__content .r2 p.r2-status {
@@ -177,20 +172,20 @@ noindex: true
   .page__content .r2 p.r2-question {
     color: #2d2824;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.06rem, 2.2vw, 1.2rem);
+    font-size: clamp(1.02rem, 2vw, 1.12rem);
     font-style: italic;
     line-height: 1.45;
     margin: 1.15rem 0 1.25rem;
-    max-width: 680px;
+    max-width: 640px;
   }
 
   .page__content .r2-summary {
-    max-width: 700px;
+    max-width: 640px;
   }
 
   .page__content .r2-summary p {
     color: #3f3a35;
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.65;
   }
 
@@ -214,8 +209,7 @@ noindex: true
     padding: 0.38rem 0 0.22rem;
   }
 
-  .page__content .r2-links a.r2-primary,
-  .page__content .r2-links a.r2-internal {
+  .page__content .r2-links a.r2-primary {
     color: #8f1d2c;
   }
 
@@ -225,7 +219,7 @@ noindex: true
 
   .page__content .r2-abstract {
     margin: 0.35rem 0 0;
-    max-width: 720px;
+    max-width: 640px;
   }
 
   .page__content .r2-abstract summary {
@@ -268,7 +262,7 @@ noindex: true
 
   .page__content .r2-abstract-body p {
     color: #4a443e;
-    font-size: 0.94rem;
+    font-size: 0.9rem;
     line-height: 1.65;
   }
 
@@ -310,11 +304,11 @@ noindex: true
 
   @media (max-width: 780px) {
     .page__content .r2-header {
-      padding: 3rem 0 2.55rem;
+      padding: 2.75rem 0 2.3rem;
     }
 
     .page__content .r2-section {
-      padding: 2.65rem 0;
+      padding: 2.45rem 0;
     }
 
     .page__content .r2-section-featured {
@@ -350,27 +344,23 @@ noindex: true
 
 <main class="r2" id="research-draft">
   <header class="r2-header" aria-labelledby="research-title">
-    <p class="r2-kicker">Research</p>
     <h1 id="research-title">Research</h1>
     <p class="r2-intro">
-      My econometrics research develops methods for policy targeting, experimental design, and empirical Bayes estimation. I also study the political economy of development, with a focus on corruption and accountability.
+      My research develops methods for policy targeting, experimental design, and empirical Bayes estimation. A related line of work studies the political economy of development, with a focus on corruption and accountability.
     </p>
   </header>
 
-  <section class="r2-section r2-section-featured" aria-labelledby="poverty-targeting-title">
+  <section class="r2-section r2-section-featured" aria-labelledby="featured-paper-title">
     <div class="r2-section-head">
-      <p class="r2-label">Featured Paper</p>
+      <h2 class="r2-label" id="featured-paper-title">Featured Paper</h2>
     </div>
     <article class="r2-paper r2-paper-featured" id="poverty-targeting">
-      <h2 class="r2-paper-title" id="poverty-targeting-title">Poverty Targeting with Imperfect Information</h2>
+      <h3 class="r2-paper-title" id="poverty-targeting-title">Poverty Targeting with Imperfect Information</h3>
       <p class="r2-status">Submitted</p>
-      <p class="r2-question">How should a fixed transfer budget be allocated when policymakers must rely on estimated incomes?</p>
+      <p class="r2-question">How should an anti-poverty transfer budget be allocated when policymakers must rely on estimated incomes?</p>
       <div class="r2-summary">
         <p>
-          Cash transfer programs often allocate benefits using estimates of household income. I formulate fixed-budget targeting as a statistical decision problem and show that the standard plug-in rule, which treats estimated income as true, is inadmissible: another rule does at least as well in every case, and strictly better in some.
-        </p>
-        <p>
-          I develop a nonparametric empirical Bayes rule that assigns transfers using posterior distributions of poverty gaps. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
+          I formulate poverty targeting as a statistical decision problem and show that the standard plug-in rule, which treats estimated income as true, is inadmissible: another allocation rule does at least as well in every case, and strictly better in some. I develop a nonparametric empirical Bayes rule that assigns transfers using posterior distributions of poverty gaps. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
         </p>
       </div>
       <nav class="r2-links" aria-label="Poverty Targeting links">
@@ -390,8 +380,7 @@ noindex: true
 
   <section class="r2-section" aria-labelledby="working-papers-title">
     <div class="r2-section-head">
-      <p class="r2-label">Working Papers</p>
-      <h2 id="working-papers-title">Working Papers</h2>
+      <h2 class="r2-label" id="working-papers-title">Working Papers</h2>
     </div>
 
     <article class="r2-paper" id="when-and-how-to-pilot">
@@ -400,18 +389,13 @@ noindex: true
       <p class="r2-question">How much should a small first wave change the experiment that follows?</p>
       <div class="r2-summary">
         <p>
-          Many experiments begin with a pilot that reveals how variable outcomes are across arms. Balanced assignment protects against worst cases but ignores that evidence; feasible Neyman allocation adapts to it, but can overreact when the pilot is small.
-        </p>
-        <p>
-          I develop a Conditional Minimax Regret rule that adapts only when the pilot provides sufficient evidence. The rule retains balance&rsquo;s worst-case protection with high probability, converges to Neyman allocation as the pilot grows, and avoids feasible Neyman&rsquo;s severe small-pilot losses in simulations calibrated to four field experiments. The same two-wave structure appears in digital experiments, where a small ramp-up can precede the full experiment.
+          Balanced assignment ignores evidence from the first wave about outcome variances, while feasible Neyman allocation can overreact to small-sample variation. I develop a Conditional Minimax Regret rule that adapts only when the pilot provides sufficient evidence. The rule retains balance&rsquo;s worst-case protection with high probability, converges to Neyman allocation as the pilot grows, extends to multi-arm and stratified designs, and avoids feasible Neyman&rsquo;s severe small-pilot losses in simulations calibrated to four field experiments.
         </p>
       </div>
       <nav class="r2-links" aria-label="When and How to Pilot links">
         <a class="r2-primary" href="https://arxiv.org/abs/2607.16982">Paper</a>
         <a href="https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&amp;raw=1">AFE 2025 Slides</a>
-        <a class="r2-internal" href="/cmrdesign/">Software</a>
-        <a href="https://juancyamin.r-universe.dev/cmrdesign">R Package</a>
-        <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
+        <a href="https://juancyamin.github.io/cmrdesign/">Software</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>
@@ -430,10 +414,7 @@ noindex: true
       <p class="r2-question">How should two-way effects be estimated when the latent components may be dependent?</p>
       <div class="r2-summary">
         <p>
-          Researchers use two-way effects models to decompose outcomes into unit and cluster components, such as workers and firms, teachers and schools, or individuals and regions. Existing empirical Bayes methods often impose parametric structure or independence between the two latent components.
-        </p>
-        <p>
-          With Cole Davis, I develop a nonparametric empirical Bayes framework that allows the distribution of unit effects to vary with latent cluster effects, so the components need not be independent and units within a cluster may be correlated. The project studies the resulting shrinkage rules and their finite-sample performance.
+          We develop a nonparametric empirical Bayes framework for decomposing outcomes into unit and cluster components, such as workers and firms, teachers and schools, or individuals and regions. Unlike existing empirical Bayes methods that impose parametric structure or independence between the two latent components, the framework allows the distribution of unit effects to vary with latent cluster effects and studies the resulting shrinkage rules.
         </p>
       </div>
       <nav class="r2-links" aria-label="Two-Way Effects links">
@@ -450,10 +431,9 @@ noindex: true
     </article>
   </section>
 
-  <section class="r2-section" aria-labelledby="political-economy-title">
+  <section class="r2-section" aria-labelledby="other-papers-title">
     <div class="r2-section-head">
-      <p class="r2-label">Political Economy</p>
-      <h2 id="political-economy-title">Political Economy</h2>
+      <h2 class="r2-label" id="other-papers-title">Other Papers</h2>
     </div>
 
     <article class="r2-paper" id="birds-of-a-feather">
@@ -463,10 +443,7 @@ noindex: true
       <p class="r2-question">Does partisan alignment across levels of government facilitate corruption?</p>
       <div class="r2-summary">
         <p>
-          We use close elections in Colombia to study how partisan alignment between municipal mayors and departmental governors affects corruption and public-service delivery. Alignment increases reported ghost enrollment by 0.3 standard deviations, without improvements in genuine enrollment or student performance.
-        </p>
-        <p>
-          The same alignment also increases discretionary hiring, patronage-based outsourcing, and electoral-fraud risk, consistent with clientelistic networks distorting public service delivery and weakening accountability.
+          We use close elections in Colombia to study how partisan alignment between municipal mayors and departmental governors affects corruption and public-service delivery. Alignment increases reported ghost enrollment by 0.3 standard deviations, without improvements in genuine enrollment or student performance, and also increases discretionary hiring, patronage-based outsourcing, and electoral-fraud risk.
         </p>
       </div>
       <nav class="r2-links" aria-label="Subnational Alignment and Corruption links">
@@ -485,8 +462,7 @@ noindex: true
 
   <section class="r2-section" aria-labelledby="presentations-title">
     <div class="r2-section-head">
-      <p class="r2-label">Selected Presentations</p>
-      <h2 id="presentations-title">Presentations</h2>
+      <h2 class="r2-label" id="presentations-title">Presentations</h2>
     </div>
 
     <div class="r2-presentations">
