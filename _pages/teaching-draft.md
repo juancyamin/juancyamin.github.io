@@ -168,6 +168,8 @@ noindex: true
   }
 
   .page__content .t2-course-table {
+    background: transparent;
+    border: 0;
     border-collapse: collapse;
     color: #3f3a35;
     font-size: 16px;
@@ -177,13 +179,25 @@ noindex: true
     width: 100%;
   }
 
+  .page__content .t2 table.t2-course-table thead,
+  .page__content .t2 table.t2-course-table tbody,
+  .page__content .t2 table.t2-course-table tr,
+  .page__content .t2 table.t2-course-table th,
+  .page__content .t2 table.t2-course-table td {
+    background: transparent;
+  }
+
   .page__content .t2-course-table th {
+    border: 0;
     padding: 0 0.9rem 0.7rem 0;
     text-align: left;
   }
 
   .page__content .t2-course-table td {
     border-top: 1px solid #dedbd4;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
     color: #3f3a35;
     padding: 0.9rem 0.9rem 0.9rem 0;
     text-align: left;
@@ -419,7 +433,7 @@ noindex: true
     }
 
     .page__content .t2-course-table td {
-      border-top: 0;
+      border: 0;
       padding: 0.12rem 0;
       white-space: normal;
     }
