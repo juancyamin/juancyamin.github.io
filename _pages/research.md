@@ -211,6 +211,10 @@ description: "Research by Juan C. Yamin."
     color: #8f1d2c;
   }
 
+  .page__content .r2-links a.r2-internal {
+    color: #8f1d2c;
+  }
+
   .page__content .r2-links a.r2-primary:after {
     content: " \2192";
   }
@@ -432,7 +436,7 @@ description: "Research by Juan C. Yamin."
       <nav class="r2-links" aria-label="When and How to Pilot links">
         <a class="r2-primary" href="https://arxiv.org/abs/2607.16982">Paper</a>
         <a href="/files/when-and-how-to-pilot-afe-2025.pdf">AFE 2025 Slides</a>
-        <a href="https://juancyamin.github.io/cmrdesign/">Software</a>
+        <a class="r2-internal" href="/software/">Software</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>

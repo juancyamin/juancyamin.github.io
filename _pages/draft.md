@@ -425,11 +425,12 @@ noindex: true
       <h2 id="software-title">cmrdesign</h2>
       <div class="d2-copy">
         <p>
-          Open-source R and Python tools for using pilot data to choose treatment allocations in two-wave experiments. The same structure appears in digital experiments when a small ramp-up precedes the full experiment.
+          Open-source R and Python tools for applying Conditional Minimax Regret design rules in two-wave experiments. Given pilot outcomes and assignment labels, the package returns a recommended main-wave allocation and a regret certificate.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Software links">
-        <a class="d2-primary d2-internal" href="/cmrdesign/">Documentation</a>
+        <a class="d2-primary d2-internal" href="/software/">Software</a>
+        <a class="d2-internal" href="/cmrdesign/">Documentation</a>
         <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
         <a href="https://juancyamin.r-universe.dev/cmrdesign">R Package</a>
         <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
