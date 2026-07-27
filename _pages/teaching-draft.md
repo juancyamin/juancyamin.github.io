@@ -107,19 +107,6 @@ noindex: true
     max-width: 640px;
   }
 
-  .page__content .t2-signals {
-    display: grid;
-    gap: 1.4rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin: 2.25rem 0 0;
-    max-width: 900px;
-  }
-
-  .page__content .t2-signal {
-    border-top: 2px solid #8f1d2c;
-    padding-top: 0.85rem;
-  }
-
   .page__content .t2 p.t2-label,
   .page__content .t2 th {
     color: #8f1d2c;
@@ -130,13 +117,6 @@ noindex: true
     line-height: 1.35;
     margin: 0 0 0.4rem;
     text-transform: uppercase;
-  }
-
-  .page__content .t2 p.t2-signal-text {
-    color: #3f3a35;
-    font-size: 16px;
-    line-height: 1.55;
-    margin: 0;
   }
 
   .page__content .t2-section {
@@ -227,6 +207,23 @@ noindex: true
     font-weight: 650;
   }
 
+  .page__content .t2-eval-score {
+    color: #201b18;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 0.05rem;
+  }
+
+  .page__content .t2-eval-meta {
+    color: #6b6660;
+    display: block;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
   .page__content .t2-links {
     align-items: center;
     display: flex;
@@ -251,6 +248,14 @@ noindex: true
   .page__content .t2-links a.t2-internal,
   .page__content .t2-material-list a.t2-internal {
     color: #8f1d2c;
+  }
+
+  .page__content .t2-links.t2-eval-links {
+    margin-top: 0.1rem;
+  }
+
+  .page__content .t2-links.t2-eval-links a {
+    min-height: 34px;
   }
 
   .page__content .t2 p.t2-note {
@@ -297,7 +302,7 @@ noindex: true
   .page__content .t2-materials {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
     margin: 1.7rem 0 0;
     max-width: 980px;
   }
@@ -338,12 +343,6 @@ noindex: true
     margin: -0.1rem 0 0;
   }
 
-  .page__content .t2 p.t2-material-meta a {
-    border-bottom: 1px solid currentColor;
-    color: #201b18;
-    font-weight: 650;
-  }
-
   .page__content .t2-section-final {
     border-bottom: 0;
   }
@@ -362,7 +361,6 @@ noindex: true
       padding-top: 2.25rem;
     }
 
-    .page__content .t2-signals,
     .page__content .t2-materials {
       grid-template-columns: 1fr;
       max-width: 640px;
@@ -464,6 +462,14 @@ noindex: true
     .page__content .t2-material-list a {
       font-size: 16px;
     }
+
+    .page__content .t2-links.t2-eval-links a {
+      min-height: 44px;
+    }
+
+    .page__content .t2-course-table td.t2-empty-eval {
+      display: none;
+    }
   }
 </style>
 
@@ -471,29 +477,15 @@ noindex: true
   <header class="t2-header" aria-labelledby="teaching-title">
     <h1 id="teaching-title">Teaching</h1>
     <p class="t2-intro">
-      I have taught econometrics and applied data courses at Brown University, including both halves of the Ph.D. econometrics sequence. My sections emphasize derivations, implementation, and the judgment needed to use empirical methods carefully.
+      I have taught econometrics and applied data courses at Brown University, including both halves of the Ph.D. applied econometrics sequence. My sections emphasize derivations, implementation, and the judgment needed to use empirical methods carefully.
     </p>
-    <div class="t2-signals" aria-label="Teaching summary">
-      <article class="t2-signal">
-        <p class="t2-label">Ph.D. Sequence</p>
-        <p class="t2-signal-text">Applied Econometrics I with Toru Kitagawa and Applied Econometrics II with Peter Hull.</p>
-      </article>
-      <article class="t2-signal">
-        <p class="t2-label">Benchmarked Feedback</p>
-        <p class="t2-signal-text">Student evaluations are linked where available; Brown prints department benchmarks on each form.</p>
-      </article>
-      <article class="t2-signal">
-        <p class="t2-label">Materials</p>
-        <p class="t2-signal-text">Selected notes and slides cover staggered-adoption DiD, empirical Bayes, and applied econometrics.</p>
-      </article>
-    </div>
   </header>
 
   <section class="t2-section t2-section-featured" aria-labelledby="courses-title">
     <h2 id="courses-title">Courses</h2>
     <div class="t2-copy">
       <p>
-        At Brown, I have served as a teaching assistant for graduate econometrics and undergraduate applied data analysis. Earlier teaching at Universidad de los Andes is listed below.
+        At Brown, I have served as a teaching assistant for graduate econometrics and undergraduate applied data analysis. Earlier teaching at Universidad de los Andes is also listed below.
       </p>
     </div>
     <div class="t2-table-wrap">
@@ -504,7 +496,7 @@ noindex: true
             <th>Level</th>
             <th>Instructor</th>
             <th>Term</th>
-            <th>Evaluation</th>
+            <th>Ph.D. Sequence Eval.</th>
           </tr>
         </thead>
         <tbody>
@@ -516,8 +508,10 @@ noindex: true
             <td data-label="Level">Ph.D.</td>
             <td data-label="Instructor">Peter Hull</td>
             <td data-label="Term">Spring 2026</td>
-            <td data-label="Evaluation">
-              <nav class="t2-links" aria-label="ECON 2400 evaluation">
+            <td data-label="Ph.D. sequence eval.">
+              <span class="t2-eval-score">4.92</span>
+              <span class="t2-eval-meta">Dept. avg. 4.53</span>
+              <nav class="t2-links t2-eval-links" aria-label="ECON 2400 evaluation">
                 <a class="t2-internal" href="/files/econ2400_evaluation.pdf">PDF</a>
               </nav>
             </td>
@@ -530,8 +524,10 @@ noindex: true
             <td data-label="Level">Ph.D.</td>
             <td data-label="Instructor">Toru Kitagawa</td>
             <td data-label="Term">Fall 2024</td>
-            <td data-label="Evaluation">
-              <nav class="t2-links" aria-label="ECON 2390 evaluation">
+            <td data-label="Ph.D. sequence eval.">
+              <span class="t2-eval-score">4.90</span>
+              <span class="t2-eval-meta">Dept. avg. 4.52</span>
+              <nav class="t2-links t2-eval-links" aria-label="ECON 2390 evaluation">
                 <a class="t2-internal" href="/files/econ2390_evaluation_fall2024.pdf">PDF</a>
               </nav>
             </td>
@@ -544,28 +540,11 @@ noindex: true
             <td data-label="Level">Undergraduate</td>
             <td data-label="Instructor">John N. Friedman</td>
             <td data-label="Term">Fall 2023</td>
-            <td data-label="Evaluation">
-              <nav class="t2-links" aria-label="ECON 1000 Fall 2023 evaluation">
-                <a class="t2-internal" href="/files/econ1000_evaluation_fall2023.pdf">PDF</a>
-              </nav>
-            </td>
-          </tr>
-          <tr>
-            <td data-label="Course">
-              <span class="t2-course-code">ECON 1000</span>
-              <span class="t2-course-title">Using Big Data to Solve Economic and Social Problems</span>
-            </td>
-            <td data-label="Level">Undergraduate</td>
-            <td data-label="Instructor">John N. Friedman</td>
-            <td data-label="Term">Fall 2022</td>
-            <td data-label="Evaluation">Not available</td>
+            <td class="t2-empty-eval" data-label="Ph.D. sequence eval."></td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p class="t2-note">
-      Evaluation PDFs include Brown, division, and department benchmarks when reported by the university.
-    </p>
 
     <div class="t2-previous" aria-labelledby="previous-title">
       <h3 id="previous-title">Previous Teaching</h3>
@@ -597,58 +576,44 @@ noindex: true
     <h2 id="materials-title">Selected Materials</h2>
     <div class="t2-copy">
       <p>
-        Selected materials from Brown TA sessions. Source attributions are included where the sessions build from existing lecture materials.
+        Selected materials from Brown TA sessions, organized by course. Source attributions are included where the sessions build from existing lecture materials.
       </p>
     </div>
     <div class="t2-materials">
       <article class="t2-material-group">
-        <h3>Staggered-Adoption DiD</h3>
+        <h3>ECON 2400 &mdash; Applied Econometrics II</h3>
         <ul class="t2-material-list">
           <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_1.pdf">Part I</a>
-            <p class="t2-material-meta">ECON 2400, Spring 2026. Adapted from teaching materials by <a href="https://sites.google.com/view/borusyak/home">Kirill Borusyak</a>.</p>
+            <a class="t2-internal" href="/files/econ2400_ta_session_1.pdf">Staggered-Adoption Difference-in-Differences, Part I</a>
+            <p class="t2-material-meta">Spring 2026. Adapted from teaching materials by Kirill Borusyak (ARE 213).</p>
           </li>
           <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_2.pdf">Part II</a>
-            <p class="t2-material-meta">ECON 2400, Spring 2026. Adapted from <a href="https://github.com/borusyak/are213">ARE 213 materials</a>.</p>
+            <a class="t2-internal" href="/files/econ2400_ta_session_2.pdf">Staggered-Adoption Difference-in-Differences, Part II</a>
+            <p class="t2-material-meta">Spring 2026. Adapted from teaching materials by Kirill Borusyak (ARE 213).</p>
+          </li>
+          <li>
+            <a class="t2-internal" href="/files/econ2400_ta_session_3.pdf">Empirical Bayes: Fundamentals</a>
+            <p class="t2-material-meta">Spring 2026. Based on NBER SI Methods lectures by Jiaying Gu and Christopher R. Walters.</p>
+          </li>
+          <li>
+            <a class="t2-internal" href="/files/econ2400_ta_session_4.pdf">Empirical Bayes: Empirical Applications</a>
+            <p class="t2-material-meta">Spring 2026. Based on NBER SI Methods lectures by Jiaying Gu and Christopher R. Walters.</p>
           </li>
         </ul>
       </article>
       <article class="t2-material-group">
-        <h3>Empirical Bayes</h3>
-        <ul class="t2-material-list">
-          <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_3.pdf">Fundamentals</a>
-            <p class="t2-material-meta">ECON 2400, Spring 2026. Based on NBER SI Methods lectures by <a href="https://www.nber.org/conferences/si-2022-methods-lectures-empirical-bayes-methods-theory-and-application">Jiaying Gu and Christopher R. Walters</a>.</p>
-          </li>
-          <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_4.pdf">Empirical Applications</a>
-            <p class="t2-material-meta">ECON 2400, Spring 2026. Based on NBER SI Methods lectures by <a href="https://www.nber.org/conferences/si-2022-methods-lectures-empirical-bayes-methods-theory-and-application">Jiaying Gu and Christopher R. Walters</a>.</p>
-          </li>
-        </ul>
-      </article>
-      <article class="t2-material-group">
-        <h3>Applied Econometrics I</h3>
+        <h3>ECON 2390 &mdash; Applied Econometrics I</h3>
         <ul class="t2-material-list">
           <li>
             <a class="t2-internal" href="/files/econ2390_review_session_1.pdf">Midterm and Problem Set 1</a>
-            <p class="t2-material-meta">ECON 2390, Fall 2024.</p>
+            <p class="t2-material-meta">Fall 2024.</p>
           </li>
           <li>
             <a class="t2-internal" href="/files/econ2390_review_session_2.pdf">Problem Set 2</a>
-            <p class="t2-material-meta">ECON 2390, Fall 2024.</p>
+            <p class="t2-material-meta">Fall 2024.</p>
           </li>
         </ul>
       </article>
-    </div>
-  </section>
-
-  <section class="t2-section t2-section-final" aria-labelledby="prepared-title">
-    <h2 id="prepared-title">Prepared to Teach</h2>
-    <div class="t2-copy">
-      <p>
-        Prepared to teach econometrics at the undergraduate and graduate levels, causal inference, experimental design, introductory statistics, and a new course on data-driven decision-making for policy and experiments.
-      </p>
     </div>
   </section>
 </main>
