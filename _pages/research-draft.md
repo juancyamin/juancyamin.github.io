@@ -59,7 +59,7 @@ noindex: true
 
   .page__content .r2 p {
     color: #3f3a35;
-    font-size: 0.95rem;
+    font-size: 17px;
     line-height: 1.65;
     margin: 0 0 1rem;
   }
@@ -72,7 +72,7 @@ noindex: true
   .page__content .r2 .r2-label {
     color: #8f1d2c;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 0.88rem;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.1em;
     line-height: 1.3;
@@ -93,14 +93,14 @@ noindex: true
   }
 
   .page__content .r2 h1 {
-    font-size: clamp(2.35rem, 5vw, 2.45rem);
+    font-size: 44px;
     line-height: 1;
     margin: 0 0 1.15rem;
   }
 
   .page__content .r2 p.r2-intro {
     color: #46413b;
-    font-size: 1rem;
+    font-size: 18px;
     line-height: 1.7;
     max-width: 640px;
   }
@@ -137,20 +137,20 @@ noindex: true
   }
 
   .page__content .r2-paper-title {
-    font-size: clamp(1.55rem, 2.8vw, 1.7rem);
+    font-size: 30px;
     line-height: 1.16;
     margin: 0 0 0.75rem;
     max-width: 640px;
   }
 
   .page__content .r2-paper-featured .r2-paper-title {
-    font-size: clamp(1.65rem, 3vw, 1.75rem);
+    font-size: 31px;
     max-width: 640px;
   }
 
   .page__content .r2 p.r2-status {
     color: #8f1d2c;
-    font-size: 0.9rem;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.015em;
     line-height: 1.4;
@@ -163,7 +163,7 @@ noindex: true
 
   .page__content .r2 p.r2-coauthors {
     color: #6b6660;
-    font-size: 0.9rem;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.45;
     margin: -0.1rem 0 0.35rem;
@@ -172,7 +172,7 @@ noindex: true
   .page__content .r2 p.r2-question {
     color: #2d2824;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.02rem, 2vw, 1.12rem);
+    font-size: 20px;
     font-style: italic;
     line-height: 1.45;
     margin: 1.15rem 0 1.25rem;
@@ -185,7 +185,7 @@ noindex: true
 
   .page__content .r2-summary p {
     color: #3f3a35;
-    font-size: 0.95rem;
+    font-size: 17px;
     line-height: 1.65;
   }
 
@@ -202,10 +202,10 @@ noindex: true
     border-bottom: 1px solid currentColor;
     color: #201b18;
     display: inline-flex;
-    font-size: 0.95rem;
+    font-size: 17px;
     font-weight: 700;
     line-height: 1.35;
-    min-height: 2.45rem;
+    min-height: 44px;
     padding: 0.38rem 0 0.22rem;
   }
 
@@ -228,11 +228,11 @@ noindex: true
     color: #8f1d2c;
     cursor: pointer;
     display: inline-flex;
-    font-size: 0.95rem;
+    font-size: 17px;
     font-weight: 700;
     line-height: 1.35;
     list-style: none;
-    min-height: 2.45rem;
+    min-height: 44px;
     padding: 0.38rem 0 0.22rem;
   }
 
@@ -262,7 +262,7 @@ noindex: true
 
   .page__content .r2-abstract-body p {
     color: #4a443e;
-    font-size: 0.9rem;
+    font-size: 16px;
     line-height: 1.65;
   }
 
@@ -281,7 +281,7 @@ noindex: true
 
   .page__content .r2 p.r2-year {
     color: #8f1d2c;
-    font-size: 0.92rem;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.45;
     margin: 0;
@@ -289,7 +289,7 @@ noindex: true
 
   .page__content .r2 p.r2-venue {
     color: #3f3a35;
-    font-size: 0.96rem;
+    font-size: 17px;
     font-weight: 650;
     line-height: 1.5;
     margin: 0 0 0.15rem;
@@ -297,7 +297,7 @@ noindex: true
 
   .page__content .r2 p.r2-talk {
     color: #6b6660;
-    font-size: 0.9rem;
+    font-size: 16px;
     line-height: 1.5;
     margin: 0;
   }
@@ -327,8 +327,47 @@ noindex: true
       margin-top: 0;
     }
 
+    .page__content .r2 h1 {
+      font-size: 38px;
+    }
+
+    .page__content .r2 .r2-label {
+      font-size: 14px;
+    }
+
     .page__content .r2 p.r2-intro {
-      font-size: 1rem;
+      font-size: 16px;
+    }
+
+    .page__content .r2-paper-title {
+      font-size: 25px;
+    }
+
+    .page__content .r2-paper-featured .r2-paper-title {
+      font-size: 26px;
+    }
+
+    .page__content .r2 p.r2-question {
+      font-size: 17px;
+    }
+
+    .page__content .r2 p,
+    .page__content .r2-summary p {
+      font-size: 16px;
+    }
+
+    .page__content .r2 p.r2-status,
+    .page__content .r2 p.r2-coauthors,
+    .page__content .r2-abstract-body p,
+    .page__content .r2 p.r2-year,
+    .page__content .r2 p.r2-talk {
+      font-size: 15px;
+    }
+
+    .page__content .r2 p.r2-venue,
+    .page__content .r2-links a,
+    .page__content .r2-abstract summary {
+      font-size: 16px;
     }
 
     .page__content .r2-links {
