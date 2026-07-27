@@ -2,7 +2,7 @@
 layout: splash
 permalink: /research/
 title: "Research"
-description: "Research by Juan C. Yamin."
+description: "Econometric research by Juan C. Yamin on policy targeting, experimental design, and empirical Bayes estimation."
 ---
 
 <style>
@@ -388,7 +388,7 @@ description: "Research by Juan C. Yamin."
   <header class="r2-header" aria-labelledby="research-title">
     <h1 id="research-title">Research</h1>
     <p class="r2-intro">
-      My research develops methods for policy targeting, experimental design, and empirical Bayes estimation. A related line of work studies the political economy of development, with a focus on corruption and accountability.
+      My research develops econometric methods for policy targeting, experimental design, and empirical Bayes estimation. I also have a collaborative applied publication on corruption and accountability in Colombian local government.
     </p>
   </header>
 
@@ -406,8 +406,8 @@ description: "Research by Juan C. Yamin."
         </p>
       </div>
       <nav class="r2-links" aria-label="Poverty Targeting links">
-        <a class="r2-primary" href="https://arxiv.org/abs/2506.18188">Paper</a>
-        <a href="/files/poverty-targeting-world-congress-2025.pdf">World Congress Slides</a>
+        <a class="r2-primary" href="https://arxiv.org/abs/2506.18188">Paper (arXiv)</a>
+        <a href="/files/poverty-targeting-world-congress-2025.pdf">Slides (World Congress)</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>
@@ -431,12 +431,12 @@ description: "Research by Juan C. Yamin."
       <p class="r2-question">How much should a small first wave change the experiment that follows?</p>
       <div class="r2-summary">
         <p>
-          Balanced assignment ignores evidence from the first wave about outcome variances, while feasible Neyman allocation can overreact to small-sample variation. I develop a Conditional Minimax Regret rule that adapts only when the pilot provides sufficient evidence. The rule retains balance&rsquo;s worst-case protection with high probability, converges to Neyman allocation as the pilot grows, extends to multi-arm and stratified designs, and avoids feasible Neyman&rsquo;s severe small-pilot losses in simulations calibrated to four field experiments.
+          Balanced assignment ignores evidence from the first wave about outcome variances, while feasible Neyman allocation can overreact to small-sample variation. I develop a Conditional Minimax Regret rule that adapts only when the pilot provides sufficient evidence. The rule applies to field pilots, staged experiments, and A/B tests; retains balance&rsquo;s worst-case protection with high probability; converges to Neyman allocation as the pilot grows; extends to multi-arm and stratified designs; and avoids feasible Neyman&rsquo;s severe small-pilot losses in simulations calibrated to four field experiments.
         </p>
       </div>
       <nav class="r2-links" aria-label="When and How to Pilot links">
-        <a class="r2-primary" href="https://arxiv.org/abs/2607.16982">Paper</a>
-        <a href="/files/when-and-how-to-pilot-afe-2025.pdf">AFE 2025 Slides</a>
+        <a class="r2-primary" href="https://arxiv.org/abs/2607.16982">Paper (arXiv)</a>
+        <a href="/files/when-and-how-to-pilot-afe-2025.pdf">Slides (AFE 2025)</a>
         <a class="r2-internal" href="/software/">Software</a>
       </nav>
       <details class="r2-abstract">
@@ -460,7 +460,7 @@ description: "Research by Juan C. Yamin."
         </p>
       </div>
       <nav class="r2-links" aria-label="Two-Way Effects links">
-        <a href="mailto:juan_yamin_silva@brown.edu?subject=Two-Way%20Effects%20draft">Request draft</a>
+        <a href="mailto:juan_yamin_silva@brown.edu?subject=Two-Way%20Effects%20draft">Draft available upon request</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>
@@ -473,9 +473,9 @@ description: "Research by Juan C. Yamin."
     </article>
   </section>
 
-  <section class="r2-section" aria-labelledby="other-papers-title">
+  <section class="r2-section" aria-labelledby="publications-title">
     <div class="r2-section-head">
-      <h2 class="r2-label" id="other-papers-title">Other Papers</h2>
+      <h2 class="r2-label" id="publications-title">Publications</h2>
     </div>
 
     <article class="r2-paper" id="birds-of-a-feather">
@@ -489,7 +489,7 @@ description: "Research by Juan C. Yamin."
         </p>
       </div>
       <nav class="r2-links" aria-label="Subnational Alignment and Corruption links">
-        <a class="r2-primary" href="/files/subnational-alignment-corruption.pdf">Paper</a>
+        <a class="r2-primary" href="/files/subnational-alignment-corruption.pdf">Paper (PDF)</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>
@@ -504,7 +504,7 @@ description: "Research by Juan C. Yamin."
 
   <section class="r2-section" aria-labelledby="presentations-title">
     <div class="r2-section-head">
-      <h2 class="r2-label" id="presentations-title">Presentations</h2>
+      <h2 class="r2-label" id="presentations-title">Selected Presentations</h2>
     </div>
 
     <div class="r2-presentations">

@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 title: "Juan C. Yamin"
-description: "2026-27 Economics Job Market Candidate"
+description: "Econometrician and 2026-27 Economics Job Market Candidate"
 redirect_from:
   - /about/
   - /about.html
@@ -382,7 +382,7 @@ redirect_from:
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
-        <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper</a>
+        <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper (arXiv)</a>
       </nav>
     </div>
   </section>
@@ -393,14 +393,14 @@ redirect_from:
       <h2 id="research-agenda-title">Current Research</h2>
       <div class="d2-copy">
         <p>
-          Beyond poverty targeting, my current work spans experimental design, empirical Bayes methods, and the political economy of development.
+          Beyond poverty targeting, my current work develops econometric tools for experimental design and empirical Bayes estimation, alongside a collaborative applied publication on corruption and accountability.
         </p>
       </div>
       <div class="d2-agenda">
         <article>
           <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot</a></h3>
           <p class="d2-status">Working paper</p>
-          <p>Design rules for two-wave experiments, studying how small pilot estimates of treatment and control variances should guide later allocation while guarding against overreaction to small-sample variation.</p>
+          <p>Design rules for field pilots, staged experiments, and A/B tests, studying how small first-wave estimates should guide later allocation while guarding against overreaction to small-sample variation.</p>
         </article>
         <article>
           <h3><a href="/research/#two-way-effects">Two-Way Effects Models</a></h3>

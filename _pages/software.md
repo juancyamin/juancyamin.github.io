@@ -2,7 +2,7 @@
 layout: splash
 permalink: /software/
 title: "Software"
-description: "Software by Juan C. Yamin."
+description: "Open-source R and Python software by Juan C. Yamin for Conditional Minimax Regret experimental design."
 ---
 
 <style>
@@ -471,7 +471,7 @@ description: "Software by Juan C. Yamin."
   <header class="s2-header" aria-labelledby="software-title">
     <h1 id="software-title">Software</h1>
     <p class="s2-intro">
-      I maintain open-source tools that turn econometric methods into documented, auditable research workflows. The main project is <span class="s2-code-name">cmrdesign</span>, an R and Python package for deciding how a pilot should shape the experiment that follows.
+      I maintain open-source tools that turn econometric methods into documented, auditable research workflows. The main project is <span class="s2-code-name">cmrdesign</span>, an R and Python package for deciding how a pilot, staged experiment, or A/B-test ramp-up should shape the experiment that follows.
     </p>
   </header>
 
@@ -505,7 +505,7 @@ fit.U_CMR  # regret certificate</code></pre>
         <span class="s2-code-name">cmrdesign</span> implements Conditional Minimax Regret design rules from <em>When and How to Pilot</em>. Use it when an initial wave contains the outcome variable and treatment assignment, and the next task is deciding how to allocate treatment in the larger main wave.
       </p>
       <p>
-        Balanced assignment ignores pilot variance information; feasible Neyman allocation can overreact to a small pilot. CMR adapts only when the pilot is informative enough. The same workflow applies to field pilots and A/B tests in which a small ramp-up precedes the full experiment.
+        Balanced assignment ignores pilot variance information; feasible Neyman allocation can overreact to a small pilot. CMR adapts only when the pilot is informative enough. The same workflow applies to field pilots, staged experiments, and A/B tests in which a small ramp-up precedes the full experiment.
       </p>
       <p>
         The R and Python APIs are intended to be parallel: shared JSON fixtures check common cases across languages, and separate validation scripts compare selected outputs with independent reference calculations. GitHub Actions runs the R and Python test suites, fixture checks, validation checks, and the pkgdown documentation build.
