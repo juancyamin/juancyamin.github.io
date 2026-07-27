@@ -371,8 +371,10 @@ description: "Software by Juan C. Yamin."
         <h3>R</h3>
         <pre class="s2-code"><code>install.packages(
   "cmrdesign",
-  repos = c("https://juancyamin.r-universe.dev",
-            "https://cloud.r-project.org")
+  repos = c(
+    "https://juancyamin.r-universe.dev",
+    "https://cloud.r-project.org"
+  )
 )</code></pre>
         <p class="s2-note">The R package is available from R-universe.</p>
       </article>
