@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Juan C. Yamin"
 title_separator          : "-"
 name                     : &name "Juan C. Yamin"
-description              : &description "Ph.D. Student in Economics at Brown University"
+description              : &description "Econometrician and 2026-27 Economics Job Market Candidate at Brown University"
 url                      : https://juancyamin.github.io #https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "juancyamin.github.io"
@@ -22,10 +22,10 @@ repository               : "juancyamin.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : https://i.postimg.cc/c13ZKhKD/profile.jpg
+  avatar           : profile.jpg
   name             : "Juan C. Yamin"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. Student in Economics at Brown University"
+  bio              : "Econometrician and Ph.D. candidate in Economics at Brown University"
   location         : "Providence, RI"
   employer         : "Brown University"
   uri              : # URL
@@ -68,7 +68,7 @@ author:
   steam            : # Username
   telegram         : # URL
   tumblr           : # Username
-  twitter          : "@juancamiloyamin" # Username for X / Twitter
+  twitter          : "juancamiloyamin" # Username for X / Twitter
   vine             : # Username
   weibo            : # Username
   wikipedia        : # Username
@@ -132,12 +132,12 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter juancamiloyamin
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : profile.jpg # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -179,10 +179,21 @@ exclude:
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
+  - profile.png
   - Rakefile
   - README
+  - README.md
+  - CONTRIBUTING.md
+  - docker-compose.yaml
+  - scripts
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
+  - _pages/terms.md
   - tmp
   - vendor
 keep_files:

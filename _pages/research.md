@@ -6,8 +6,9 @@ description: "Research by Juan C. Yamin."
 ---
 
 <style>
-  html,
+  :root,
   html[data-theme="dark"] {
+    --global-base-color: #f7f7f4;
     --global-bg-color: #f7f7f4;
     --global-footer-bg-color: #efeee9;
     --global-link-color: #8f1d2c;

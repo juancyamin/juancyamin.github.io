@@ -9,8 +9,9 @@ redirect_from:
 ---
 
 <style>
-  html,
+  :root,
   html[data-theme="dark"] {
+    --global-base-color: #f7f7f4;
     --global-bg-color: #f7f7f4;
     --global-footer-bg-color: #efeee9;
     --global-link-color: #8f1d2c;
@@ -350,7 +351,7 @@ redirect_from:
       </p>
       <nav class="d2-link-row" aria-label="Homepage links">
         <a class="d2-primary d2-internal" href="/research/">Research</a>
-        <a class="d2-internal" href="/files/cv.pdf">CV</a>
+        <a class="d2-internal" href="/files/Juan_Yamin_CV.pdf">CV</a>
       </nav>
       <nav class="d2-profile-row" aria-label="Contact and profile links">
         <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
