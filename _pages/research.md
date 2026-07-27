@@ -484,7 +484,7 @@ description: "Research by Juan C. Yamin."
         </p>
       </div>
       <nav class="r2-links" aria-label="Subnational Alignment and Corruption links">
-        <a class="r2-primary" href="https://repositorio.uniandes.edu.co/bitstream/handle/1992/66329/dcede2023-10.pdf">Paper</a>
+        <a class="r2-primary" href="https://ideas.repec.org/p/col/000089/020732.html">Paper</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>
