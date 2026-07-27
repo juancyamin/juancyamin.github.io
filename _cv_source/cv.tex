@@ -94,6 +94,12 @@
   \datedline{#2}{#1}\par\vspace{-0.18em}
 }
 
+\newcommand{\presentation}[3]{%
+  \needspace{3\baselineskip}%
+  \datedline{#1}{#2}\\[-0.28em]
+  \hspace*{0.75em}\textit{#3}\par\vspace{0.20em}
+}
+
 \begin{document}
 
 % ---------- Header ----------
@@ -256,28 +262,18 @@ Dissertation committee:
     certificate.
   }
 
-% ---------- Presentations ----------
-\section{Presentations}
+% ---------- Selected presentations ----------
+\section{Selected Presentations}
 
-\datedline{
-  World Congress of the Econometric Society, Seoul
-}{
-  2025
-}\\[-0.12em]
+\presentation
+  {World Congress of the Econometric Society, Seoul}
+  {2025}
+  {Poverty Targeting with Imperfect Information}
 
-\hspace{0.75em}
-\textit{Poverty Targeting with Imperfect Information}\\[0.12em]
-
-\datedline{
-  Advances with Field Experiments, Chicago
-}{
-  2025
-}\\[-0.12em]
-
-\hspace{0.75em}
-\textit{
-  When and How to Pilot: Design Rules for Two-Wave Experiments
-}
+\presentation
+  {Advances with Field Experiments, Chicago}
+  {2025}
+  {When and How to Pilot: Design Rules for Two-Wave Experiments}
 
 % ---------- Awards ----------
 \section{Awards and Fellowships}
@@ -347,7 +343,7 @@ Tom\'as Rodr\'iguez
 \section{Professional Service}
 
 \datedline{
-  Co-organizer, Brown Metrics Coffee
+  Organizer, Brown Metrics Coffee
 }{
   2024--25
 }
