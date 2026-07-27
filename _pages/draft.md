@@ -210,6 +210,18 @@ noindex: true
     padding: 0;
   }
 
+  .page__content .d2 h2 a,
+  .page__content .d2-agenda h3 a {
+    color: #201b18;
+    text-decoration: none;
+  }
+
+  .page__content .d2 h2 a:hover,
+  .page__content .d2-agenda h3 a:hover {
+    color: #8f1d2c;
+    text-decoration: none;
+  }
+
   .page__content .d2 p.d2-meta {
     color: #6b6660;
     font-size: 0.88rem;
@@ -354,7 +366,7 @@ noindex: true
   <section class="d2-section" id="featured-research" aria-labelledby="featured-research-title">
     <div class="d2-section-inner">
       <p class="d2-label">Featured Research</p>
-      <h2 id="featured-research-title">Poverty Targeting with Imperfect Information</h2>
+      <h2 id="featured-research-title"><a href="/research/#poverty-targeting">Poverty Targeting with Imperfect Information</a></h2>
       <p class="d2-meta">Submitted</p>
       <p class="d2-standfirst">
         Better targeting requires not only better income predictions, but better decisions about how to act on them.
@@ -364,7 +376,7 @@ noindex: true
           Cash transfer programs often target households using income estimates from surveys, censuses, or proxy means tests. The standard approach takes those estimates at face value and allocates transfers to the households that look poorest. But extreme estimates can reflect noise as well as extreme poverty, causing programs to concentrate scarce transfers on too few households and miss others who are genuinely poor.
         </p>
         <p>
-          I show that this plug-in rule is inadmissible: another rule does at least as well in every case, and strictly better in some. I develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
+          I show that this plug-in rule is inadmissible: another allocation rule does at least as well in every case, and strictly better in some. I develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
         </p>
       </div>
       <nav class="d2-link-row" aria-label="Featured research links">
@@ -384,18 +396,18 @@ noindex: true
       </div>
       <div class="d2-agenda">
         <article>
-          <h3>When and How to Pilot</h3>
+          <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot</a></h3>
           <p class="d2-status">Working paper</p>
           <p>Design rules for two-wave experiments, studying how small pilot estimates of treatment and control variances should guide later allocation while guarding against overreaction to small-sample variation.</p>
         </article>
         <article>
-          <h3>Two-Way Effects Models</h3>
+          <h3><a href="/research/#two-way-effects">Two-Way Effects Models</a></h3>
           <p class="d2-status">Working paper</p>
           <p class="d2-credit">with Cole Davis</p>
           <p>A nonparametric empirical Bayes approach to estimating worker and firm effects when the distribution of individual effects may vary with latent firm components.</p>
         </article>
         <article>
-          <h3>Subnational Alignment and Corruption</h3>
+          <h3><a href="/research/#birds-of-a-feather">Subnational Alignment and Corruption</a></h3>
           <p class="d2-status">Conditionally accepted at the <em>American Political Science Review</em></p>
           <p class="d2-credit">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina</p>
           <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>

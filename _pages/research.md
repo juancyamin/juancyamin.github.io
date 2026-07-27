@@ -402,7 +402,7 @@ description: "Research by Juan C. Yamin."
       </div>
       <nav class="r2-links" aria-label="Poverty Targeting links">
         <a class="r2-primary" href="https://arxiv.org/abs/2506.18188">Paper</a>
-        <a href="https://www.dropbox.com/scl/fi/mjyca26ok6wqingkm8ov8/WorldCongress.pdf?rlkey=j3nogjv01fxski68wil45uhq8&amp;raw=1">World Congress Slides</a>
+        <a href="/files/poverty-targeting-world-congress-2025.pdf">World Congress Slides</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>
@@ -431,7 +431,7 @@ description: "Research by Juan C. Yamin."
       </div>
       <nav class="r2-links" aria-label="When and How to Pilot links">
         <a class="r2-primary" href="https://arxiv.org/abs/2607.16982">Paper</a>
-        <a href="https://www.dropbox.com/scl/fi/opvdv4bvfzwl2coo9fk0o/Slides_v2.pdf?rlkey=uvbogtgk75qvx6431m0bveiow&amp;raw=1">AFE 2025 Slides</a>
+        <a href="/files/when-and-how-to-pilot-afe-2025.pdf">AFE 2025 Slides</a>
         <a href="https://juancyamin.github.io/cmrdesign/">Software</a>
       </nav>
       <details class="r2-abstract">
@@ -484,7 +484,7 @@ description: "Research by Juan C. Yamin."
         </p>
       </div>
       <nav class="r2-links" aria-label="Subnational Alignment and Corruption links">
-        <a class="r2-primary" href="https://ideas.repec.org/p/col/000089/020732.html">Paper</a>
+        <a class="r2-primary" href="https://repositorio.uniandes.edu.co/bitstream/handle/1992/66329/dcede2023-10.pdf">Paper</a>
       </nav>
       <details class="r2-abstract">
         <summary>Abstract</summary>
