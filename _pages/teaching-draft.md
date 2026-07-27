@@ -477,7 +477,7 @@ noindex: true
   <header class="t2-header" aria-labelledby="teaching-title">
     <h1 id="teaching-title">Teaching</h1>
     <p class="t2-intro">
-      I have taught econometrics and applied data courses at Brown University, including both halves of the Ph.D. applied econometrics sequence. My sections emphasize derivations, implementation, and the judgment needed to use empirical methods carefully.
+      I have taught econometrics and applied data courses at Brown University, including both halves of the Ph.D. applied econometrics sequence.
     </p>
   </header>
 
@@ -496,7 +496,7 @@ noindex: true
             <th>Level</th>
             <th>Instructor</th>
             <th>Term</th>
-            <th>Ph.D. Sequence Eval.</th>
+            <th>Eval.</th>
           </tr>
         </thead>
         <tbody>
@@ -508,7 +508,7 @@ noindex: true
             <td data-label="Level">Ph.D.</td>
             <td data-label="Instructor">Peter Hull</td>
             <td data-label="Term">Spring 2026</td>
-            <td data-label="Ph.D. sequence eval.">
+            <td data-label="Eval.">
               <span class="t2-eval-score">4.92</span>
               <span class="t2-eval-meta">Dept. avg. 4.53</span>
               <nav class="t2-links t2-eval-links" aria-label="ECON 2400 evaluation">
@@ -524,7 +524,7 @@ noindex: true
             <td data-label="Level">Ph.D.</td>
             <td data-label="Instructor">Toru Kitagawa</td>
             <td data-label="Term">Fall 2024</td>
-            <td data-label="Ph.D. sequence eval.">
+            <td data-label="Eval.">
               <span class="t2-eval-score">4.90</span>
               <span class="t2-eval-meta">Dept. avg. 4.52</span>
               <nav class="t2-links t2-eval-links" aria-label="ECON 2390 evaluation">
@@ -540,7 +540,13 @@ noindex: true
             <td data-label="Level">Undergraduate</td>
             <td data-label="Instructor">John N. Friedman</td>
             <td data-label="Term">Fall 2023</td>
-            <td class="t2-empty-eval" data-label="Ph.D. sequence eval."></td>
+            <td data-label="Eval.">
+              <span class="t2-eval-score">4.10</span>
+              <span class="t2-eval-meta">Dept. avg. 4.57</span>
+              <nav class="t2-links t2-eval-links" aria-label="ECON 1000 Fall 2023 evaluation">
+                <a class="t2-internal" href="/files/econ1000_evaluation_fall2023.pdf">PDF</a>
+              </nav>
+            </td>
           </tr>
         </tbody>
       </table>
