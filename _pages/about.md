@@ -434,7 +434,7 @@ redirect_from:
         <a class="d2-primary d2-internal" href="/software/">Software</a>
         <a class="d2-internal" href="/cmrdesign/">Documentation</a>
         <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
-        <a href="https://juancyamin.r-universe.dev/cmrdesign">R Package</a>
+        <a href="https://cran.r-project.org/package=cmrdesign">R Package</a>
         <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
       </nav>
     </div>

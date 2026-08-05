@@ -479,7 +479,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
     <div class="s2-section-head">
       <p class="s2-label">Package</p>
       <h2 id="cmrdesign-title">cmrdesign</h2>
-      <p class="s2-status">R package on R-universe &middot; Python alpha on PyPI &middot; MIT License</p>
+      <p class="s2-status">R package on CRAN &middot; Python package on PyPI &middot; MIT License</p>
       <p class="s2-standfirst">Give the package pilot outcomes and treatment labels; it recommends a main-wave treatment allocation and reports a finite-sample regret certificate.</p>
     </div>
     <div class="s2-demo" aria-label="cmrdesign quick start">
@@ -514,6 +514,8 @@ fit.U_CMR  # regret certificate</code></pre>
     <nav class="s2-links" aria-label="cmrdesign links">
       <a class="s2-primary" href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
       <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
+      <a href="https://cran.r-project.org/package=cmrdesign">R Package</a>
+      <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
       <a href="https://arxiv.org/abs/2607.16982">Paper</a>
     </nav>
   </section>
@@ -527,30 +529,24 @@ fit.U_CMR  # regret certificate</code></pre>
       <article>
         <h3>R</h3>
         <p class="s2-code-caption">Current release</p>
-        <pre class="s2-code"><code>install.packages(
-  "cmrdesign",
-  repos = c(
-    "https://juancyamin.r-universe.dev",
-    "https://cloud.r-project.org"
-  )
-)</code></pre>
+        <pre class="s2-code"><code>install.packages("cmrdesign")</code></pre>
         <p class="s2-code-caption">Development version</p>
         <pre class="s2-code"><code>remotes::install_github(
   "juancyamin/cmrdesign",
   subdir = "r"
 )</code></pre>
-        <p class="s2-note">Current R package: <a href="https://juancyamin.r-universe.dev/cmrdesign">R-universe</a>.</p>
+        <p class="s2-note">Current R package: <a href="https://cran.r-project.org/package=cmrdesign">CRAN</a>. Development builds: <a href="https://juancyamin.r-universe.dev/cmrdesign">R-universe</a>.</p>
       </article>
       <article>
         <h3>Python</h3>
-        <p class="s2-code-caption">Current alpha</p>
-        <pre class="s2-code"><code>python -m pip install --pre cmrdesign</code></pre>
+        <p class="s2-code-caption">Current release</p>
+        <pre class="s2-code"><code>python -m pip install cmrdesign</code></pre>
         <p class="s2-code-caption">Development version</p>
         <pre class="s2-code"><code>python -m pip install \
 "cmrdesign @ git+https://github.com/\
 juancyamin/cmrdesign.git\
 #subdirectory=python"</code></pre>
-        <p class="s2-note">Current Python package: <a href="https://pypi.org/project/cmrdesign/">PyPI</a>. The Python release is alpha while the API stabilizes.</p>
+        <p class="s2-note">Current Python package: <a href="https://pypi.org/project/cmrdesign/">PyPI</a>.</p>
       </article>
     </div>
   </section>
