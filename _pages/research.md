@@ -305,6 +305,11 @@ description: "Econometric research by Juan C. Yamin on policy targeting, experim
     margin: 0;
   }
 
+  .page__content .r2 .r2-presentation-note {
+    color: #8f1d2c;
+    font-style: italic;
+  }
+
   @media (max-width: 780px) {
     .page__content .r2-header {
       padding: 2.75rem 0 2.3rem;
@@ -508,6 +513,16 @@ description: "Econometric research by Juan C. Yamin on policy targeting, experim
     </div>
 
     <div class="r2-presentations">
+      <div class="r2-presentation-row">
+        <p class="r2-year">2026</p>
+        <div>
+          <p class="r2-venue">Midwest Econometrics Group Annual Meeting, Cincinnati</p>
+          <p class="r2-talk">
+            Poverty Targeting with Imperfect Information<br>
+            <span class="r2-presentation-note">Accepted for presentation &middot; October 9&ndash;10, 2026</span>
+          </p>
+        </div>
+      </div>
       <div class="r2-presentation-row">
         <p class="r2-year">2025</p>
         <div>
