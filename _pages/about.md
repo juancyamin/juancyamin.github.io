@@ -9,434 +9,255 @@ redirect_from:
 ---
 
 <style>
-  :root,
-  html[data-theme="dark"] {
-    --global-base-color: #f7f7f4;
-    --global-bg-color: #f7f7f4;
-    --global-footer-bg-color: #efeee9;
-    --global-link-color: #8f1d2c;
-    --global-link-color-hover: #5e111c;
-    --global-link-color-visited: #8f1d2c;
-    --global-masthead-link-color: #201b18;
-    --global-masthead-link-color-hover: #8f1d2c;
-    --global-text-color: #201b18;
-    --global-text-color-light: #6b6660;
-    --global-border-color: #d8d6cf;
-    color-scheme: light;
+  :root, html[data-theme="dark"] {
+    --global-base-color:#f7f7f4; --global-bg-color:#f7f7f4; --global-footer-bg-color:#e8e6df;
+    --global-link-color:#8f1d2c; --global-link-color-hover:#5e111c; --global-link-color-visited:#8f1d2c;
+    --global-masthead-link-color:#201b18; --global-masthead-link-color-hover:#8f1d2c;
+    --global-text-color:#201b18; --global-text-color-light:#6b6660; --global-border-color:#d8d6cf; color-scheme:light;
+    --mast:63px;
+  }
+  html,body{margin:0;padding:0;background:#f7f7f4}
+  html{scroll-snap-type:y mandatory;scroll-padding-top:var(--mast);scroll-behavior:smooth}
+  .masthead{position:sticky;top:0;z-index:30;background:#f7f7f4;height:var(--mast);box-sizing:border-box}
+  .greedy-nav,#site-nav{background:transparent}
+  #main{padding:0;margin:0;max-width:none}
+  #main article,.page__content{margin:0;padding:0}
+  .page__footer{display:none}
+
+  .page__content .d2{color:#201b18;margin:0;max-width:none;text-align:left}
+  .page__content .d2 a{color:#8f1d2c;text-decoration:none}
+  .page__content .d2 a:hover{color:#5e111c}
+  .page__content .d2 p{color:#3f3a35;font-size:.97rem;line-height:1.6;margin:0 0 .85rem}
+
+  /* ===== BLOCKS: each exactly one screen, hard snap ===== */
+  .page__content .d2-band{position:relative;box-sizing:border-box;height:calc(100vh - var(--mast));overflow-y:auto;overflow-x:hidden;
+    scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:center;
+    margin:0;padding:1.4rem 1.5rem 3rem}
+  .page__content .d2-band-tint{background:#efeee9}
+  .page__content .d2-band > .d2-inner{width:100%;max-width:980px;margin:0 auto}
+  .page__content .d2-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3.5rem;align-items:start}
+  .page__content .d2-two-jmp{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
+  .page__content .d2-two-sw{grid-template-columns:minmax(0,4fr) minmax(0,5fr);gap:2.6rem}
+
+  /* next-block cue (hero and every block but the last) */
+  .page__content .d2-next{position:absolute;left:50%;bottom:.9rem;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.25rem;
+    color:#8f1d2c;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+  .page__content .d2-next svg{width:22px;height:22px;stroke:#8f1d2c;fill:none;stroke-width:2;display:block;animation:d2bob 2.2s ease-in-out infinite}
+  .page__content .d2-next:hover{color:#5e111c}
+  @keyframes d2bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+
+  /* labels, headings */
+  .page__content .d2 p.d2-kicker,.page__content .d2 p.d2-label{color:#8f1d2c;font-size:.82rem;font-weight:700;letter-spacing:.1em;line-height:1.3;margin:0 0 .7rem;text-transform:uppercase}
+  .page__content .d2 h1{color:#201b18;font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,6vw,3.9rem);font-weight:500;letter-spacing:0;line-height:1;margin:0 0 1.3rem}
+  .page__content .d2 h2{border:0;color:#201b18;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,3.2vw,2.3rem);font-weight:500;letter-spacing:0;line-height:1.12;margin:0 0 .8rem;padding:0}
+  .page__content .d2 h2 a,.page__content .d2-entry h3 a{color:#201b18}
+  .page__content .d2 h2 a:hover,.page__content .d2-entry h3 a:hover{color:#8f1d2c}
+  .page__content .d2 p.d2-standfirst{color:#2d2824;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.06rem,1.6vw,1.2rem);font-weight:600;line-height:1.45;margin:0 0 .7rem}
+
+  /* hero */
+  .page__content .d2-hero-grid{align-items:center;display:grid;gap:2.5rem;grid-template-columns:minmax(0,1fr) minmax(190px,220px)}
+  .page__content .d2 p.d2-intro{color:#2d2824;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.08rem,1.7vw,1.28rem);line-height:1.5;max-width:640px;margin:0 0 .8rem}
+  .page__content .d2 p.d2-committee{color:#6b6660;font-size:.95rem;line-height:1.5;margin:.5rem 0 .4rem}
+  .page__content .d2 p.d2-committee a{color:#3f3a35;border-bottom:1px solid #c9c6bd}
+  .page__content .d2 p.d2-committee a:hover{color:#8f1d2c;border-color:currentColor}
+  .page__content .d2-photo{margin:0;width:100%} .page__content .d2-photo img{display:block;height:auto;width:100%}
+  .page__content .d2-link-row{align-items:center;display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;margin-top:1.1rem}
+  .page__content .d2-link-row a{align-items:center;border-bottom:1px solid currentColor;color:#201b18;display:inline-flex;font-size:.95rem;font-weight:700;line-height:1.35;min-height:2.35rem;padding:.38rem 0 .2rem}
+  .page__content .d2-link-row a.d2-primary{color:#8f1d2c}
+  .page__content .d2-link-row a.d2-primary.d2-internal:after{content:" \2192"}
+  .page__content .d2-profile-row{align-items:center;display:flex;flex-wrap:wrap;gap:.1rem 1.1rem;margin-top:.35rem}
+  .page__content .d2-profile-row a{align-items:center;border-bottom:1px solid currentColor;color:#201b18;display:inline-flex;font-size:.9rem;font-weight:600;line-height:1.35;min-height:2.25rem;padding:.32rem 0 .18rem}
+
+  /* JMP block: centred header, two prose columns, centred results */
+  .page__content .d2-jmp-head{text-align:center;max-width:820px;margin:0 auto .65rem}
+  .page__content .d2-abstract{max-width:840px;margin:0 auto}
+  .page__content .d2 p.d2-abstract-label{color:#8f1d2c;font-size:.71rem;font-weight:700;letter-spacing:.12em;
+    text-transform:uppercase;text-align:center;margin:0 0 .5rem}
+  .page__content .d2-abstract p.d2-abstract-body{text-align:left;margin:0;color:#3f3a35}
+  .page__content .d2-band-jmp > .d2-inner{max-width:1080px}
+  .page__content .d2-jmp-head .d2-standfirst{margin-left:auto;margin-right:auto;max-width:none}
+  .page__content .d2-colhead{color:#8f1d2c;font-size:.71rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    margin:0 0 .45rem;padding-bottom:.35rem;border-bottom:1px solid #d3d0c7}
+  .page__content .d2-results{text-align:center;max-width:820px;margin:.65rem auto 0}
+  .page__content .d2 p.d2-lead{color:#5b5650;font-size:.9rem;margin:0 auto .75rem;max-width:640px}
+  .page__content .d2-stats{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;border-top:2px solid #8f1d2c;padding-top:.6rem;margin:0}
+  .page__content .d2-stat-n{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.4rem;line-height:1;color:#8f1d2c;margin-bottom:.3rem}
+  .page__content .d2-stats p{font-size:.88rem;line-height:1.45;color:#5b5650;margin:0 auto;max-width:30ch}
+  .page__content .d2-link-center{justify-content:center;margin-top:.35rem}
+  .page__content .d2-link-center a{min-height:1.9rem;padding:.25rem 0 .15rem}
+
+  /* Other Research: one paper per column */
+  .page__content .d2-entry h3{color:#201b18;font-family:Georgia,"Times New Roman",serif;font-size:1.28rem;font-weight:600;line-height:1.25;margin:0 0 .35rem}
+  .page__content .d2-entry p.d2-meta{color:#6b6660;font-size:.9rem;line-height:1.5;margin:0 0 .7rem}
+  .page__content .d2-entry .d2-link-row{margin-top:.2rem}
+  .page__content .d2-entry .d2-link-row a{font-size:.9rem;min-height:2.1rem}
+  .page__content .d2-two-entries{align-items:stretch}
+  .page__content .d2-entry{display:flex;flex-direction:column}
+  .page__content .d2-entry .d2-link-row{margin-top:auto}
+  .page__content .d2-section-head{margin-bottom:1.4rem}
+
+  /* Software: light code panel, matches the page palette */
+  .page__content .d2-codebox{background:#fbfaf7;border:1px solid #ddd9cf;border-radius:6px;overflow:hidden;margin:0 0 1rem}
+  .page__content .d2 p.d2-code-head{background:#f2f0e9;border-bottom:1px solid #e4e0d6;color:#8b857c;font-size:.68rem;font-weight:700;
+    letter-spacing:.12em;text-transform:uppercase;margin:0;padding:.45rem .95rem}
+  .page__content .d2-code{background:transparent;color:#35302b;font:.85rem/1.7 Menlo,Consolas,"Liberation Mono",monospace;
+    padding:.85rem .95rem;margin:0;overflow-x:auto;white-space:pre}
+  .page__content .d2-code .c{color:#a6a096}
+  .page__content .d2-code .s{color:#8f1d2c}
+  .page__content .d2-foot{position:absolute;left:0;right:0;bottom:0;padding:.7rem 1.5rem;background:#e8e6df;color:#6b6660;font-size:.78rem}
+  .page__content .d2-foot .d2-inner{max-width:980px;margin:0 auto}
+
+  /* short laptop windows: tighten so blocks still fit exactly */
+  @media (min-width:781px) and (min-height:601px) and (max-height:760px){
+    .page__content .d2-band{padding:1rem 1.5rem 2.5rem}
+    .page__content .d2 p{font-size:.89rem;line-height:1.45;margin-bottom:.5rem}
+    .page__content .d2-two{gap:2.6rem}
+    .page__content .d2 p.d2-standfirst{font-size:1rem;margin-bottom:.45rem}
+    .page__content .d2 h2{font-size:1.75rem;margin-bottom:.5rem}
+    .page__content .d2-jmp-head{margin-bottom:.45rem}
+    .page__content .d2-results{margin-top:.45rem}
+    .page__content .d2 p.d2-lead{font-size:.84rem}
+    .page__content .d2-stat-n{font-size:1.85rem;margin-bottom:.2rem}
+    .page__content .d2-stats{padding-top:.7rem}
+    .page__content .d2-link-center{margin-top:.35rem}
+    .page__content .d2-stats p{font-size:.84rem}
+    .page__content .d2-colhead{margin-bottom:.45rem;padding-bottom:.3rem}
+    .page__content .d2-code{font-size:.78rem;line-height:1.55}
   }
 
-  body {
-    background: #f7f7f4;
-  }
-
-  .masthead {
-    background: rgba(247, 247, 244, 0.96);
-  }
-
-  .greedy-nav,
-  #site-nav {
-    background: transparent;
-  }
-
-  .page__content .d2 {
-    color: #201b18;
-    margin: -0.5rem auto 0;
-    max-width: 980px;
-  }
-
-  .page__content .d2 a {
-    color: #8f1d2c;
-    text-decoration: none;
-  }
-
-  .page__content .d2 a:hover {
-    color: #5e111c;
-    text-decoration: none;
-  }
-
-  .page__content .d2 p {
-    color: #3f3a35;
-    font-size: 1rem;
-    line-height: 1.65;
-    margin: 0 0 1rem;
-  }
-
-  .page__content .d2-hero {
-    align-items: center;
-    border-bottom: 1px solid #d8d6cf;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: minmax(0, 1fr) minmax(180px, 200px);
-    margin: 0 auto;
-    padding: 4.6rem 0 4.25rem;
-    text-align: left;
-  }
-
-  .page__content .d2 p.d2-kicker,
-  .page__content .d2 p.d2-label {
-    color: #8f1d2c;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1.3;
-    margin: 0 0 1.05rem;
-    text-transform: uppercase;
-  }
-
-  .page__content .d2 h1 {
-    color: #201b18;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(3rem, 6vw, 3.75rem);
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 1;
-    margin: 0 0 1.35rem;
-  }
-
-  .page__content .d2 p.d2-statement {
-    color: #201b18;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.12rem, 2vw, 1.45rem);
-    line-height: 1.35;
-    margin: 0 0 1.2rem;
-    max-width: 620px;
-  }
-
-  .page__content .d2 p.d2-fields {
-    color: #5b5650;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.045em;
-    line-height: 1.45;
-    margin: 0 0 1.45rem;
-    max-width: 760px;
-    text-transform: uppercase;
-  }
-
-  .page__content .d2 p.d2-intro {
-    color: #46413b;
-    font-size: 1rem;
-    line-height: 1.7;
-    max-width: 640px;
-  }
-
-  .page__content .d2-photo {
-    margin: 0;
-    width: 100%;
-  }
-
-  .page__content .d2-photo img {
-    display: block;
-    height: auto;
-    width: 100%;
-  }
-
-  .page__content .d2-link-row {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.2rem 1.25rem;
-    justify-content: flex-start;
-    margin-top: 1.3rem;
-  }
-
-  .page__content .d2-link-row a {
-    align-items: center;
-    border-bottom: 1px solid currentColor;
-    color: #201b18;
-    display: inline-flex;
-    font-size: 0.95rem;
-    font-weight: 700;
-    line-height: 1.35;
-    min-height: 2.35rem;
-    padding: 0.38rem 0 0.2rem;
-  }
-
-  .page__content .d2-link-row a.d2-primary {
-    color: #8f1d2c;
-  }
-
-  .page__content .d2-link-row a.d2-internal {
-    color: #8f1d2c;
-  }
-
-  .page__content .d2-link-row a.d2-primary.d2-internal:after {
-    content: " \2192";
-  }
-
-  .page__content .d2-profile-row {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.1rem 1.1rem;
-    margin-top: 0.55rem;
-  }
-
-  .page__content .d2-profile-row a {
-    align-items: center;
-    border-bottom: 1px solid currentColor;
-    color: #201b18;
-    display: inline-flex;
-    font-size: 0.9rem;
-    font-weight: 600;
-    line-height: 1.35;
-    min-height: 2.25rem;
-    padding: 0.32rem 0 0.18rem;
-  }
-
-  .page__content .d2-profile-row a:hover {
-    color: #5e111c;
-  }
-
-  .page__content .d2-section {
-    border-bottom: 1px solid #d8d6cf;
-    padding: 4.25rem 0;
-    text-align: left;
-  }
-
-  .page__content .d2-section-inner {
-    margin: 0;
-    max-width: none;
-  }
-
-  .page__content .d2 h2 {
-    border: 0;
-    color: #201b18;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.9rem, 4vw, 2.55rem);
-    font-weight: 500;
-    letter-spacing: 0;
-    line-height: 1.12;
-    margin: 0 0 0.8rem;
-    max-width: 820px;
-    padding: 0;
-  }
-
-  .page__content .d2 h2 a,
-  .page__content .d2-agenda h3 a {
-    color: #201b18;
-    text-decoration: none;
-  }
-
-  .page__content .d2 h2 a:hover,
-  .page__content .d2-agenda h3 a:hover {
-    color: #8f1d2c;
-    text-decoration: none;
-  }
-
-  .page__content .d2 p.d2-meta {
-    color: #6b6660;
-    font-size: 0.88rem;
-    font-weight: 700;
-    letter-spacing: 0.035em;
-    line-height: 1.4;
-    margin: 0 0 1.3rem;
-    text-transform: uppercase;
-  }
-
-  .page__content .d2 p.d2-standfirst {
-    color: #2d2824;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.06rem, 2vw, 1.22rem);
-    font-weight: 600;
-    line-height: 1.45;
-    margin: 1.35rem 0 1.55rem;
-    max-width: 640px;
-    padding: 0;
-  }
-
-  .page__content .d2-copy {
-    margin: 0;
-    max-width: 640px;
-    text-align: left;
-  }
-
-  .page__content .d2-copy p {
-    color: #3f3a35;
-  }
-
-  .page__content .d2-agenda {
-    display: grid;
-    gap: 1.3rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    margin: 2.3rem 0 0;
-    max-width: 900px;
-    text-align: left;
-  }
-
-  .page__content .d2-agenda article {
-    border-top: 2px solid #8f1d2c;
-    padding-top: 1rem;
-  }
-
-  .page__content .d2-agenda h3 {
-    color: #201b18;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.12rem;
-    font-weight: 600;
-    line-height: 1.25;
-    margin: 0 0 0.55rem;
-  }
-
-  .page__content .d2-agenda p {
-    color: #5b5650;
-    font-size: 0.9rem;
-    line-height: 1.55;
-    margin: 0;
-  }
-
-  .page__content .d2-agenda p.d2-status {
-    color: #8f1d2c;
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    line-height: 1.35;
-    margin: 0 0 0.45rem;
-  }
-
-  .page__content .d2-agenda p.d2-status em {
-    font-style: italic;
-  }
-
-  .page__content .d2-agenda p.d2-credit {
-    color: #6b6660;
-    font-size: 0.84rem;
-    line-height: 1.45;
-    margin: -0.15rem 0 0.45rem;
-  }
-
-  @media (max-width: 780px) {
-    .page__content .d2-hero {
-      gap: 2rem;
-      grid-template-columns: 1fr;
-      padding: 3rem 0 3.2rem;
-    }
-
-    .page__content .d2-photo {
-      max-width: 190px;
-    }
-
-    .page__content .d2-section {
-      padding: 3.2rem 0;
-    }
-
-    .page__content .d2-agenda {
-      grid-template-columns: 1fr;
-      max-width: 560px;
-      text-align: left;
-    }
-  }
-
-  @media (max-width: 520px) {
-    .page__content .d2 {
-      margin-top: 0;
-    }
-
-    .page__content .d2-link-row {
-      align-items: center;
-      gap: 0.8rem;
-    }
+  /* phones and short windows: ordinary scrolling, single column */
+  @media (max-width:780px), (max-height:600px){
+    html{scroll-snap-type:none}
+    .page__content .d2-band{height:auto;min-height:0;overflow:visible;padding:2.5rem 1.2rem}
+    .page__content .d2-next{display:none}
+    .page__content .d2-two,.page__content .d2-two-jmp,.page__content .d2-two-sw{grid-template-columns:minmax(0,1fr);gap:1.6rem}
+    .page__content .d2-hero-grid,.page__content .d2-two > *{min-width:0}
+    .page__content .d2-hero-grid{gap:1.4rem;grid-template-columns:1fr}
+    .page__content .d2-photo{max-width:150px;order:-1}
+    .page__content .d2-foot{position:static;margin:2rem -1.2rem -2.5rem}
   }
 </style>
 
 <main class="d2" id="home">
-  <section class="d2-hero" aria-labelledby="home-title">
-    <div class="d2-hero-copy">
-      <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
-      <h1 id="home-title">Juan C. Yamin</h1>
-      <p class="d2-statement">I develop econometric methods for translating empirical evidence into policy decisions and experimental designs.</p>
-      <p class="d2-fields">Statistical Decision Theory &middot; Experimental Design &middot; Causal Inference</p>
-      <p class="d2-intro">
-        I am an econometrician and Ph.D. candidate in Economics at Brown University.
-      </p>
-      <nav class="d2-link-row" aria-label="Homepage links">
-        <a class="d2-primary d2-internal" href="/research/">Research</a>
-        <a class="d2-internal" href="/files/Juan_Yamin_CV.pdf">CV</a>
-      </nav>
-      <nav class="d2-profile-row" aria-label="Contact and profile links">
-        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ">Google Scholar</a>
-        <a href="https://github.com/juancyamin">GitHub</a>
-        <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
-      </nav>
+
+  <section class="d2-band" id="top" aria-labelledby="home-title">
+    <div class="d2-inner d2-hero-grid">
+      <div>
+        <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
+        <h1 id="home-title">Juan C. Yamin</h1>
+        <p class="d2-intro">I am a Ph.D. candidate in the Department of Economics at Brown University, with primary interests in applied econometrics.</p>
+        <p class="d2-intro">My research develops methods for translating empirical evidence into real-world decisions. It combines statistical decision theory, causal inference, and experimental design, with applications to policy design and development economics.</p>
+        <p class="d2-committee">Dissertation committee:
+          <a href="https://economics.brown.edu/people/toru-kitagawa">Toru Kitagawa</a>,
+          <a href="https://soonwookwon.github.io/">Soonwoo Kwon</a>, and
+          <a href="https://economics.brown.edu/people/jonathan-roth">Jonathan Roth</a></p>
+        <nav class="d2-link-row" aria-label="Main links">
+          <a class="d2-primary d2-internal" href="/files/Juan_Yamin_CV.pdf">CV</a>
+          <a class="d2-primary d2-internal" href="https://arxiv.org/abs/2506.18188">Job Market Paper</a>
+          <a class="d2-primary d2-internal" href="mailto:juan_yamin_silva@brown.edu">Email</a>
+        </nav>
+        <nav class="d2-profile-row" aria-label="Profile links">
+          <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ">Google Scholar</a>
+          <a href="https://github.com/juancyamin">GitHub</a>
+          <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
+        </nav>
+      </div>
+      <figure class="d2-photo"><img src="/images/profile.jpg" alt="Juan C. Yamin"></figure>
     </div>
-    <figure class="d2-photo">
-      <img src="/images/profile.jpg" alt="Juan C. Yamin">
-    </figure>
+    <a class="d2-next" href="#job-market-paper"><span>Job Market Paper</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
   </section>
 
-  <section class="d2-section" id="featured-research" aria-labelledby="featured-research-title">
-    <div class="d2-section-inner">
-      <p class="d2-label">Job Market Paper</p>
-      <h2 id="featured-research-title"><a href="/research/#poverty-targeting">Poverty Targeting with Imperfect Information</a></h2>
-      <p class="d2-meta">Submitted</p>
-      <p class="d2-standfirst">
-        Better targeting requires not only better income predictions, but better decisions about how to act on them.
-      </p>
-      <div class="d2-copy">
-        <p>
-          Cash transfer programs often target households using income estimates from surveys, censuses, or proxy means tests. The standard approach takes those estimates at face value and allocates transfers to the households that look poorest. But extreme estimates can reflect noise as well as extreme poverty, causing programs to concentrate scarce transfers on too few households and miss others who are genuinely poor.
-        </p>
-        <p>
-          I show that this plug-in rule is inadmissible: another allocation rule does at least as well in every case, and strictly better in some. I develop a nonparametric empirical Bayes rule that uses the same data, budget, and prediction model but first learns how much to trust each estimate. In simulations using household survey data from nine African countries, the rule reaches 45.6 poor households per 1,000 people, compared with 25.5 under standard targeting&mdash;nearly 80 percent more.
-        </p>
+  <section class="d2-band d2-band-tint d2-band-jmp" id="job-market-paper" aria-labelledby="jmp-title">
+    <div class="d2-inner">
+      <header class="d2-jmp-head">
+        <p class="d2-label">Job Market Paper</p>
+        <h2 id="jmp-title"><a href="https://arxiv.org/abs/2506.18188">Poverty Targeting with Imperfect Information</a></h2>
+        <p class="d2-standfirst">Better targeting needs better decisions, not just better income predictions.</p>
+      </header>
+      <div class="d2-abstract">
+        <p class="d2-abstract-label">Abstract</p>
+        <p class="d2-abstract-body">A key challenge for targeted antipoverty programs in developing countries is that policymakers must rely on estimated rather than observed income, which leads to substantial targeting errors. This paper studies how noisy income estimates should be translated into feasible transfers. I formulate this as a statistical decision problem in which a policymaker chooses transfers to minimize a poverty-targeting loss subject to a fixed budget and the constraint that transfers cannot be negative. I show that the standard plug-in rule, which treats estimated incomes as true, is inadmissible. I develop a nonparametric empirical Bayes targeting rule that assigns transfers using posterior distributions of poverty gaps. Although the budget and no-taxation constraints make the targeting rule nonsmooth, Bayes regret is governed by the accuracy of the posterior functionals that determine the oracle allocation.</p>
       </div>
-      <nav class="d2-link-row" aria-label="Featured research links">
-        <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper (arXiv)</a>
-      </nav>
+      <div class="d2-results">
+        <p class="d2-lead">In simulations from nine African countries, relative to plug-in OLS targeting:</p>
+        <div class="d2-stats">
+          <div><span class="d2-stat-n">1.8&times;</span><p>as many poor people reached, for the same budget</p></div>
+          <div><span class="d2-stat-n">6.7%</span><p>less spending to achieve the same poverty-gap reduction</p></div>
+        </div>
+        <nav class="d2-link-row d2-link-center" aria-label="Job market paper links">
+          <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper (arXiv)</a>
+        </nav>
+      </div>
     </div>
+    <a class="d2-next" href="#other-research"><span>Other Research</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
   </section>
 
-  <section class="d2-section" aria-labelledby="research-agenda-title">
-    <div class="d2-section-inner">
-      <p class="d2-label">Research Agenda</p>
-      <h2 id="research-agenda-title">Current Research</h2>
-      <div class="d2-copy">
-        <p>
-          Beyond poverty targeting, my current work develops econometric tools for experimental design and empirical Bayes estimation, alongside a collaborative applied publication on corruption and accountability.
-        </p>
+  <section class="d2-band" id="other-research" aria-labelledby="other-title">
+    <div class="d2-inner">
+      <div class="d2-section-head">
+        <p class="d2-label">Research</p>
+        <h2 id="other-title">Other Research</h2>
       </div>
-      <div class="d2-agenda">
-        <article>
-          <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot</a></h3>
-          <p class="d2-status">Working paper</p>
-          <p>Design rules for field pilots, staged experiments, and A/B tests, studying how small first-wave estimates should guide later allocation while guarding against overreaction to small-sample variation.</p>
+      <div class="d2-two d2-two-entries">
+        <article class="d2-entry">
+          <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h3>
+          <p class="d2-meta">Submitted</p>
+          <p>Many experiments run in two waves: a small pilot, then a larger main wave. The pilot can inform how to split that main wave between treatment and control, but its variance estimates are themselves noisy. I develop a Conditional Minimax Regret rule that uses the pilot evidence while accounting for that uncertainty, with a finite-sample bound on the precision the chosen split can lose.</p>
+          <nav class="d2-link-row" aria-label="Pilot paper links">
+            <a class="d2-primary" href="https://arxiv.org/abs/2607.16982">Paper (arXiv)</a>
+            <a href="#software">Software</a>
+          </nav>
         </article>
-        <article>
-          <h3><a href="/research/#two-way-effects">Two-Way Effects Models</a></h3>
-          <p class="d2-status">Working paper</p>
-          <p class="d2-credit">with Cole Davis</p>
-          <p>A nonparametric empirical Bayes approach to estimating worker and firm effects when the distribution of individual effects may vary with latent firm components.</p>
-        </article>
-        <article>
-          <h3><a href="/research/#birds-of-a-feather">Subnational Alignment and Corruption</a></h3>
-          <p class="d2-status">Conditionally accepted at the <em>American Political Science Review</em></p>
-          <p class="d2-credit">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina</p>
-          <p>Evidence on how partisan alignment shapes corruption and accountability in Colombian local government.</p>
+        <article class="d2-entry">
+          <h3><a href="/research/#birds-of-a-feather">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h3>
+          <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina &middot; Conditionally accepted, <em>American Political Science Review</em></p>
+          <p>Using close elections in Colombia, we study whether partisan alignment between mayors and governors facilitates corruption. Alignment increases the fabrication of student enrollment used to obtain education transfers, without improving actual enrollment or student performance.</p>
+          <nav class="d2-link-row" aria-label="Corruption paper links">
+            <a class="d2-primary" href="/files/subnational-alignment-corruption.pdf">Paper (PDF)</a>
+          </nav>
         </article>
       </div>
-      <nav class="d2-link-row" aria-label="Research links">
+      <nav class="d2-link-row" aria-label="Research links" style="margin-top:1.6rem">
         <a class="d2-primary d2-internal" href="/research/">All research</a>
       </nav>
     </div>
+    <a class="d2-next" href="#software"><span>Software</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
   </section>
 
-  <section class="d2-section" aria-labelledby="software-title">
-    <div class="d2-section-inner">
-      <p class="d2-label">Software</p>
-      <h2 id="software-title">cmrdesign</h2>
-      <div class="d2-copy">
-        <p>
-          cmrdesign is open-source R and Python software for pilot-informed experimental design. It uses pilot outcomes and treatment labels to recommend a main-wave treatment allocation and report a finite-sample regret certificate.
-        </p>
+  <section class="d2-band d2-band-tint" id="software" aria-labelledby="software-title">
+    <div class="d2-inner d2-two d2-two-sw">
+      <div>
+        <p class="d2-label">Software</p>
+        <h2 id="software-title">cmrdesign</h2>
+        <p>cmrdesign is an R and Python package that implements the design rules from <em>When and How to Pilot</em>. Given pilot outcomes and treatment assignments, it recommends how to split the main experiment between treatment and control. It also reports a finite-sample bound on how much precision that split can lose relative to the best allocation. The package is available on CRAN and PyPI.</p>
+        <nav class="d2-link-row" aria-label="Software links">
+          <a class="d2-primary d2-internal" href="/software/">Software</a>
+          <a href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
+          <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
+        </nav>
       </div>
-      <nav class="d2-link-row" aria-label="Software links">
-        <a class="d2-primary d2-internal" href="/software/">Software</a>
-        <a class="d2-internal" href="/cmrdesign/">Documentation</a>
-        <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
-        <a href="https://cran.r-project.org/package=cmrdesign">R Package</a>
-        <a href="https://pypi.org/project/cmrdesign/">Python Package</a>
-      </nav>
+      <div>
+        <div class="d2-codebox">
+        <p class="d2-code-head">R</p>
+<pre class="d2-code">install.packages(<span class="s">"cmrdesign"</span>)
+library(cmrdesign)
+fit &lt;- cmr_two_arm(y, d, alpha = 0.05,
+                   method = <span class="s">"auto"</span>)
+fit$pi     <span class="c"># share of the main wave to treat</span>
+fit$U_CMR  <span class="c"># bound on precision lost vs. best split</span></pre>
+        </div>
+        <div class="d2-codebox">
+        <p class="d2-code-head">Python</p>
+<pre class="d2-code">pip install cmrdesign
+import cmrdesign as cmr
+fit = cmr.cmr_two_arm(y, d, alpha=0.05,
+                      method=<span class="s">"auto"</span>)
+fit.pi     <span class="c"># share of the main wave to treat</span>
+fit.U_CMR  <span class="c"># bound on precision lost vs. best split</span></pre>
+        </div>
+      </div>
     </div>
+    <div class="d2-foot"><div class="d2-inner">&copy; 2026 Juan C. Yamin</div></div>
   </section>
+
 </main>
