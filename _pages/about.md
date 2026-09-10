@@ -69,7 +69,7 @@ redirect_from:
   .page__content .d2-profile-row a{align-items:center;border-bottom:1px solid currentColor;color:#201b18;display:inline-flex;font-size:.9rem;font-weight:600;line-height:1.35;min-height:2.25rem;padding:.32rem 0 .18rem}
 
   /* JMP block: separate the heading, abstract, and results with room to breathe. */
-  .page__content .d2 .d2-band-jmp{padding-bottom:4.5rem}
+  .page__content .d2 .d2-band-jmp{padding-bottom:4.25rem}
   .page__content .d2-jmp-head{text-align:center;max-width:1080px;margin:0 auto 2.4rem}
   .page__content .d2 .d2-jmp-head h2{font-size:clamp(1.55rem,3vw,2.15rem);margin-bottom:.65rem}
   .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.65rem}
@@ -79,7 +79,7 @@ redirect_from:
   .page__content .d2 .d2-jmp-head .d2-standfirst{font-size:clamp(1rem,1.6vw,1.15rem);margin:0 auto .4rem;max-width:none}
   .page__content .d2-colhead{color:#8f1d2c;font-size:.71rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
     margin:0 0 .45rem;padding-bottom:.35rem;border-bottom:1px solid #d3d0c7}
-  .page__content .d2-results{text-align:center;max-width:920px;margin:.95rem auto 0}
+  .page__content .d2-results{text-align:center;max-width:920px;margin:1.7rem auto 0}
   .page__content .d2 p.d2-lead{color:#5b5650;font-size:.9rem;margin:0 auto .5rem;max-width:640px}
   .page__content .d2-stats{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;border-top:2px solid #8f1d2c;padding-top:.7rem;margin:0}
   .page__content .d2-stat-n{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.4rem;line-height:1;color:#8f1d2c;margin-bottom:.3rem}
@@ -124,7 +124,7 @@ redirect_from:
     .page__content .d2 p.d2-standfirst{font-size:1rem;margin-bottom:.45rem}
     .page__content .d2 h2{font-size:1.75rem;margin-bottom:.5rem}
     .page__content .d2-jmp-head{margin-bottom:2.25rem}
-    .page__content .d2-results{margin-top:.85rem}
+    .page__content .d2-results{margin-top:1.6rem}
     .page__content .d2 p.d2-lead{font-size:.84rem}
     .page__content .d2-stat-n{font-size:1.85rem;margin-bottom:.2rem}
     .page__content .d2-stats{padding-top:.65rem}
