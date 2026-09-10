@@ -168,7 +168,7 @@ redirect_from:
         <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
         <h1 id="home-title">Juan C. Yamin</h1>
         <p class="d2-intro">I am a Ph.D. candidate in the Department of Economics at Brown University, with primary interests in applied econometrics.</p>
-        <p class="d2-intro">My research develops methods for translating empirical evidence into real-world decisions. It combines statistical decision theory, causal inference, and experimental design, with applications to policy design and development economics.</p>
+        <p class="d2-intro">I develop methods for using data to improve economic decisions. My work brings together statistical decision theory, causal inference, and experimental design.</p>
         <p class="d2-committee">Dissertation committee:
           <a href="https://economics.brown.edu/people/toru-kitagawa">Toru Kitagawa</a>,
           <a href="https://soonwookwon.github.io/">Soonwoo Kwon</a>, and
