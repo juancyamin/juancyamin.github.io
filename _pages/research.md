@@ -8,26 +8,26 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
 <style>
   :root,
   html[data-theme="dark"] {
-    --global-base-color: #f7f7f4;
-    --global-bg-color: #f7f7f4;
-    --global-footer-bg-color: #efeee9;
-    --global-link-color: #8f1d2c;
-    --global-link-color-hover: #5e111c;
-    --global-link-color-visited: #8f1d2c;
-    --global-masthead-link-color: #201b18;
-    --global-masthead-link-color-hover: #8f1d2c;
-    --global-text-color: #201b18;
-    --global-text-color-light: #6b6660;
-    --global-border-color: #d8d6cf;
+    --global-base-color: #f8f9fa;
+    --global-bg-color: #f8f9fa;
+    --global-footer-bg-color: #eef1f4;
+    --global-link-color: #173b63;
+    --global-link-color-hover: #0f2742;
+    --global-link-color-visited: #173b63;
+    --global-masthead-link-color: #202833;
+    --global-masthead-link-color-hover: #173b63;
+    --global-text-color: #202833;
+    --global-text-color-light: #5d6975;
+    --global-border-color: #d6dce2;
     color-scheme: light;
   }
 
   body {
-    background: #f7f7f4;
+    background: #f8f9fa;
   }
 
   .masthead {
-    background: rgba(247, 247, 244, 0.96);
+    background: rgba(248, 249, 250, 0.96);
   }
 
   .greedy-nav,
@@ -36,7 +36,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 {
-    color: #201b18;
+    color: #202833;
     margin: -0.5rem auto 0;
     max-width: 640px;
     text-align: left;
@@ -47,29 +47,29 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 a {
-    color: #201b18;
+    color: #202833;
     text-decoration: none;
   }
 
   .page__content .r2 a:hover {
-    color: #5e111c;
+    color: #0f2742;
     text-decoration: none;
   }
 
   .page__content .r2 p {
-    color: #3f3a35;
+    color: #444e59;
     font-size: 17px;
     line-height: 1.65;
     margin: 0 0 1rem;
   }
 
   .page__content .r2-header {
-    border-bottom: 1px solid #d8d6cf;
+    border-bottom: 1px solid #d6dce2;
     padding: 1.6rem 0 1.1rem;
   }
 
   .page__content .r2 .r2-label {
-    color: #8f1d2c;
+    color: #173b63;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -83,7 +83,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2 h2,
   .page__content .r2 h3 {
     border: 0;
-    color: #201b18;
+    color: #202833;
     font-family: Georgia, "Times New Roman", serif;
     font-weight: 500;
     letter-spacing: 0;
@@ -98,19 +98,19 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-intro {
-    color: #46413b;
+    color: #444e59;
     font-size: 18px;
     line-height: 1.7;
     max-width: 640px;
   }
 
   .page__content .r2-section {
-    border-bottom: 1px solid #d8d6cf;
+    border-bottom: 1px solid #d6dce2;
     padding: 1.1rem 0;
   }
 
   .page__content .r2-section-featured {
-    border-top: 2px solid #8f1d2c;
+    border-top: 2px solid #173b63;
     margin-top: 0.75rem;
     padding-top: 1.1rem;
   }
@@ -130,7 +130,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-paper + .r2-paper {
-    border-top: 1px solid #dedbd4;
+    border-top: 1px solid #d6dce2;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
   }
@@ -148,7 +148,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-status {
-    color: #8f1d2c;
+    color: #173b63;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.015em;
@@ -161,7 +161,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-coauthors {
-    color: #6b6660;
+    color: #5d6975;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.45;
@@ -169,7 +169,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-question {
-    color: #2d2824;
+    color: #202833;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 20px;
     font-style: italic;
@@ -183,7 +183,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-summary p {
-    color: #3f3a35;
+    color: #444e59;
     font-size: 17px;
     line-height: 1.65;
   }
@@ -199,7 +199,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2-links a {
     align-items: center;
     border-bottom: 1px solid currentColor;
-    color: #201b18;
+    color: #202833;
     display: inline-flex;
     font-size: 17px;
     font-weight: 700;
@@ -209,11 +209,11 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-links a.r2-primary {
-    color: #8f1d2c;
+    color: #173b63;
   }
 
   .page__content .r2-links a.r2-internal {
-    color: #8f1d2c;
+    color: #173b63;
   }
 
   .page__content .r2-links a.r2-primary:after {
@@ -228,7 +228,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2-abstract summary {
     align-items: center;
     border-bottom: 1px solid currentColor;
-    color: #8f1d2c;
+    color: #173b63;
     cursor: pointer;
     display: inline-flex;
     font-size: 17px;
@@ -253,18 +253,18 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-abstract summary:focus {
-    outline: 2px solid rgba(143, 29, 44, 0.35);
+    outline: 2px solid rgba(23, 59, 99, 0.35);
     outline-offset: 4px;
   }
 
   .page__content .r2-abstract-body {
-    border-left: 2px solid #d8d6cf;
+    border-left: 2px solid #d6dce2;
     margin: 0.85rem 0 0.3rem;
     padding-left: 1rem;
   }
 
   .page__content .r2-abstract-body p {
-    color: #4a443e;
+    color: #444e59;
     font-size: 16px;
     line-height: 1.65;
   }
@@ -275,7 +275,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-presentation-row {
-    border-top: 1px solid #dedbd4;
+    border-top: 1px solid #d6dce2;
     display: grid;
     gap: 1.1rem;
     grid-template-columns: 4.5rem minmax(0, 1fr);
@@ -283,7 +283,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-year {
-    color: #8f1d2c;
+    color: #173b63;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.45;
@@ -291,7 +291,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-venue {
-    color: #3f3a35;
+    color: #444e59;
     font-size: 17px;
     font-weight: 650;
     line-height: 1.5;
@@ -299,14 +299,14 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-talk {
-    color: #6b6660;
+    color: #5d6975;
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
   }
 
   .page__content .r2 .r2-presentation-note {
-    color: #8f1d2c;
+    color: #173b63;
     font-style: italic;
   }
 
@@ -413,7 +413,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2 h1 { font-size: 33px; margin-bottom: 0.28rem; }
   .page__content .r2 p.r2-intro { font-size: 17px; max-width: none; margin-bottom: 0; }
   .page__content .r2-section:first-of-type .r2-label { margin-top: 0.5rem; }
-  .page__content .r2 p.r2-answer { color: #46413b; font-size: 17px; line-height: 1.6;
+  .page__content .r2 p.r2-answer { color: #444e59; font-size: 17px; line-height: 1.6;
     margin: 0.28rem 0 0; max-width: none; }
   .page__content .r2-section { border-bottom: 0; padding: 0; }
   .page__content .r2 .r2-label { font-size: 15px; font-weight: 700; letter-spacing: 0.09em;
@@ -422,20 +422,20 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2-paper + .r2-paper { border-top: 0; margin-top: 0; padding-top: 0; }
   .page__content .r2-paper-title { font-size: 22px; font-weight: 500; line-height: 1.25;
     margin: 0 0 0.15rem; max-width: none; }
-  .page__content .r2-paper-title a { color: #201b18; border-bottom: 1px solid #d3cec5; }
-  .page__content .r2-paper-title a:hover { color: #8f1d2c; border-bottom-color: currentColor; }
-  .page__content .r2 p.r2-meta { color: #6b6660; font-size: 15.5px; line-height: 1.45;
+  .page__content .r2-paper-title a { color: #202833; border-bottom: 1px solid #c7d0d9; }
+  .page__content .r2-paper-title a:hover { color: #173b63; border-bottom-color: currentColor; }
+  .page__content .r2 p.r2-meta { color: #5d6975; font-size: 15.5px; line-height: 1.45;
     margin: 0 0 0.15rem; max-width: none; }
   /* reading text is capped at ~78 characters; only titles use the full 860px */
-  .page__content .r2 p.r2-question { font-size: 17.5px; line-height: 1.5; color: #46413b;
+  .page__content .r2 p.r2-question { font-size: 17.5px; line-height: 1.5; color: #444e59;
     margin: 0.7rem 0 0; max-width: none; }
   /* links become small bracketed plain text, not buttons */
   .page__content .r2-links { gap: 0 1rem; margin: 0.3rem 0 0; }
   .page__content .r2-links a,
-  .page__content .r2-abstract summary { border-bottom: 0; color: #8f1d2c; font-size: 15px;
+  .page__content .r2-abstract summary { border-bottom: 0; color: #173b63; font-size: 15px;
     font-weight: 400; line-height: 1.5; min-height: 0; padding: 0; }
   .page__content .r2-links a:hover,
-  .page__content .r2-abstract summary:hover { color: #5e111c; text-decoration: underline; }
+  .page__content .r2-abstract summary:hover { color: #0f2742; text-decoration: underline; }
   .page__content .r2-links a::before,
   .page__content .r2-abstract summary::before { content: none; }
   .page__content .r2-links a::after,
@@ -449,9 +449,9 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2-presentations { max-width: none; margin-top: 0.4rem; }
   .page__content .r2-presentation-row { gap: 1.1rem; padding: 0.75rem 0; }
   .page__content .r2 p.r2-year { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; }
-  .page__content .r2 p.r2-venue { font-size: 16px; font-weight: 600; color: #201b18;
+  .page__content .r2 p.r2-venue { font-size: 16px; font-weight: 600; color: #202833;
     line-height: 1.45; margin: 0 0 0.1rem; }
-  .page__content .r2 p.r2-talk { font-size: 15px; color: #6b6660; line-height: 1.45; }
+  .page__content .r2 p.r2-talk { font-size: 15px; color: #5d6975; line-height: 1.45; }
   .page__content .r2-presentation-note { font-size: 14px; }
   @media (max-width: 900px) {
     .page__content .r2-paper-title { font-size: 21px; }

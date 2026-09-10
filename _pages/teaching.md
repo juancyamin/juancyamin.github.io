@@ -8,26 +8,26 @@ description: "Teaching by Juan C. Yamin."
 <style>
   :root,
   html[data-theme="dark"] {
-    --global-base-color: #f7f7f4;
-    --global-bg-color: #f7f7f4;
-    --global-footer-bg-color: #efeee9;
-    --global-link-color: #8f1d2c;
-    --global-link-color-hover: #5e111c;
-    --global-link-color-visited: #8f1d2c;
-    --global-masthead-link-color: #201b18;
-    --global-masthead-link-color-hover: #8f1d2c;
-    --global-text-color: #201b18;
-    --global-text-color-light: #6b6660;
-    --global-border-color: #d8d6cf;
+    --global-base-color: #f8f9fa;
+    --global-bg-color: #f8f9fa;
+    --global-footer-bg-color: #eef1f4;
+    --global-link-color: #173b63;
+    --global-link-color-hover: #0f2742;
+    --global-link-color-visited: #173b63;
+    --global-masthead-link-color: #202833;
+    --global-masthead-link-color-hover: #173b63;
+    --global-text-color: #202833;
+    --global-text-color-light: #5d6975;
+    --global-border-color: #d6dce2;
     color-scheme: light;
   }
 
   body {
-    background: #f7f7f4;
+    background: #f8f9fa;
   }
 
   .masthead {
-    background: rgba(247, 247, 244, 0.96);
+    background: rgba(248, 249, 250, 0.96);
   }
 
   .greedy-nav,
@@ -36,7 +36,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2 {
-    color: #201b18;
+    color: #202833;
     margin: -0.5rem auto 0;
     max-width: 980px;
     text-align: left;
@@ -47,24 +47,24 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2 a {
-    color: #201b18;
+    color: #202833;
     text-decoration: none;
   }
 
   .page__content .t2 a:hover {
-    color: #5e111c;
+    color: #0f2742;
     text-decoration: none;
   }
 
   .page__content .t2 p {
-    color: #3f3a35;
+    color: #444e59;
     font-size: 17px;
     line-height: 1.65;
     margin: 0 0 1rem;
   }
 
   .page__content .t2-header {
-    border-bottom: 1px solid #d8d6cf;
+    border-bottom: 1px solid #d6dce2;
     padding: 3.75rem 0 2.8rem;
   }
 
@@ -72,7 +72,7 @@ description: "Teaching by Juan C. Yamin."
   .page__content .t2 h2,
   .page__content .t2 h3 {
     border: 0;
-    color: #201b18;
+    color: #202833;
     font-family: Georgia, "Times New Roman", serif;
     font-weight: 500;
     letter-spacing: 0;
@@ -100,7 +100,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2 p.t2-intro {
-    color: #46413b;
+    color: #444e59;
     font-size: 18px;
     line-height: 1.7;
     max-width: 640px;
@@ -108,7 +108,7 @@ description: "Teaching by Juan C. Yamin."
 
   .page__content .t2 p.t2-label,
   .page__content .t2 th {
-    color: #8f1d2c;
+    color: #173b63;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -119,12 +119,12 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-section {
-    border-bottom: 1px solid #d8d6cf;
+    border-bottom: 1px solid #d6dce2;
     padding: 2.85rem 0;
   }
 
   .page__content .t2-section-featured {
-    border-top: 2px solid #8f1d2c;
+    border-top: 2px solid #173b63;
     margin-top: 1.95rem;
     padding-top: 2.45rem;
   }
@@ -135,7 +135,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-copy p {
-    color: #3f3a35;
+    color: #444e59;
     font-size: 17px;
     line-height: 1.65;
   }
@@ -150,7 +150,7 @@ description: "Teaching by Juan C. Yamin."
     background: transparent;
     border: 0;
     border-collapse: collapse;
-    color: #3f3a35;
+    color: #444e59;
     font-size: 16px;
     line-height: 1.45;
     margin: 0;
@@ -173,11 +173,11 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-course-table td {
-    border-top: 1px solid #dedbd4;
+    border-top: 1px solid #d6dce2;
     border-right: 0;
     border-bottom: 0;
     border-left: 0;
-    color: #3f3a35;
+    color: #444e59;
     padding: 0.9rem 0.9rem 0.9rem 0;
     text-align: left;
     vertical-align: top;
@@ -190,7 +190,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-course-code {
-    color: #8f1d2c;
+    color: #173b63;
     display: block;
     font-size: 14px;
     font-weight: 700;
@@ -201,13 +201,13 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-course-title {
-    color: #201b18;
+    color: #202833;
     display: block;
     font-weight: 650;
   }
 
   .page__content .t2-eval-score {
-    color: #201b18;
+    color: #202833;
     display: block;
     font-size: 17px;
     font-weight: 700;
@@ -216,7 +216,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-eval-meta {
-    color: #6b6660;
+    color: #5d6975;
     display: block;
     font-size: 14px;
     line-height: 1.4;
@@ -235,7 +235,7 @@ description: "Teaching by Juan C. Yamin."
   .page__content .t2-material-list a {
     align-items: center;
     border-bottom: 1px solid currentColor;
-    color: #201b18;
+    color: #202833;
     display: inline-flex;
     font-size: 16px;
     font-weight: 700;
@@ -246,7 +246,7 @@ description: "Teaching by Juan C. Yamin."
 
   .page__content .t2-links a.t2-internal,
   .page__content .t2-material-list a.t2-internal {
-    color: #8f1d2c;
+    color: #173b63;
   }
 
   .page__content .t2-links.t2-eval-links {
@@ -258,7 +258,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2 p.t2-note {
-    color: #6b6660;
+    color: #5d6975;
     font-size: 15px;
     line-height: 1.55;
     margin: 0.95rem 0 0;
@@ -276,7 +276,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-previous-row {
-    border-top: 1px solid #dedbd4;
+    border-top: 1px solid #d6dce2;
     display: grid;
     gap: 0.5rem 1.1rem;
     grid-template-columns: minmax(0, 1fr) minmax(130px, 0.35fr);
@@ -284,7 +284,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2 p.t2-previous-title {
-    color: #201b18;
+    color: #202833;
     font-size: 16px;
     font-weight: 650;
     line-height: 1.45;
@@ -292,7 +292,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2 p.t2-previous-meta {
-    color: #6b6660;
+    color: #5d6975;
     font-size: 15px;
     line-height: 1.45;
     margin: 0;
@@ -307,7 +307,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-material-group {
-    border-top: 2px solid #8f1d2c;
+    border-top: 2px solid #173b63;
     min-width: 0;
     padding-top: 1rem;
   }
@@ -325,7 +325,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2-material-list li {
-    border-top: 1px solid #dedbd4;
+    border-top: 1px solid #d6dce2;
     margin: 0;
     padding: 0.85rem 0 0.95rem;
   }
@@ -336,7 +336,7 @@ description: "Teaching by Juan C. Yamin."
   }
 
   .page__content .t2 p.t2-material-meta {
-    color: #6b6660;
+    color: #5d6975;
     font-size: 14px;
     line-height: 1.5;
     margin: -0.1rem 0 0;
@@ -420,7 +420,7 @@ description: "Teaching by Juan C. Yamin."
     }
 
     .page__content .t2-course-table tr {
-      border-top: 2px solid #8f1d2c;
+      border-top: 2px solid #173b63;
       padding: 0.85rem 0;
     }
 
@@ -442,7 +442,7 @@ description: "Teaching by Juan C. Yamin."
     }
 
     .page__content .t2-course-table td:before {
-      color: #8f1d2c;
+      color: #173b63;
       content: attr(data-label);
       display: block;
       font-size: 12px;
