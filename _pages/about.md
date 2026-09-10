@@ -89,15 +89,22 @@ redirect_from:
   .page__content .d2-link-center{justify-content:center;margin-top:.35rem}
   .page__content .d2-link-center a{min-height:1.9rem;padding:.25rem 0 .15rem}
 
-  /* Other Research: one paper per column */
-  .page__content .d2-entry h3{color:#201b18;font-family:Georgia,"Times New Roman",serif;font-size:1.28rem;font-weight:600;line-height:1.25;margin:0 0 .35rem}
-  .page__content .d2-entry p.d2-meta{color:#6b6660;font-size:.9rem;line-height:1.5;margin:0 0 .7rem}
-  .page__content .d2-entry .d2-link-row{margin-top:.2rem}
-  .page__content .d2-entry .d2-link-row a{font-size:.9rem;min-height:2.1rem}
-  .page__content .d2-two-entries{align-items:stretch}
-  .page__content .d2-entry{display:flex;flex-direction:column}
-  .page__content .d2-entry .d2-link-row{margin-top:auto}
-  .page__content .d2-section-head{margin-bottom:1.4rem}
+  /* Other Research: stacked papers with a shared reading width. */
+  .page__content #other-research > .d2-inner{max-width:840px}
+  .page__content #other-research .d2-section-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem}
+  .page__content #other-research .d2-section-head h2{margin-bottom:0}
+  .page__content #other-research .d2-section-head > .d2-link-row{margin:0;flex-shrink:0}
+  .page__content #other-research .d2-entry{display:block}
+  .page__content #other-research .d2-entry + .d2-entry{margin-top:.85rem;padding-top:.85rem;border-top:1px solid #d8d6cf}
+  .page__content #other-research .d2-entry h3{color:#201b18;font-family:Georgia,"Times New Roman",serif;font-size:1.28rem;font-weight:600;line-height:1.25;margin:0 0 .3rem}
+  .page__content #other-research .d2-entry p.d2-meta{color:#6b6660;font-size:.9rem;line-height:1.5;margin:0 0 .35rem}
+  .page__content #other-research .d2-entry > p{margin-bottom:.35rem}
+  .page__content #other-research .d2-entry .d2-link-row{margin-top:0}
+  .page__content #other-research .d2-entry .d2-link-row a{font-size:.9rem;min-height:2.1rem}
+  @media (max-width:780px){
+    .page__content #other-research .d2-section-head{align-items:flex-start;flex-direction:column}
+    .page__content #other-research .d2-entry + .d2-entry{margin-top:1.2rem;padding-top:1.2rem}
+  }
 
   /* Software: light code panel, matches the page palette */
   .page__content .d2-codebox{background:#fbfaf7;border:1px solid #ddd9cf;border-radius:6px;overflow:hidden;margin:0 0 1rem}
@@ -128,8 +135,13 @@ redirect_from:
     .page__content .d2-code{font-size:.78rem;line-height:1.55}
   }
 
-  /* Preserve the whole JMP in shorter desktop windows without shrinking its body text. */
+  /* Keep the research blocks compact in shorter desktop windows. */
   @media (min-width:781px) and (min-height:601px) and (max-height:680px){
+    .page__content #other-research{padding-top:.65rem;padding-bottom:4.5rem}
+    .page__content #other-research .d2-section-head{margin-bottom:.6rem}
+    .page__content #other-research .d2-section-head .d2-label{margin-bottom:.35rem}
+    .page__content #other-research .d2-entry + .d2-entry{margin-top:.55rem;padding-top:.55rem}
+    .page__content #other-research .d2-entry .d2-link-row a{min-height:1.9rem}
     .page__content .d2 .d2-band-jmp{padding-top:.55rem;padding-bottom:4.2rem}
     .page__content .d2-jmp-head{margin-bottom:.25rem}
     .page__content .d2 .d2-jmp-head h2{margin-bottom:.3rem}
@@ -217,10 +229,15 @@ redirect_from:
   <section class="d2-band" id="other-research" aria-labelledby="other-title">
     <div class="d2-inner">
       <div class="d2-section-head">
-        <p class="d2-label">Research</p>
-        <h2 id="other-title">Other Research</h2>
+        <div>
+          <p class="d2-label">Research</p>
+          <h2 id="other-title">Other Research</h2>
+        </div>
+        <nav class="d2-link-row" aria-label="Research links">
+          <a class="d2-primary d2-internal" href="/research/">All research</a>
+        </nav>
       </div>
-      <div class="d2-two d2-two-entries">
+      <div class="d2-research-list">
         <article class="d2-entry">
           <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot</a></h3>
           <p>Many experiments run in two waves: a small pilot, then a larger main wave. The pilot can inform how to split that main wave between treatment and control, but its variance estimates are themselves noisy. I develop a Conditional Minimax Regret rule that uses the pilot evidence while accounting for that uncertainty, with a finite-sample bound on the precision the chosen split can lose.</p>
@@ -231,16 +248,13 @@ redirect_from:
         </article>
         <article class="d2-entry">
           <h3><a href="/research/#birds-of-a-feather">Birds of a Feather Collude Together</a></h3>
-          <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina &middot; Conditionally accepted, <em>American Political Science Review</em></p>
+          <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina<br>Conditionally accepted, <em>American Political Science Review</em></p>
           <p>Using close elections in Colombia, we study whether partisan alignment between mayors and governors facilitates corruption. Alignment increases the fabrication of student enrollment used to obtain education transfers, without improving actual enrollment or student performance.</p>
           <nav class="d2-link-row" aria-label="Corruption paper links">
             <a class="d2-primary" href="/files/subnational-alignment-corruption.pdf">Paper (PDF)</a>
           </nav>
         </article>
       </div>
-      <nav class="d2-link-row" aria-label="Research links" style="margin-top:1.6rem">
-        <a class="d2-primary d2-internal" href="/research/">All research</a>
-      </nav>
     </div>
     <a class="d2-next" href="#software"><span>Software</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
   </section>
