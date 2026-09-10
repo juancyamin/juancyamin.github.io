@@ -70,12 +70,10 @@ redirect_from:
 
   /* JMP block: separate the heading, abstract, and results with room to breathe. */
   .page__content .d2 .d2-band-jmp{padding-bottom:4.5rem}
-  .page__content .d2-jmp-head{text-align:center;max-width:1080px;margin:0 auto 1rem}
+  .page__content .d2-jmp-head{text-align:center;max-width:1080px;margin:0 auto 2.4rem}
   .page__content .d2 .d2-jmp-head h2{font-size:clamp(1.55rem,3vw,2.15rem);margin-bottom:.65rem}
   .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.65rem}
   .page__content .d2-abstract{max-width:920px;margin:0 auto}
-  .page__content .d2 p.d2-abstract-label{color:#8f1d2c;font-size:.71rem;font-weight:700;letter-spacing:.12em;
-    text-transform:uppercase;text-align:center;margin:0 0 .5rem}
   .page__content .d2-abstract p.d2-abstract-body{text-align:left;margin:0;color:#3f3a35}
   .page__content .d2-band-jmp > .d2-inner{max-width:1080px}
   .page__content .d2 .d2-jmp-head .d2-standfirst{font-size:clamp(1rem,1.6vw,1.15rem);margin:0 auto .4rem;max-width:none}
@@ -125,7 +123,7 @@ redirect_from:
     .page__content .d2-two{gap:2.6rem}
     .page__content .d2 p.d2-standfirst{font-size:1rem;margin-bottom:.45rem}
     .page__content .d2 h2{font-size:1.75rem;margin-bottom:.5rem}
-    .page__content .d2-jmp-head{margin-bottom:.85rem}
+    .page__content .d2-jmp-head{margin-bottom:2.25rem}
     .page__content .d2-results{margin-top:.85rem}
     .page__content .d2 p.d2-lead{font-size:.84rem}
     .page__content .d2-stat-n{font-size:1.85rem;margin-bottom:.2rem}
@@ -143,11 +141,10 @@ redirect_from:
     .page__content #other-research .d2-entry + .d2-entry{margin-top:1rem;padding-top:1rem}
     .page__content #other-research .d2-entry .d2-link-row a{min-height:1.9rem}
     .page__content .d2 .d2-band-jmp{padding-top:.55rem;padding-bottom:4.2rem}
-    .page__content .d2-jmp-head{margin-bottom:.25rem}
+    .page__content .d2-jmp-head{margin-bottom:1.4rem}
     .page__content .d2 .d2-jmp-head h2{margin-bottom:.3rem}
     .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.25rem}
     .page__content .d2 .d2-jmp-head .d2-standfirst{margin-bottom:.2rem}
-    .page__content .d2 p.d2-abstract-label{margin-bottom:.15rem}
     .page__content .d2-abstract p.d2-abstract-body{line-height:1.4}
     .page__content .d2-results{margin-top:.25rem}
     .page__content .d2 p.d2-lead{margin-bottom:.25rem}
@@ -209,7 +206,6 @@ redirect_from:
         <p class="d2-standfirst">Better targeting needs better decisions, not just better income predictions.</p>
       </header>
       <div class="d2-abstract">
-        <p class="d2-abstract-label">Abstract</p>
         <p class="d2-abstract-body">A key challenge for targeted antipoverty programs in developing countries is that policymakers must rely on estimated rather than observed income, which leads to substantial targeting errors. This paper studies how noisy income estimates should be translated into feasible transfers. I formulate this as a statistical decision problem in which a policymaker chooses transfers to minimize a poverty-targeting loss subject to a fixed budget and the constraint that transfers cannot be negative. I show that the standard plug-in rule, which treats estimated incomes as true, is inadmissible. I develop a nonparametric empirical Bayes targeting rule that assigns transfers using posterior distributions of poverty gaps. Although the budget and no-taxation constraints make the targeting rule nonsmooth, Bayes regret is governed by the accuracy of the posterior functionals that determine the oracle allocation.</p>
       </div>
       <div class="d2-results">
