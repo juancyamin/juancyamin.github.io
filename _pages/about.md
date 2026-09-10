@@ -91,11 +91,12 @@ redirect_from:
 
   /* Other Research: stacked papers with a shared reading width. */
   .page__content #other-research > .d2-inner{max-width:840px}
-  .page__content #other-research .d2-section-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem}
+  .page__content #other-research .d2-section-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.65rem}
   .page__content #other-research .d2-section-head h2{margin-bottom:0}
   .page__content #other-research .d2-section-head > .d2-link-row{margin:0;flex-shrink:0}
+  .page__content #other-research .d2-section-head .d2-link-row a{min-height:0}
   .page__content #other-research .d2-entry{display:block}
-  .page__content #other-research .d2-entry + .d2-entry{margin-top:.85rem;padding-top:.85rem;border-top:1px solid #d8d6cf}
+  .page__content #other-research .d2-entry + .d2-entry{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #d8d6cf}
   .page__content #other-research .d2-entry h3{color:#201b18;font-family:Georgia,"Times New Roman",serif;font-size:1.28rem;font-weight:600;line-height:1.25;margin:0 0 .3rem}
   .page__content #other-research .d2-entry p.d2-meta{color:#6b6660;font-size:.9rem;line-height:1.5;margin:0 0 .35rem}
   .page__content #other-research .d2-entry > p{margin-bottom:.35rem}
@@ -103,7 +104,7 @@ redirect_from:
   .page__content #other-research .d2-entry .d2-link-row a{font-size:.9rem;min-height:2.1rem}
   @media (max-width:780px){
     .page__content #other-research .d2-section-head{align-items:flex-start;flex-direction:column}
-    .page__content #other-research .d2-entry + .d2-entry{margin-top:1.2rem;padding-top:1.2rem}
+    .page__content #other-research .d2-entry + .d2-entry{margin-top:1.6rem;padding-top:1.6rem}
   }
 
   /* Software: light code panel, matches the page palette */
@@ -138,9 +139,8 @@ redirect_from:
   /* Keep the research blocks compact in shorter desktop windows. */
   @media (min-width:781px) and (min-height:601px) and (max-height:680px){
     .page__content #other-research{padding-top:.65rem;padding-bottom:4.5rem}
-    .page__content #other-research .d2-section-head{margin-bottom:.6rem}
-    .page__content #other-research .d2-section-head .d2-label{margin-bottom:.35rem}
-    .page__content #other-research .d2-entry + .d2-entry{margin-top:.55rem;padding-top:.55rem}
+    .page__content #other-research .d2-section-head{margin-bottom:1.1rem}
+    .page__content #other-research .d2-entry + .d2-entry{margin-top:1rem;padding-top:1rem}
     .page__content #other-research .d2-entry .d2-link-row a{min-height:1.9rem}
     .page__content .d2 .d2-band-jmp{padding-top:.55rem;padding-bottom:4.2rem}
     .page__content .d2-jmp-head{margin-bottom:.25rem}
@@ -229,10 +229,7 @@ redirect_from:
   <section class="d2-band" id="other-research" aria-labelledby="other-title">
     <div class="d2-inner">
       <div class="d2-section-head">
-        <div>
-          <p class="d2-label">Research</p>
-          <h2 id="other-title">Other Research</h2>
-        </div>
+        <h2 id="other-title">Other Research</h2>
         <nav class="d2-link-row" aria-label="Research links">
           <a class="d2-primary d2-internal" href="/research/">All research</a>
         </nav>
