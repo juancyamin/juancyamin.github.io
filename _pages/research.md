@@ -519,7 +519,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
     <p class="r2-label">Publications</p>
     <article class="r2-paper" id="birds-of-a-feather">
       <h2 class="r2-paper-title"><a href="/files/subnational-alignment-corruption.pdf">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h2>
-      <p class="r2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina &middot; Conditionally accepted, <em>American Political Science Review</em></p>
+      <p class="r2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina &middot; Forthcoming, <em>American Political Science Review</em></p>
       <p class="r2-question">Does partisan alignment across levels of government facilitate corruption?</p>
       <p class="r2-answer">Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of &ldquo;ghost&rdquo; students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
       <nav class="r2-links" aria-label="Birds of a Feather Collude Together: Subnational Alignment and Corruption links">

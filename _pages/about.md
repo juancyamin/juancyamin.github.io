@@ -241,7 +241,7 @@ redirect_from:
         </article>
         <article class="d2-entry">
           <h3><a href="/research/#birds-of-a-feather">Birds of a Feather Collude Together</a></h3>
-          <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina<br>Conditionally accepted, <em>American Political Science Review</em></p>
+          <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina<br>Forthcoming, <em>American Political Science Review</em></p>
           <p>Using close elections in Colombia, we study whether partisan alignment between mayors and governors facilitates corruption. Alignment increases the fabrication of student enrollment used to obtain education transfers, without improving actual enrollment or student performance.</p>
           <nav class="d2-link-row" aria-label="Corruption paper links">
             <a class="d2-primary" href="/files/subnational-alignment-corruption.pdf">Paper (PDF)</a>
