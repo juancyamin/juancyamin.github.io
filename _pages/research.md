@@ -11,11 +11,11 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
     --global-base-color: #f8f9fa;
     --global-bg-color: #f8f9fa;
     --global-footer-bg-color: #eef1f4;
-    --global-link-color: #173b63;
-    --global-link-color-hover: #0f2742;
-    --global-link-color-visited: #173b63;
+    --global-link-color: #2b587a;
+    --global-link-color-hover: #173b56;
+    --global-link-color-visited: #2b587a;
     --global-masthead-link-color: #202833;
-    --global-masthead-link-color-hover: #173b63;
+    --global-masthead-link-color-hover: #2b587a;
     --global-text-color: #202833;
     --global-text-color-light: #5d6975;
     --global-border-color: #d6dce2;
@@ -52,7 +52,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 a:hover {
-    color: #0f2742;
+    color: #173b56;
     text-decoration: none;
   }
 
@@ -69,7 +69,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 .r2-label {
-    color: #173b63;
+    color: #2b587a;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -110,7 +110,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-section-featured {
-    border-top: 2px solid #173b63;
+    border-top: 2px solid #2b587a;
     margin-top: 0.75rem;
     padding-top: 1.1rem;
   }
@@ -148,7 +148,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-status {
-    color: #173b63;
+    color: #2b587a;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.015em;
@@ -209,11 +209,11 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-links a.r2-primary {
-    color: #173b63;
+    color: #2b587a;
   }
 
   .page__content .r2-links a.r2-internal {
-    color: #173b63;
+    color: #2b587a;
   }
 
   .page__content .r2-links a.r2-primary:after {
@@ -228,7 +228,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2-abstract summary {
     align-items: center;
     border-bottom: 1px solid currentColor;
-    color: #173b63;
+    color: #2b587a;
     cursor: pointer;
     display: inline-flex;
     font-size: 17px;
@@ -253,7 +253,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2-abstract summary:focus {
-    outline: 2px solid rgba(23, 59, 99, 0.35);
+    outline: 2px solid rgba(43, 88, 122, 0.35);
     outline-offset: 4px;
   }
 
@@ -283,7 +283,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 p.r2-year {
-    color: #173b63;
+    color: #2b587a;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.45;
@@ -306,7 +306,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   }
 
   .page__content .r2 .r2-presentation-note {
-    color: #173b63;
+    color: #2b587a;
     font-style: italic;
   }
 
@@ -423,7 +423,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   .page__content .r2-paper-title { font-size: 22px; font-weight: 500; line-height: 1.25;
     margin: 0 0 0.15rem; max-width: none; }
   .page__content .r2-paper-title a { color: #202833; border-bottom: 1px solid #c7d0d9; }
-  .page__content .r2-paper-title a:hover { color: #173b63; border-bottom-color: currentColor; }
+  .page__content .r2-paper-title a:hover { color: #2b587a; border-bottom-color: currentColor; }
   .page__content .r2 p.r2-meta { color: #5d6975; font-size: 15.5px; line-height: 1.45;
     margin: 0 0 0.15rem; max-width: none; }
   /* reading text is capped at ~78 characters; only titles use the full 860px */
@@ -432,10 +432,10 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   /* links become small bracketed plain text, not buttons */
   .page__content .r2-links { gap: 0 1rem; margin: 0.3rem 0 0; }
   .page__content .r2-links a,
-  .page__content .r2-abstract summary { border-bottom: 0; color: #173b63; font-size: 15px;
+  .page__content .r2-abstract summary { border-bottom: 0; color: #2b587a; font-size: 15px;
     font-weight: 400; line-height: 1.5; min-height: 0; padding: 0; }
   .page__content .r2-links a:hover,
-  .page__content .r2-abstract summary:hover { color: #0f2742; text-decoration: underline; }
+  .page__content .r2-abstract summary:hover { color: #173b56; text-decoration: underline; }
   .page__content .r2-links a::before,
   .page__content .r2-abstract summary::before { content: none; }
   .page__content .r2-links a::after,

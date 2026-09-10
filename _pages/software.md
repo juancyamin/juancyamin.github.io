@@ -11,11 +11,11 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
     --global-base-color: #f8f9fa;
     --global-bg-color: #f8f9fa;
     --global-footer-bg-color: #eef1f4;
-    --global-link-color: #173b63;
-    --global-link-color-hover: #0f2742;
-    --global-link-color-visited: #173b63;
+    --global-link-color: #2b587a;
+    --global-link-color-hover: #173b56;
+    --global-link-color-visited: #2b587a;
     --global-masthead-link-color: #202833;
-    --global-masthead-link-color-hover: #173b63;
+    --global-masthead-link-color-hover: #2b587a;
     --global-text-color: #202833;
     --global-text-color-light: #5d6975;
     --global-border-color: #d6dce2;
@@ -52,7 +52,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   }
 
   .page__content .s2 a:hover {
-    color: #0f2742;
+    color: #173b56;
     text-decoration: none;
   }
 
@@ -69,7 +69,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   }
 
   .page__content .s2 .s2-label {
-    color: #173b63;
+    color: #2b587a;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     font-size: 15px;
     font-weight: 700;
@@ -124,7 +124,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   }
 
   .page__content .s2-section-featured {
-    border-top: 2px solid #173b63;
+    border-top: 2px solid #2b587a;
     margin-top: 1.95rem;
     padding-top: 2.45rem;
   }
@@ -135,7 +135,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   }
 
   .page__content .s2 p.s2-status {
-    color: #173b63;
+    color: #2b587a;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.015em;
@@ -196,7 +196,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
 
   .page__content .s2-links a.s2-primary,
   .page__content .s2-links a.s2-internal {
-    color: #173b63;
+    color: #2b587a;
   }
 
   .page__content .s2-links a.s2-primary:after {
@@ -218,7 +218,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
 
   .page__content .s2-demo article,
   .page__content .s2-install article {
-    border-top: 2px solid #173b63;
+    border-top: 2px solid #2b587a;
     min-width: 0;
     padding-top: 1rem;
   }
@@ -238,7 +238,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   }
 
   .page__content .s2-function-table th {
-    color: #173b63;
+    color: #2b587a;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -262,7 +262,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
 
   .page__content .s2 code,
   .page__content .s2 .s2-code-name {
-    color: #173b63;
+    color: #2b587a;
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     font-size: 0.92em;
     font-weight: 700;
@@ -277,7 +277,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   .page__content .s2 pre.s2-code {
     background: #f8f9fa;
     border: 1px solid #d6dce2;
-    border-left: 2px solid #173b63;
+    border-left: 2px solid #2b587a;
     color: #202833;
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     font-size: 14px;
@@ -305,7 +305,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   }
 
   .page__content .s2 p.s2-code-caption {
-    color: #173b63;
+    color: #2b587a;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -321,7 +321,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   .page__content .s2-citation summary {
     align-items: center;
     border-bottom: 1px solid currentColor;
-    color: #173b63;
+    color: #2b587a;
     cursor: pointer;
     display: inline-flex;
     font-size: 17px;
@@ -346,7 +346,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
   }
 
   .page__content .s2-citation summary:focus {
-    outline: 2px solid rgba(23, 59, 99, 0.35);
+    outline: 2px solid rgba(43, 88, 122, 0.35);
     outline-offset: 4px;
   }
 
@@ -433,7 +433,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
     }
 
     .page__content .s2-function-table tr {
-      border-top: 2px solid #173b63;
+      border-top: 2px solid #2b587a;
       padding: 0.85rem 0;
     }
 
@@ -454,7 +454,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
     }
 
     .page__content .s2-function-table td:before {
-      color: #173b63;
+      color: #2b587a;
       content: attr(data-label);
       display: block;
       font-size: 12px;
