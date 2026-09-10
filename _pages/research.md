@@ -408,7 +408,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
     .page__content .r2-header { padding-left: 0; }
   }
   .page__content .r2 { margin-top: -1.2rem; }
-  .page__content .r2-header { border-bottom: 0; padding: 0.35rem 0 0.15rem 0; }
+  .page__content .r2-header { border-bottom: 0; padding: 0.35rem 0 1.65rem 0; }
   @media (min-width: 1001px) { .page__content .r2-header { padding-left: calc(300px + 4rem); } }
   .page__content .r2 h1 { font-size: 33px; margin-bottom: 0.28rem; }
   .page__content .r2 p.r2-intro { font-size: 17px; max-width: none; margin-bottom: 0; }
