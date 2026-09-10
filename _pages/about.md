@@ -29,10 +29,10 @@ redirect_from:
   .page__content .d2 a:hover{color:#5e111c}
   .page__content .d2 p{color:#3f3a35;font-size:.97rem;line-height:1.6;margin:0 0 .85rem}
 
-  /* ===== BLOCKS: each exactly one screen, hard snap ===== */
-  .page__content .d2-band{position:relative;box-sizing:border-box;height:calc(100vh - var(--mast));overflow-y:auto;overflow-x:hidden;
+  /* Fill the screen, but grow with the content; reserve room for the next-block cue. */
+  .page__content .d2-band{position:relative;box-sizing:border-box;min-height:calc(100vh - var(--mast));overflow:visible;
     scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:center;
-    margin:0;padding:1.4rem 1.5rem 3rem}
+    margin:0;padding:1.4rem 1.5rem 5rem}
   .page__content .d2-band-tint{background:#efeee9}
   .page__content .d2-band > .d2-inner{width:100%;max-width:980px;margin:0 auto}
   .page__content .d2-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3.5rem;align-items:start}
@@ -107,9 +107,9 @@ redirect_from:
   .page__content .d2-foot{position:absolute;left:0;right:0;bottom:0;padding:.7rem 1.5rem;background:#e8e6df;color:#6b6660;font-size:.78rem}
   .page__content .d2-foot .d2-inner{max-width:980px;margin:0 auto}
 
-  /* short laptop windows: tighten so blocks still fit exactly */
+  /* Short laptop windows: tighten the content while preserving the cue's clearance. */
   @media (min-width:781px) and (min-height:601px) and (max-height:760px){
-    .page__content .d2-band{padding:1rem 1.5rem 2.5rem}
+    .page__content .d2-band{padding:1rem 1.5rem 5rem}
     .page__content .d2 p{font-size:.89rem;line-height:1.45;margin-bottom:.5rem}
     .page__content .d2-two{gap:2.6rem}
     .page__content .d2 p.d2-standfirst{font-size:1rem;margin-bottom:.45rem}
@@ -201,7 +201,6 @@ redirect_from:
       <div class="d2-two d2-two-entries">
         <article class="d2-entry">
           <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h3>
-          <p class="d2-meta">Submitted</p>
           <p>Many experiments run in two waves: a small pilot, then a larger main wave. The pilot can inform how to split that main wave between treatment and control, but its variance estimates are themselves noisy. I develop a Conditional Minimax Regret rule that uses the pilot evidence while accounting for that uncertainty, with a finite-sample bound on the precision the chosen split can lose.</p>
           <nav class="d2-link-row" aria-label="Pilot paper links">
             <a class="d2-primary" href="https://arxiv.org/abs/2607.16982">Paper (arXiv)</a>

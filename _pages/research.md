@@ -488,7 +488,6 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
     <p class="r2-label">Working Papers</p>
     <article class="r2-paper" id="when-and-how-to-pilot">
       <h2 class="r2-paper-title"><a href="https://arxiv.org/abs/2607.16982">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h2>
-      <p class="r2-meta">Submitted</p>
       <p class="r2-question">How much should a small pilot change the experiment that follows?</p>
       <p class="r2-answer">A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
       <nav class="r2-links" aria-label="When and How to Pilot: Design Rules for Two-Wave Experiments links">
@@ -522,7 +521,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
       <h2 class="r2-paper-title"><a href="/files/subnational-alignment-corruption.pdf">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h2>
       <p class="r2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina &middot; Conditionally accepted, <em>American Political Science Review</em></p>
       <p class="r2-question">Does partisan alignment across levels of government facilitate corruption?</p>
-      <p class="r2-answer">Same-party mayors and governors can collude rather than check each other. Using close elections in Colombia, aligned municipalities report 0.3 standard deviations more students than they enrol, claiming education transfers with no gain in schooling.</p>
+      <p class="r2-answer">Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of &ldquo;ghost&rdquo; students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
       <nav class="r2-links" aria-label="Birds of a Feather Collude Together: Subnational Alignment and Corruption links">
         <details class="r2-abstract"><summary>Abstract</summary>
           <div class="r2-abstract-body"><p>
