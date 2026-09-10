@@ -68,19 +68,22 @@ redirect_from:
   .page__content .d2-profile-row{align-items:center;display:flex;flex-wrap:wrap;gap:.1rem 1.1rem;margin-top:.35rem}
   .page__content .d2-profile-row a{align-items:center;border-bottom:1px solid currentColor;color:#201b18;display:inline-flex;font-size:.9rem;font-weight:600;line-height:1.35;min-height:2.25rem;padding:.32rem 0 .18rem}
 
-  /* JMP block: centred header, two prose columns, centred results */
-  .page__content .d2-jmp-head{text-align:center;max-width:820px;margin:0 auto .65rem}
+  /* JMP block: wide headings, readable abstract, compact results. */
+  .page__content .d2 .d2-band-jmp{padding-bottom:4.5rem}
+  .page__content .d2-jmp-head{text-align:center;max-width:1080px;margin:0 auto .45rem}
+  .page__content .d2 .d2-jmp-head h2{font-size:clamp(1.55rem,3vw,2.15rem);margin-bottom:.5rem}
+  .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.45rem}
   .page__content .d2-abstract{max-width:840px;margin:0 auto}
   .page__content .d2 p.d2-abstract-label{color:#8f1d2c;font-size:.71rem;font-weight:700;letter-spacing:.12em;
-    text-transform:uppercase;text-align:center;margin:0 0 .5rem}
+    text-transform:uppercase;text-align:center;margin:0 0 .35rem}
   .page__content .d2-abstract p.d2-abstract-body{text-align:left;margin:0;color:#3f3a35}
   .page__content .d2-band-jmp > .d2-inner{max-width:1080px}
-  .page__content .d2-jmp-head .d2-standfirst{margin-left:auto;margin-right:auto;max-width:none}
+  .page__content .d2 .d2-jmp-head .d2-standfirst{font-size:clamp(1rem,1.6vw,1.15rem);margin:0 auto .4rem;max-width:none}
   .page__content .d2-colhead{color:#8f1d2c;font-size:.71rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
     margin:0 0 .45rem;padding-bottom:.35rem;border-bottom:1px solid #d3d0c7}
-  .page__content .d2-results{text-align:center;max-width:820px;margin:.65rem auto 0}
-  .page__content .d2 p.d2-lead{color:#5b5650;font-size:.9rem;margin:0 auto .75rem;max-width:640px}
-  .page__content .d2-stats{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;border-top:2px solid #8f1d2c;padding-top:.6rem;margin:0}
+  .page__content .d2-results{text-align:center;max-width:820px;margin:.5rem auto 0}
+  .page__content .d2 p.d2-lead{color:#5b5650;font-size:.9rem;margin:0 auto .5rem;max-width:640px}
+  .page__content .d2-stats{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;border-top:2px solid #8f1d2c;padding-top:.5rem;margin:0}
   .page__content .d2-stat-n{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.4rem;line-height:1;color:#8f1d2c;margin-bottom:.3rem}
   .page__content .d2-stats p{font-size:.88rem;line-height:1.45;color:#5b5650;margin:0 auto;max-width:30ch}
   .page__content .d2-link-center{justify-content:center;margin-top:.35rem}
@@ -118,17 +121,36 @@ redirect_from:
     .page__content .d2-results{margin-top:.45rem}
     .page__content .d2 p.d2-lead{font-size:.84rem}
     .page__content .d2-stat-n{font-size:1.85rem;margin-bottom:.2rem}
-    .page__content .d2-stats{padding-top:.7rem}
+    .page__content .d2-stats{padding-top:.5rem}
     .page__content .d2-link-center{margin-top:.35rem}
     .page__content .d2-stats p{font-size:.84rem}
     .page__content .d2-colhead{margin-bottom:.45rem;padding-bottom:.3rem}
     .page__content .d2-code{font-size:.78rem;line-height:1.55}
   }
 
+  /* Preserve the whole JMP in shorter desktop windows without shrinking its body text. */
+  @media (min-width:781px) and (min-height:601px) and (max-height:680px){
+    .page__content .d2 .d2-band-jmp{padding-top:.55rem;padding-bottom:4.2rem}
+    .page__content .d2-jmp-head{margin-bottom:.25rem}
+    .page__content .d2 .d2-jmp-head h2{margin-bottom:.3rem}
+    .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.25rem}
+    .page__content .d2 .d2-jmp-head .d2-standfirst{margin-bottom:.2rem}
+    .page__content .d2 p.d2-abstract-label{margin-bottom:.15rem}
+    .page__content .d2-abstract p.d2-abstract-body{line-height:1.4}
+    .page__content .d2-results{margin-top:.25rem}
+    .page__content .d2 p.d2-lead{margin-bottom:.25rem}
+    .page__content .d2-stats{padding-top:.3rem}
+    .page__content .d2-stat-n{margin-bottom:.1rem}
+    .page__content .d2-stats p{line-height:1.35}
+    .page__content .d2-link-center{margin-top:.15rem}
+    .page__content .d2-link-center a{min-height:1.7rem}
+  }
+
   /* phones and short windows: ordinary scrolling, single column */
   @media (max-width:780px), (max-height:600px){
     html{scroll-snap-type:none}
     .page__content .d2-band{height:auto;min-height:0;overflow:visible;padding:2.5rem 1.2rem}
+    .page__content .d2 .d2-band-jmp{padding-bottom:2.5rem}
     .page__content .d2-next{display:none}
     .page__content .d2-two,.page__content .d2-two-jmp,.page__content .d2-two-sw{grid-template-columns:minmax(0,1fr);gap:1.6rem}
     .page__content .d2-hero-grid,.page__content .d2-two > *{min-width:0}
@@ -200,7 +222,7 @@ redirect_from:
       </div>
       <div class="d2-two d2-two-entries">
         <article class="d2-entry">
-          <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h3>
+          <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot</a></h3>
           <p>Many experiments run in two waves: a small pilot, then a larger main wave. The pilot can inform how to split that main wave between treatment and control, but its variance estimates are themselves noisy. I develop a Conditional Minimax Regret rule that uses the pilot evidence while accounting for that uncertainty, with a finite-sample bound on the precision the chosen split can lose.</p>
           <nav class="d2-link-row" aria-label="Pilot paper links">
             <a class="d2-primary" href="https://arxiv.org/abs/2607.16982">Paper (arXiv)</a>
@@ -208,7 +230,7 @@ redirect_from:
           </nav>
         </article>
         <article class="d2-entry">
-          <h3><a href="/research/#birds-of-a-feather">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h3>
+          <h3><a href="/research/#birds-of-a-feather">Birds of a Feather Collude Together</a></h3>
           <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina &middot; Conditionally accepted, <em>American Political Science Review</em></p>
           <p>Using close elections in Colombia, we study whether partisan alignment between mayors and governors facilitates corruption. Alignment increases the fabrication of student enrollment used to obtain education transfers, without improving actual enrollment or student performance.</p>
           <nav class="d2-link-row" aria-label="Corruption paper links">
