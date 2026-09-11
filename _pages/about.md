@@ -257,7 +257,7 @@ redirect_from:
       <div>
         <p class="d2-label">Software</p>
         <h2 id="software-title">cmrdesign</h2>
-        <p>cmrdesign is an R and Python package that implements the design rules from <em>When and How to Pilot</em>. Given pilot outcomes and treatment assignments, it recommends how to split the main experiment between treatment and control. It also reports a finite-sample bound on how much precision that split can lose relative to the best allocation. The package is available on CRAN and PyPI.</p>
+        <p>cmrdesign is an R and Python package that implements the design rules from <em>When and How to Pilot</em>. Given pilot outcomes and treatment assignments, it recommends how to split the main experiment between treatment and control. It also reports a finite-sample bound on how much precision that split can lose relative to the best allocation.</p>
         <nav class="d2-link-row" aria-label="Software links">
           <a class="d2-primary d2-internal" href="/software/">Software</a>
           <a href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
