@@ -233,7 +233,7 @@ redirect_from:
       <div class="d2-research-list">
         <article class="d2-entry">
           <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot</a></h3>
-          <p>Many experiments run in two waves: a small pilot, then a larger main wave. The pilot can inform how to split that main wave between treatment and control, but its variance estimates are themselves noisy. I develop a Conditional Minimax Regret rule that uses the pilot evidence while accounting for that uncertainty, with a finite-sample bound on the precision the chosen split can lose.</p>
+          <p>A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
           <nav class="d2-link-row" aria-label="Pilot paper links">
             <a class="d2-primary" href="https://arxiv.org/abs/2607.16982">Paper (arXiv)</a>
             <a href="#software">Software</a>
@@ -242,7 +242,7 @@ redirect_from:
         <article class="d2-entry">
           <h3><a href="/research/#birds-of-a-feather">Birds of a Feather Collude Together</a></h3>
           <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina<br>Forthcoming, <em>American Political Science Review</em></p>
-          <p>Using close elections in Colombia, we study whether partisan alignment between mayors and governors facilitates corruption. Alignment increases the fabrication of student enrollment used to obtain education transfers, without improving actual enrollment or student performance.</p>
+          <p>Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of &ldquo;ghost&rdquo; students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
           <nav class="d2-link-row" aria-label="Corruption paper links">
             <a class="d2-primary" href="/files/subnational-alignment-corruption.pdf">Paper (PDF)</a>
           </nav>
