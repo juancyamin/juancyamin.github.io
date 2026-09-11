@@ -475,9 +475,6 @@ description: "Teaching by Juan C. Yamin."
 <main class="t2" id="teaching">
   <header class="t2-header" aria-labelledby="teaching-title">
     <h1 id="teaching-title">Teaching</h1>
-    <p class="t2-intro">
-      I have taught econometrics and applied data courses at Brown University, including both halves of the Ph.D. applied econometrics sequence.
-    </p>
   </header>
 
   <section class="t2-section t2-section-featured" aria-labelledby="courses-title">
