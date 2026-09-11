@@ -2,7 +2,7 @@
 layout: splash
 permalink: /teaching/
 title: "Teaching"
-description: "Teaching by Juan C. Yamin."
+description: "Teaching experience, student evaluations, and econometrics materials by Juan C. Yamin."
 ---
 
 <style>
@@ -35,586 +35,218 @@ description: "Teaching by Juan C. Yamin."
     background: transparent;
   }
 
-  .page__content .t2 {
-    color: #202833;
-    margin: -0.5rem auto 0;
-    max-width: 980px;
-    text-align: left;
-  }
 
-  .page__content .t2 * {
-    box-sizing: border-box;
-  }
-
-  .page__content .t2 a {
-    color: #202833;
-    text-decoration: none;
-  }
-
-  .page__content .t2 a:hover {
-    color: #173b56;
-    text-decoration: none;
-  }
-
-  .page__content .t2 p {
-    color: #444e59;
-    font-size: 17px;
-    line-height: 1.65;
-    margin: 0 0 1rem;
-  }
-
-  .page__content .t2-header {
-    border-bottom: 1px solid #d6dce2;
-    padding: 3.75rem 0 2.8rem;
-  }
-
+  /* Let the approved page spacing control the splash layout. */
+  /* The footer is in normal flow here; disable the theme script's sticky-footer reserve. */
+  body { padding-bottom: 0; margin-bottom: 0 !important; }
+  #main { max-width: none; margin: 0; padding: 0; }
+  #main > .splash, #main .page__content { margin: 0; padding: 0; }
+  .page__footer { position: static; margin-top: 0; }
+  .page__content .t2 { text-align: left; }
   .page__content .t2 h1,
   .page__content .t2 h2,
-  .page__content .t2 h3 {
-    border: 0;
-    color: #202833;
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: 500;
-    letter-spacing: 0;
-    margin: 0;
-    padding: 0;
-  }
+  .page__content .t2 h3 { border: 0; padding: 0; }
+  .page__content .t2 a { font-weight: 400; }
 
+  .page__content .t2 {
+    --t2-bg: #f8f9fa;
+    --t2-ink: #202833;
+    --t2-copy: #444e59;
+    --t2-muted: #5d6975;
+    --t2-blue: #2b587a;
+    --t2-hover: #173b56;
+    --t2-border: #d6dce2;
+    --t2-rail: 260px;
+    --t2-rail-gap: 56px;
+    --t2-course-gap: 42px;
+    color-scheme: light;
+    background: var(--t2-bg);
+    color: var(--t2-copy);
+    font: 15.5px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  }
+  .page__content .t2 * { box-sizing: border-box; }
+  .page__content .t2 a {
+    color: var(--t2-blue); text-decoration: none;
+  }
+  .page__content .t2 a:hover { color: var(--t2-hover); text-decoration: underline; }
+  .page__content .t2 {
+    width: calc(100% - 64px); max-width: 1060px; margin: 0 auto; padding: 24px 0 60px;
+  }
+  .page__content .t2 .t2-page-header {
+    padding-left: calc(var(--t2-rail) + var(--t2-rail-gap)); margin-bottom: 32px;
+  }
   .page__content .t2 h1 {
-    font-size: 44px;
-    line-height: 1;
-    margin: 0 0 1.15rem;
+    font: 500 33px/1.1 Georgia, "Times New Roman", serif; color: var(--t2-ink);
+    margin: 0; padding: 0; letter-spacing: 0;
+  }
+  .page__content .t2 .t2-institution {
+    display: grid; grid-template-columns: var(--t2-rail) minmax(0, 1fr); gap: 0 var(--t2-rail-gap);
+  }
+  .page__content .t2 .t2-institution + .t2-institution { margin-top: 42px; }
+  .page__content .t2 .t2-institution-label { text-align: right; padding-top: 3px; }
+  .page__content .t2 .t2-institution-label h2 {
+    color: var(--t2-blue); font: 700 15px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; letter-spacing: .09em; margin: 0 0 5px;
+  }
+  .page__content .t2 .t2-institution-label p {
+    font-size: 14px; line-height: 1.5; color: var(--t2-muted); margin: 0;
+  }
+  .page__content .t2 .t2-courses { min-width: 0; }
+  .page__content .t2 .t2-course + .t2-course { margin-top: var(--t2-course-gap); }
+  .page__content .t2 .t2-course h3 {
+    color: var(--t2-ink); font: 500 22px/1.25 Georgia, "Times New Roman", serif;
+    margin: 0 0 5px; letter-spacing: 0;
+  }
+  .page__content .t2 .t2-meta {
+    color: var(--t2-muted); font-size: 15px; line-height: 1.5; margin: 0 0 7px;
+  }
+  .page__content .t2 .t2-evaluation {
+    color: var(--t2-copy); font-size: 15px; line-height: 1.55;
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin: 0;
+  }
+  .page__content .t2 .t2-evaluation strong { color: var(--t2-ink); font-weight: 600; }
+  .page__content .t2 .t2-materials { margin-top: 13px; }
+  .page__content .t2 .t2-materials summary {
+    color: var(--t2-blue); font-size: 15px; line-height: 1.5;
+    cursor: pointer; width: fit-content; list-style: none;
+  }
+  .page__content .t2 .t2-materials summary::-webkit-details-marker { display: none; }
+  .page__content .t2 .t2-materials summary::after { content: " +"; }
+  .page__content .t2 .t2-materials[open] summary::after { content: " −"; }
+  .page__content .t2 .t2-materials summary:hover { color: var(--t2-hover); text-decoration: underline; }
+  .page__content .t2 .t2-material-body { margin-top: 9px; }
+  .page__content .t2 .t2-topic + .t2-topic { margin-top: 12px; }
+  .page__content .t2 .t2-topic-line { margin: 0; font-size: 15.5px; line-height: 1.5; }
+  .page__content .t2 .t2-topic-line .t2-topic-links { display: inline-flex; flex-wrap: wrap; gap: 0 10px; margin-left: 5px; }
+  .page__content .t2 .t2-credit {
+    color: var(--t2-muted); font-size: 13px; line-height: 1.45; margin: 3px 0 0;
+  }
+  .page__content .t2 .t2-evaluation-note {
+    color: var(--t2-muted); font-size: 13px; line-height: 1.55;
+    margin: 25px 0 0; padding-top: 14px; border-top: 1px solid var(--t2-border);
+  }
+  @media (min-width: 1200px) {
+    .page__content .t2 { --t2-rail: 300px; --t2-rail-gap: 72px; }
+  }
+  @media (max-width: 850px) {
+    .page__content .t2 .t2-page-header { padding-left: 0; }
+    .page__content .t2 .t2-institution { display: block; }
+    .page__content .t2 .t2-institution-label { text-align: left; padding-top: 0; margin-bottom: 24px; }
+    .page__content .t2 .t2-institution-label p { display: inline; }
+    .page__content .t2 .t2-institution-label p + p::before { content: " · "; }
+    .page__content .t2 { max-width: 688px; }
+  }
+  @media (max-width: 600px) {
+    .page__content .t2 { width: calc(100% - 40px); padding-top: 27px; padding-bottom: 42px; }
+    .page__content .t2 .t2-page-header { margin-bottom: 31px; }
+    .page__content .t2 .t2-course h3 { font-size: 21px; }
+    .page__content .t2 .t2-evaluation { gap: 2px 12px; }
+    .page__content .t2 .t2-topic-line .t2-topic-links { margin-left: 0; }
+  }
+  @media (pointer: coarse) {
+    .page__content .t2 .t2-evaluation a,
+    .page__content .t2 .t2-materials summary,
+    .page__content .t2 .t2-topic-line a { display: inline-flex; align-items: center; min-height: 44px; }
   }
 
-  .page__content .t2 h2 {
-    font-size: 34px;
-    line-height: 1.12;
-    margin: 0 0 0.75rem;
-    max-width: 640px;
-  }
-
-  .page__content .t2 h3 {
-    font-size: 21px;
-    line-height: 1.25;
-    margin: 0 0 0.45rem;
-  }
-
-  .page__content .t2 p.t2-intro {
-    color: #444e59;
-    font-size: 18px;
-    line-height: 1.7;
-    max-width: 640px;
-  }
-
-  .page__content .t2 p.t2-label,
-  .page__content .t2 th {
-    color: #2b587a;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    line-height: 1.35;
-    margin: 0 0 0.4rem;
-    text-transform: uppercase;
-  }
-
-  .page__content .t2-section {
-    border-bottom: 1px solid #d6dce2;
-    padding: 2.85rem 0;
-  }
-
-  .page__content .t2-section-featured {
-    border-top: 2px solid #2b587a;
-    margin-top: 1.95rem;
-    padding-top: 2.45rem;
-  }
-
-  .page__content .t2-copy {
-    margin: 0;
-    max-width: 640px;
-  }
-
-  .page__content .t2-copy p {
-    color: #444e59;
-    font-size: 17px;
-    line-height: 1.65;
-  }
-
-  .page__content .t2-table-wrap {
-    margin: 1.6rem 0 0;
-    max-width: 980px;
-    overflow-x: auto;
-  }
-
-  .page__content .t2-course-table {
-    background: transparent;
-    border: 0;
-    border-collapse: collapse;
-    color: #444e59;
-    font-size: 16px;
-    line-height: 1.45;
-    margin: 0;
-    min-width: 760px;
-    width: 100%;
-  }
-
-  .page__content .t2 table.t2-course-table thead,
-  .page__content .t2 table.t2-course-table tbody,
-  .page__content .t2 table.t2-course-table tr,
-  .page__content .t2 table.t2-course-table th,
-  .page__content .t2 table.t2-course-table td {
-    background: transparent;
-  }
-
-  .page__content .t2-course-table th {
-    border: 0;
-    padding: 0 0.9rem 0.7rem 0;
-    text-align: left;
-  }
-
-  .page__content .t2-course-table td {
-    border-top: 1px solid #d6dce2;
-    border-right: 0;
-    border-bottom: 0;
-    border-left: 0;
-    color: #444e59;
-    padding: 0.9rem 0.9rem 0.9rem 0;
-    text-align: left;
-    vertical-align: top;
-  }
-
-  .page__content .t2-course-table td:nth-child(2),
-  .page__content .t2-course-table td:nth-child(4),
-  .page__content .t2-course-table td:nth-child(5) {
-    white-space: nowrap;
-  }
-
-  .page__content .t2-course-code {
-    color: #2b587a;
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    line-height: 1.3;
-    margin: 0 0 0.15rem;
-    text-transform: uppercase;
-  }
-
-  .page__content .t2-course-title {
-    color: #202833;
-    display: block;
-    font-weight: 650;
-  }
-
-  .page__content .t2-eval-score {
-    color: #202833;
-    display: block;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.35;
-    margin: 0 0 0.05rem;
-  }
-
-  .page__content .t2-eval-meta {
-    color: #5d6975;
-    display: block;
-    font-size: 14px;
-    line-height: 1.4;
-    margin: 0;
-  }
-
-  .page__content .t2-links {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.15rem 1.15rem;
-    margin: 0;
-  }
-
-  .page__content .t2-links a,
-  .page__content .t2-material-list a {
-    align-items: center;
-    border-bottom: 1px solid currentColor;
-    color: #202833;
-    display: inline-flex;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.35;
-    min-height: 44px;
-    padding: 0.38rem 0 0.22rem;
-  }
-
-  .page__content .t2-links a.t2-internal,
-  .page__content .t2-material-list a.t2-internal {
-    color: #2b587a;
-  }
-
-  .page__content .t2-links.t2-eval-links {
-    margin-top: 0.1rem;
-  }
-
-  .page__content .t2-links.t2-eval-links a {
-    min-height: 34px;
-  }
-
-  .page__content .t2 p.t2-note {
-    color: #5d6975;
-    font-size: 15px;
-    line-height: 1.55;
-    margin: 0.95rem 0 0;
-    max-width: 640px;
-  }
-
-  .page__content .t2-previous {
-    margin: 2.25rem 0 0;
-    max-width: 760px;
-  }
-
-  .page__content .t2-previous h3 {
-    font-size: 22px;
-    margin-bottom: 0.95rem;
-  }
-
-  .page__content .t2-previous-row {
-    border-top: 1px solid #d6dce2;
-    display: grid;
-    gap: 0.5rem 1.1rem;
-    grid-template-columns: minmax(0, 1fr) minmax(130px, 0.35fr);
-    padding: 0.85rem 0;
-  }
-
-  .page__content .t2 p.t2-previous-title {
-    color: #202833;
-    font-size: 16px;
-    font-weight: 650;
-    line-height: 1.45;
-    margin: 0;
-  }
-
-  .page__content .t2 p.t2-previous-meta {
-    color: #5d6975;
-    font-size: 15px;
-    line-height: 1.45;
-    margin: 0;
-  }
-
-  .page__content .t2-materials {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
-    margin: 1.7rem 0 0;
-    max-width: 980px;
-  }
-
-  .page__content .t2-material-group {
-    border-top: 2px solid #2b587a;
-    min-width: 0;
-    padding-top: 1rem;
-  }
-
-  .page__content .t2-material-group h3 {
-    font-size: 21px;
-    line-height: 1.25;
-    margin-bottom: 0.95rem;
-  }
-
-  .page__content .t2-material-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .page__content .t2-material-list li {
-    border-top: 1px solid #d6dce2;
-    margin: 0;
-    padding: 0.85rem 0 0.95rem;
-  }
-
-  .page__content .t2-material-list li:first-child {
-    border-top: 0;
-    padding-top: 0;
-  }
-
-  .page__content .t2 p.t2-material-meta {
-    color: #5d6975;
-    font-size: 14px;
-    line-height: 1.5;
-    margin: -0.1rem 0 0;
-  }
-
-  .page__content .t2-section-final {
-    border-bottom: 0;
-  }
-
-  @media (max-width: 780px) {
-    .page__content .t2-header {
-      padding: 2.75rem 0 2.3rem;
-    }
-
-    .page__content .t2-section {
-      padding: 2.45rem 0;
-    }
-
-    .page__content .t2-section-featured {
-      margin-top: 1.75rem;
-      padding-top: 2.25rem;
-    }
-
-    .page__content .t2-materials {
-      grid-template-columns: 1fr;
-      max-width: 640px;
-    }
-
-    .page__content .t2-previous-row {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  @media (max-width: 520px) {
-    .page__content .t2 {
-      margin-top: 0;
-    }
-
-    .page__content .t2 h1 {
-      font-size: 38px;
-    }
-
-    .page__content .t2 h2 {
-      font-size: 29px;
-    }
-
-    .page__content .t2 h3,
-    .page__content .t2-material-group h3,
-    .page__content .t2-previous h3 {
-      font-size: 20px;
-    }
-
-    .page__content .t2 p.t2-intro,
-    .page__content .t2 p,
-    .page__content .t2-copy p {
-      font-size: 16px;
-    }
-
-    .page__content .t2 p.t2-label,
-    .page__content .t2 th,
-    .page__content .t2 p.t2-note,
-    .page__content .t2 p.t2-previous-meta,
-    .page__content .t2 p.t2-material-meta {
-      font-size: 14px;
-    }
-
-    .page__content .t2-course-table {
-      min-width: 0;
-    }
-
-    .page__content .t2-course-table thead {
-      display: none;
-    }
-
-    .page__content .t2-course-table,
-    .page__content .t2-course-table tbody,
-    .page__content .t2-course-table tr,
-    .page__content .t2-course-table td {
-      display: block;
-      width: 100%;
-    }
-
-    .page__content .t2-course-table tr {
-      border-top: 2px solid #2b587a;
-      padding: 0.85rem 0;
-    }
-
-    .page__content .t2-course-table tr:first-child {
-      border-top: 0;
-      padding-top: 0;
-    }
-
-    .page__content .t2-course-table td {
-      border: 0;
-      padding: 0.12rem 0;
-      white-space: normal;
-    }
-
-    .page__content .t2-course-table td:nth-child(2),
-    .page__content .t2-course-table td:nth-child(4),
-    .page__content .t2-course-table td:nth-child(5) {
-      white-space: normal;
-    }
-
-    .page__content .t2-course-table td:before {
-      color: #2b587a;
-      content: attr(data-label);
-      display: block;
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      line-height: 1.3;
-      margin: 0.35rem 0 0.1rem;
-      text-transform: uppercase;
-    }
-
-    .page__content .t2-links {
-      gap: 0.6rem 1rem;
-    }
-
-    .page__content .t2-links a,
-    .page__content .t2-material-list a {
-      font-size: 16px;
-    }
-
-    .page__content .t2-links.t2-eval-links a {
-      min-height: 44px;
-    }
-
-    .page__content .t2-course-table td.t2-empty-eval {
-      display: none;
-    }
-  }
 </style>
 
 <main class="t2" id="teaching">
-  <header class="t2-header" aria-labelledby="teaching-title">
-    <h1 id="teaching-title">Teaching</h1>
-  </header>
-
-  <section class="t2-section t2-section-featured" aria-labelledby="courses-title">
-    <h2 id="courses-title">Courses</h2>
-    <div class="t2-copy">
-      <p>
-        At Brown, I have served as a teaching assistant for graduate econometrics and undergraduate applied data analysis. Earlier teaching at Universidad de los Andes is also listed below.
-      </p>
+  <header class="t2-page-header"><h1 id="teaching-title">Teaching</h1></header>
+  <section class="t2-institution" id="courses-title" aria-labelledby="t2-brown-label">
+    <div class="t2-institution-label">
+      <h2 id="t2-brown-label">Brown University</h2>
+      <p>Teaching assistant</p>
     </div>
-    <div class="t2-table-wrap">
-      <table class="t2-course-table">
-        <thead>
-          <tr>
-            <th>Course</th>
-            <th>Level</th>
-            <th>Instructor</th>
-            <th>Term</th>
-            <th>Eval.</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td data-label="Course">
-              <span class="t2-course-code">ECON 2400</span>
-              <span class="t2-course-title">Applied Econometrics II</span>
-            </td>
-            <td data-label="Level">Ph.D.</td>
-            <td data-label="Instructor">Peter Hull</td>
-            <td data-label="Term">Spring 2026</td>
-            <td data-label="Eval.">
-              <span class="t2-eval-score">4.92</span>
-              <span class="t2-eval-meta">Dept. avg. 4.53</span>
-              <nav class="t2-links t2-eval-links" aria-label="ECON 2400 evaluation">
-                <a class="t2-internal" href="/files/econ2400_evaluation_spring2026.pdf">PDF</a>
-              </nav>
-            </td>
-          </tr>
-          <tr>
-            <td data-label="Course">
-              <span class="t2-course-code">ECON 2390</span>
-              <span class="t2-course-title">Applied Econometrics I</span>
-            </td>
-            <td data-label="Level">Ph.D.</td>
-            <td data-label="Instructor">Toru Kitagawa</td>
-            <td data-label="Term">Fall 2024</td>
-            <td data-label="Eval.">
-              <span class="t2-eval-score">4.90</span>
-              <span class="t2-eval-meta">Dept. avg. 4.52</span>
-              <nav class="t2-links t2-eval-links" aria-label="ECON 2390 evaluation">
-                <a class="t2-internal" href="/files/econ2390_evaluation_fall2024.pdf">PDF</a>
-              </nav>
-            </td>
-          </tr>
-          <tr>
-            <td data-label="Course">
-              <span class="t2-course-code">ECON 1000</span>
-              <span class="t2-course-title">Using Big Data to Solve Economic and Social Problems</span>
-            </td>
-            <td data-label="Level">Undergraduate</td>
-            <td data-label="Instructor">John N. Friedman</td>
-            <td data-label="Term">Fall 2023</td>
-            <td data-label="Eval.">
-              <span class="t2-eval-score">4.10</span>
-              <span class="t2-eval-meta">Dept. avg. 4.57</span>
-              <nav class="t2-links t2-eval-links" aria-label="ECON 1000 Fall 2023 evaluation">
-                <a class="t2-internal" href="/files/econ1000_evaluation_fall2023.pdf">PDF</a>
-              </nav>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="t2-courses">
+      <article class="t2-course">
+        <h3>Applied Econometrics II</h3>
+        <p class="t2-meta">ECON 2400 · Ph.D. · Peter Hull · Spring 2026</p>
+        <p class="t2-evaluation">
+          <span><strong>4.92/5</strong> (13 responses)</span>
+          <span>Dept. mean 4.53</span>
+          <a href="/files/econ2400_evaluation_spring2026.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics II evaluation PDF">Evaluation</a>
+        </p>
+        <details class="t2-materials" id="materials-title" open>
+          <summary>Teaching materials</summary>
+          <div class="t2-material-body">
+            <div class="t2-topic">
+              <p class="t2-topic-line">Staggered-adoption difference-in-differences:
+                <span class="t2-topic-links">
+                  <a href="/files/econ2400_ta_session_1.pdf" target="_blank" rel="noopener" aria-label="Staggered-adoption difference-in-differences, Part I PDF">Part I</a>
+                  <a href="/files/econ2400_ta_session_2.pdf" target="_blank" rel="noopener" aria-label="Staggered-adoption difference-in-differences, Part II PDF">Part II</a>
+                </span>
+              </p>
+              <p class="t2-credit">Adapted from Kirill Borusyak’s ARE 213 teaching materials.</p>
+            </div>
+            <div class="t2-topic">
+              <p class="t2-topic-line">Empirical Bayes:
+                <span class="t2-topic-links">
+                  <a href="/files/econ2400_ta_session_3.pdf" target="_blank" rel="noopener" aria-label="Empirical Bayes fundamentals PDF">Fundamentals</a>
+                  <a href="/files/econ2400_ta_session_4.pdf" target="_blank" rel="noopener" aria-label="Empirical Bayes empirical applications PDF">Applications</a>
+                </span>
+              </p>
+              <p class="t2-credit">Based on NBER SI Methods lectures by Jiaying Gu and Christopher R. Walters.</p>
+            </div>
+          </div>
+        </details>
+      </article>
 
-    <div class="t2-previous" aria-labelledby="previous-title">
-      <h3 id="previous-title">Previous Teaching</h3>
-      <div class="t2-previous-row">
-        <div>
-          <p class="t2-previous-title">Advanced Econometrics</p>
-          <p class="t2-previous-meta">Teaching assistant for Raquel Bernal, Universidad de los Andes</p>
-        </div>
-        <p class="t2-previous-meta">Graduate</p>
-      </div>
-      <div class="t2-previous-row">
-        <div>
-          <p class="t2-previous-title">Political Underpinnings of Prosperity and Poverty</p>
-          <p class="t2-previous-meta">Teaching assistant for James Robinson, Universidad de los Andes</p>
-        </div>
-        <p class="t2-previous-meta">Graduate</p>
-      </div>
-      <div class="t2-previous-row">
-        <div>
-          <p class="t2-previous-title">Thinking Problems</p>
-          <p class="t2-previous-meta">Teaching assistant for Tomas Rodriguez, Universidad de los Andes</p>
-        </div>
-        <p class="t2-previous-meta">Undergraduate</p>
-      </div>
+      <article class="t2-course">
+        <h3>Applied Econometrics I</h3>
+        <p class="t2-meta">ECON 2390 · Ph.D. · Toru Kitagawa · Fall 2024</p>
+        <p class="t2-evaluation">
+          <span><strong>4.90/5</strong> (10 responses)</span>
+          <span>Dept. mean 4.52</span>
+          <a href="/files/econ2390_evaluation_fall2024.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics I evaluation PDF">Evaluation</a>
+        </p>
+        <details class="t2-materials" open>
+          <summary>Teaching materials</summary>
+          <div class="t2-material-body">
+            <div class="t2-topic">
+              <p class="t2-topic-line"><a href="/files/econ2390_review_session_1.pdf" target="_blank" rel="noopener">Regression, matching, and doubly robust estimation</a></p>
+              <p class="t2-credit">Midterm and Problem Set 1 review.</p>
+            </div>
+            <div class="t2-topic">
+              <p class="t2-topic-line"><a href="/files/econ2390_review_session_2.pdf" target="_blank" rel="noopener">Regression discontinuity and instrumental variables</a></p>
+              <p class="t2-credit">Problem Set 2 review.</p>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <article class="t2-course">
+        <h3>Using Big Data to Solve Economic and Social Problems</h3>
+        <p class="t2-meta">ECON 1000 · Undergraduate · John N. Friedman<br>Fall 2022 and 2023</p>
+        <p class="t2-evaluation">
+          <span>Fall 2023: <strong>4.10/5</strong> (40 responses)</span>
+          <span>Dept. mean 4.57</span>
+          <a href="/files/econ1000_evaluation_fall2023.pdf" target="_blank" rel="noopener" aria-label="Using Big Data Fall 2023 evaluation PDF">Evaluation</a>
+        </p>
+      </article>
+
+      <p class="t2-evaluation-note">Evaluations report the mean response to “Overall, I rate this teaching assistant as effective” on a 1–5 scale. Response counts exclude N/A; department means refer to the same item.</p>
     </div>
   </section>
 
-  <section class="t2-section" aria-labelledby="materials-title">
-    <h2 id="materials-title">Selected Materials</h2>
-    <div class="t2-copy">
-      <p>
-        Selected materials from Brown TA sessions, organized by course. Source attributions are included where the sessions build from existing lecture materials.
-      </p>
+  <section class="t2-institution" id="previous-title" aria-labelledby="t2-andes-label">
+    <div class="t2-institution-label">
+      <h2 id="t2-andes-label">Universidad de los Andes</h2>
+      <p>Teaching assistant</p>
+      <p>August 2018 – June 2020</p>
     </div>
-    <div class="t2-materials">
-      <article class="t2-material-group">
-        <h3>ECON 2400 &mdash; Applied Econometrics II</h3>
-        <ul class="t2-material-list">
-          <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_1.pdf">Staggered-Adoption Difference-in-Differences, Part I</a>
-            <p class="t2-material-meta">Spring 2026. Adapted from teaching materials by Kirill Borusyak (ARE 213).</p>
-          </li>
-          <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_2.pdf">Staggered-Adoption Difference-in-Differences, Part II</a>
-            <p class="t2-material-meta">Spring 2026. Adapted from teaching materials by Kirill Borusyak (ARE 213).</p>
-          </li>
-          <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_3.pdf">Empirical Bayes: Fundamentals</a>
-            <p class="t2-material-meta">Spring 2026. Based on NBER SI Methods lectures by Jiaying Gu and Christopher R. Walters.</p>
-          </li>
-          <li>
-            <a class="t2-internal" href="/files/econ2400_ta_session_4.pdf">Empirical Bayes: Empirical Applications</a>
-            <p class="t2-material-meta">Spring 2026. Based on NBER SI Methods lectures by Jiaying Gu and Christopher R. Walters.</p>
-          </li>
-        </ul>
+    <div class="t2-courses">
+      <article class="t2-course">
+        <h3>Advanced Econometrics</h3>
+        <p class="t2-meta">Graduate · Raquel Bernal</p>
       </article>
-      <article class="t2-material-group">
-        <h3>ECON 2390 &mdash; Applied Econometrics I</h3>
-        <ul class="t2-material-list">
-          <li>
-            <a class="t2-internal" href="/files/econ2390_review_session_1.pdf">Midterm and Problem Set 1</a>
-            <p class="t2-material-meta">Fall 2024.</p>
-          </li>
-          <li>
-            <a class="t2-internal" href="/files/econ2390_review_session_2.pdf">Problem Set 2</a>
-            <p class="t2-material-meta">Fall 2024.</p>
-          </li>
-        </ul>
+      <article class="t2-course">
+        <h3>Political Underpinnings of Prosperity and Poverty</h3>
+        <p class="t2-meta">Graduate · James A. Robinson</p>
+      </article>
+      <article class="t2-course">
+        <h3>Thinking Problems</h3>
+        <p class="t2-meta">Undergraduate · Tomás Rodríguez</p>
       </article>
     </div>
   </section>
