@@ -167,7 +167,7 @@ description: "Teaching experience, student evaluations, and econometrics materia
           <span>Dept. mean 4.53</span>
           <a href="/files/econ2400_evaluation_spring2026.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics II evaluation PDF">Evaluation</a>
         </p>
-        <details class="t2-materials" id="materials-title" open>
+        <details class="t2-materials" id="materials-title">
           <summary>Teaching materials</summary>
           <div class="t2-material-body">
             <div class="t2-topic">
@@ -200,7 +200,7 @@ description: "Teaching experience, student evaluations, and econometrics materia
           <span>Dept. mean 4.52</span>
           <a href="/files/econ2390_evaluation_fall2024.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics I evaluation PDF">Evaluation</a>
         </p>
-        <details class="t2-materials" open>
+        <details class="t2-materials">
           <summary>Teaching materials</summary>
           <div class="t2-material-body">
             <div class="t2-topic">
