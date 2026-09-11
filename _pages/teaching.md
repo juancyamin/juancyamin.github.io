@@ -105,7 +105,11 @@ description: "Teaching experience, student evaluations, and econometrics materia
     display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 14px; margin: 0;
   }
   .page__content .t2 .t2-evaluation strong { color: var(--t2-ink); font-weight: 600; }
-  .page__content .t2 .t2-materials { margin-top: 13px; }
+  .page__content .t2 .t2-scores {
+    display: flex; flex-wrap: wrap; gap: 2px 14px; max-width: 100%;
+  }
+  .page__content .t2 .t2-materials { margin: 0; min-width: 0; }
+  .page__content .t2 .t2-materials[open] { flex: 1 0 100%; }
   .page__content .t2 .t2-materials summary {
     color: var(--t2-blue); font-size: 15px; line-height: 1.5;
     cursor: pointer; width: fit-content; list-style: none;
@@ -120,10 +124,6 @@ description: "Teaching experience, student evaluations, and econometrics materia
   .page__content .t2 .t2-topic-line .t2-topic-links { display: inline-flex; flex-wrap: wrap; gap: 0 10px; margin-left: 5px; }
   .page__content .t2 .t2-credit {
     color: var(--t2-muted); font-size: 13px; line-height: 1.45; margin: 3px 0 0;
-  }
-  .page__content .t2 .t2-evaluation-note {
-    color: var(--t2-muted); font-size: 13px; line-height: 1.55;
-    margin: 25px 0 0; padding-top: 14px; border-top: 1px solid var(--t2-border);
   }
   @media (min-width: 1200px) {
     .page__content .t2 { --t2-rail: 300px; --t2-rail-gap: 72px; }
@@ -141,6 +141,7 @@ description: "Teaching experience, student evaluations, and econometrics materia
     .page__content .t2 .t2-page-header { margin-bottom: 31px; }
     .page__content .t2 .t2-course h3 { font-size: 21px; }
     .page__content .t2 .t2-evaluation { gap: 2px 12px; }
+    .page__content .t2 .t2-scores { flex-basis: 100%; gap: 2px 12px; }
     .page__content .t2 .t2-topic-line .t2-topic-links { margin-left: 0; }
   }
   @media (pointer: coarse) {
@@ -162,62 +163,66 @@ description: "Teaching experience, student evaluations, and econometrics materia
       <article class="t2-course">
         <h3>Applied Econometrics II</h3>
         <p class="t2-meta">ECON 2400 · Ph.D. · Peter Hull · Spring 2026</p>
-        <p class="t2-evaluation">
-          <span><strong>4.92/5</strong> (13 responses)</span>
-          <span>Dept. mean 4.53</span>
-          <a href="/files/econ2400_evaluation_spring2026.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics II evaluation PDF">Evaluation</a>
-        </p>
-        <details class="t2-materials" id="materials-title">
-          <summary>Teaching materials</summary>
-          <div class="t2-material-body">
-            <div class="t2-topic">
-              <p class="t2-topic-line">Staggered-adoption difference-in-differences:
-                <span class="t2-topic-links">
-                  <a href="/files/econ2400_ta_session_1.pdf" target="_blank" rel="noopener" aria-label="Staggered-adoption difference-in-differences, Part I PDF">Part I</a>
-                  <a href="/files/econ2400_ta_session_2.pdf" target="_blank" rel="noopener" aria-label="Staggered-adoption difference-in-differences, Part II PDF">Part II</a>
-                </span>
-              </p>
-              <p class="t2-credit">Adapted from Kirill Borusyak’s ARE 213 teaching materials.</p>
-            </div>
-            <div class="t2-topic">
-              <p class="t2-topic-line">Empirical Bayes:
-                <span class="t2-topic-links">
-                  <a href="/files/econ2400_ta_session_3.pdf" target="_blank" rel="noopener" aria-label="Empirical Bayes fundamentals PDF">Fundamentals</a>
-                  <a href="/files/econ2400_ta_session_4.pdf" target="_blank" rel="noopener" aria-label="Empirical Bayes empirical applications PDF">Applications</a>
-                </span>
-              </p>
-              <p class="t2-credit">Based on NBER SI Methods lectures by Jiaying Gu and Christopher R. Walters.</p>
-            </div>
+        <div class="t2-evaluation">
+          <div class="t2-scores">
+            <span><strong>4.92/5</strong> (13 responses)</span>
+            <span>Dept. mean 4.53</span>
           </div>
-        </details>
+          <a href="/files/econ2400_evaluation_spring2026.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics II evaluation PDF">Evaluation</a>
+          <details class="t2-materials" id="materials-title">
+            <summary>Teaching materials</summary>
+            <div class="t2-material-body">
+              <div class="t2-topic">
+                <p class="t2-topic-line">Staggered-adoption difference-in-differences:
+                  <span class="t2-topic-links">
+                    <a href="/files/econ2400_ta_session_1.pdf" target="_blank" rel="noopener" aria-label="Staggered-adoption difference-in-differences, Part I PDF">Part I</a>
+                    <a href="/files/econ2400_ta_session_2.pdf" target="_blank" rel="noopener" aria-label="Staggered-adoption difference-in-differences, Part II PDF">Part II</a>
+                  </span>
+                </p>
+                <p class="t2-credit">Adapted from Kirill Borusyak’s ARE 213 teaching materials.</p>
+              </div>
+              <div class="t2-topic">
+                <p class="t2-topic-line">Empirical Bayes:
+                  <span class="t2-topic-links">
+                    <a href="/files/econ2400_ta_session_3.pdf" target="_blank" rel="noopener" aria-label="Empirical Bayes fundamentals PDF">Fundamentals</a>
+                    <a href="/files/econ2400_ta_session_4.pdf" target="_blank" rel="noopener" aria-label="Empirical Bayes empirical applications PDF">Applications</a>
+                  </span>
+                </p>
+                <p class="t2-credit">Based on NBER SI Methods lectures by Jiaying Gu and Christopher R. Walters.</p>
+              </div>
+            </div>
+          </details>
+        </div>
       </article>
 
       <article class="t2-course">
         <h3>Applied Econometrics I</h3>
         <p class="t2-meta">ECON 2390 · Ph.D. · Toru Kitagawa · Fall 2024</p>
-        <p class="t2-evaluation">
-          <span><strong>4.90/5</strong> (10 responses)</span>
-          <span>Dept. mean 4.52</span>
-          <a href="/files/econ2390_evaluation_fall2024.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics I evaluation PDF">Evaluation</a>
-        </p>
-        <details class="t2-materials">
-          <summary>Teaching materials</summary>
-          <div class="t2-material-body">
-            <div class="t2-topic">
-              <p class="t2-topic-line"><a href="/files/econ2390_review_session_1.pdf" target="_blank" rel="noopener">Regression, matching, and doubly robust estimation</a></p>
-              <p class="t2-credit">Midterm and Problem Set 1 review.</p>
-            </div>
-            <div class="t2-topic">
-              <p class="t2-topic-line"><a href="/files/econ2390_review_session_2.pdf" target="_blank" rel="noopener">Regression discontinuity and instrumental variables</a></p>
-              <p class="t2-credit">Problem Set 2 review.</p>
-            </div>
+        <div class="t2-evaluation">
+          <div class="t2-scores">
+            <span><strong>4.90/5</strong> (10 responses)</span>
+            <span>Dept. mean 4.52</span>
           </div>
-        </details>
+          <a href="/files/econ2390_evaluation_fall2024.pdf" target="_blank" rel="noopener" aria-label="Applied Econometrics I evaluation PDF">Evaluation</a>
+          <details class="t2-materials">
+            <summary>Teaching materials</summary>
+            <div class="t2-material-body">
+              <div class="t2-topic">
+                <p class="t2-topic-line"><a href="/files/econ2390_review_session_1.pdf" target="_blank" rel="noopener">Regression, matching, and doubly robust estimation</a></p>
+                <p class="t2-credit">Midterm and Problem Set 1 review.</p>
+              </div>
+              <div class="t2-topic">
+                <p class="t2-topic-line"><a href="/files/econ2390_review_session_2.pdf" target="_blank" rel="noopener">Regression discontinuity and instrumental variables</a></p>
+                <p class="t2-credit">Problem Set 2 review.</p>
+              </div>
+            </div>
+          </details>
+        </div>
       </article>
 
       <article class="t2-course">
         <h3>Using Big Data to Solve Economic and Social Problems</h3>
-        <p class="t2-meta">ECON 1000 · Undergraduate · John N. Friedman<br>Fall 2022 and 2023</p>
+        <p class="t2-meta">ECON 1000 · Undergraduate · John N. Friedman · Fall 2022 and 2023</p>
         <p class="t2-evaluation">
           <span>Fall 2023: <strong>4.10/5</strong> (40 responses)</span>
           <span>Dept. mean 4.57</span>
@@ -225,7 +230,6 @@ description: "Teaching experience, student evaluations, and econometrics materia
         </p>
       </article>
 
-      <p class="t2-evaluation-note">Evaluations report the mean response to “Overall, I rate this teaching assistant as effective” on a 1–5 scale. Response counts exclude N/A; department means refer to the same item.</p>
     </div>
   </section>
 
