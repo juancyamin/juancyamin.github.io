@@ -70,7 +70,7 @@ redirect_from:
 
   /* JMP block: separate the heading, abstract, and results with room to breathe. */
   .page__content .d2 .d2-band-jmp{padding-bottom:4.25rem}
-  .page__content .d2-jmp-head{text-align:center;max-width:1080px;margin:0 auto 2.4rem}
+  .page__content .d2-jmp-head{text-align:center;max-width:1080px;margin:0 auto 1.6rem}
   .page__content .d2 .d2-jmp-head h2{font-size:clamp(1.55rem,3vw,2.15rem);margin-bottom:.65rem}
   .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.65rem}
   .page__content .d2-abstract{max-width:920px;margin:0 auto}
@@ -79,7 +79,7 @@ redirect_from:
   .page__content .d2 .d2-jmp-head .d2-standfirst{font-size:clamp(1rem,1.6vw,1.15rem);margin:0 auto .4rem;max-width:none}
   .page__content .d2-colhead{color:#2b587a;font-size:.71rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
     margin:0 0 .45rem;padding-bottom:.35rem;border-bottom:1px solid #d6dce2}
-  .page__content .d2-results{text-align:center;max-width:920px;margin:1.7rem auto 0}
+  .page__content .d2-results{text-align:center;max-width:920px;margin:1.2rem auto 0}
   .page__content .d2 p.d2-lead{color:#444e59;font-size:.9rem;margin:0 auto .5rem;max-width:640px}
   .page__content .d2-stats{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;border-top:2px solid #2b587a;padding-top:.7rem;margin:0}
   .page__content .d2-stat-n{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.4rem;line-height:1;color:#2b587a;margin-bottom:.3rem}
@@ -123,8 +123,8 @@ redirect_from:
     .page__content .d2-two{gap:2.6rem}
     .page__content .d2 p.d2-standfirst{font-size:1rem;margin-bottom:.45rem}
     .page__content .d2 h2{font-size:1.75rem;margin-bottom:.5rem}
-    .page__content .d2-jmp-head{margin-bottom:2.25rem}
-    .page__content .d2-results{margin-top:1.6rem}
+    .page__content .d2-jmp-head{margin-bottom:1.6rem}
+    .page__content .d2-results{margin-top:1.2rem}
     .page__content .d2 p.d2-lead{font-size:.84rem}
     .page__content .d2-stat-n{font-size:1.85rem;margin-bottom:.2rem}
     .page__content .d2-stats{padding-top:.65rem}
@@ -206,13 +206,13 @@ redirect_from:
         <p class="d2-standfirst">Better targeting needs better decisions, not just better income predictions.</p>
       </header>
       <div class="d2-abstract">
-        <p class="d2-abstract-body">How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate this as a statistical decision problem in which a policymaker chooses nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. The standard plug-in rule, which treats predictions as exact, is inadmissible. I develop a nonparametric empirical Bayes rule that allocates the budget using posterior mean poverty gaps in place of estimated gaps. Its Bayes regret is bounded by the mean squared difference between its posterior mean gaps and the oracle's, so the budget and nonnegativity constraints do not slow its convergence to the oracle. The approach extends to an objective that penalizes only remaining poverty and to fixed benefit menus, with weaker guarantees. In simulations using household surveys from nine African countries, the empirical Bayes rule reaches about 1.8 times as many poor people as plug-in OLS with the same budget and achieves the same average poverty-gap reduction with 6.7 percent less spending.</p>
+        <p class="d2-abstract-body">How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate a statistical decision problem: choose nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. The standard plug-in rule, which treats predictions as exact, is inadmissible. I develop a nonparametric empirical Bayes rule that instead uses posterior mean poverty gaps. Its Bayes regret is bounded by the mean squared error in estimating these gaps, so the constraints do not slow convergence to the oracle. The approach extends to an objective that penalizes only remaining poverty and to fixed benefit menus, with weaker guarantees.</p>
       </div>
       <div class="d2-results">
         <p class="d2-lead">In simulations from nine African countries, relative to plug-in OLS targeting:</p>
         <div class="d2-stats">
           <div><span class="d2-stat-n">1.8&times;</span><p>as many poor people reached, for the same budget</p></div>
-          <div><span class="d2-stat-n">6.7%</span><p>less spending to achieve the same poverty-gap reduction</p></div>
+          <div><span class="d2-stat-n">6.7%</span><p>less spending to achieve the same average poverty-gap reduction</p></div>
         </div>
         <nav class="d2-link-row d2-link-center" aria-label="Job market paper links">
           <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper (arXiv)</a>
