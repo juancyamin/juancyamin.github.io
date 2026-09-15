@@ -133,11 +133,16 @@ yandex_site_verification :
 # Social Sharing
 twitter:
   username               : &twitter juancamiloyamin
+  card                   : summary_large_image
 facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : juan-yamin-2026.png # Open Graph/Twitter default site image
+og_image                 : juan-yamin-share.jpg # Dedicated landscape sharing card
+og_image_width           : 1200
+og_image_height          : 630
+og_image_type            : image/jpeg
+og_image_alt             : "Juan C. Yamin, Ph.D. candidate in Economics at Brown University, with a small portrait"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
