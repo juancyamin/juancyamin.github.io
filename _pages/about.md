@@ -55,16 +55,24 @@ redirect_from:
   .page__content .d2 p.d2-standfirst{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.06rem,1.6vw,1.2rem);font-weight:600;line-height:1.45;margin:0 0 .7rem}
 
   /* hero */
-  .page__content .d2-hero-grid{align-items:center;display:grid;gap:3rem;grid-template-columns:minmax(0,1fr) minmax(230px,320px)}
+  .page__content .d2-hero-grid{display:grid;column-gap:3rem;grid-template-columns:minmax(0,1fr) minmax(230px,320px);
+    grid-template-areas:"kicker ." "bio photo" "profiles ."}
+  .page__content .d2-hero-grid > .d2-kicker{grid-area:kicker}
+  .page__content .d2-hero-bio{grid-area:bio;min-width:0}
+  .page__content .d2-hero-grid > .d2-profile-row{grid-area:profiles}
   .page__content .d2 p.d2-intro{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.08rem,1.7vw,1.28rem);line-height:1.5;max-width:640px;margin:0 0 .8rem}
   .page__content .d2 p.d2-committee{color:#5d6975;font-size:.95rem;line-height:1.5;margin:.5rem 0 .4rem}
   .page__content .d2 p.d2-committee a{color:#444e59;border-bottom:1px solid #c7d0d9}
   .page__content .d2 p.d2-committee a:hover{color:#2b587a;border-color:currentColor}
-  .page__content .d2-photo{margin:0;width:100%}
-  .page__content .d2-photo-frame{aspect-ratio:5 / 6;overflow:hidden}
+  .page__content .d2-photo{grid-area:photo;position:relative;display:block;margin:0;width:100%;min-height:0}
+  /* Share the biography row so the portrait ends at the main-link underlines. */
+  .page__content .d2-photo-frame{position:absolute;inset:.45rem 0 0;overflow:hidden;border-radius:12px}
   /* Frame the original portrait around the head and shoulders. */
   .page__content .d2-photo img{display:block;height:100%;width:100%;object-fit:cover;object-position:50% 16%;transform:scale(1.55)}
-  .page__content .d2-photo figcaption{width:100%;margin:.35rem 0 0;color:#747b82;font-size:8px;line-height:1.4;text-align:center}
+  .page__content .d2-photo figcaption{position:absolute;top:100%;left:0;width:100%;margin:.35rem 0 0;color:#747b82;font-size:8px;line-height:1.4;text-align:center}
+  @media (min-width:1100px) and (min-height:601px){
+    .page__content .d2-photo{width:calc(100% + 20px);transform:translateX(24px)}
+  }
   .page__content .d2-link-row{align-items:center;display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;margin-top:1.1rem}
   .page__content .d2-link-row a{align-items:center;border-bottom:1px solid currentColor;color:#202833;display:inline-flex;font-size:.95rem;font-weight:700;line-height:1.35;min-height:2.35rem;padding:.38rem 0 .2rem}
   .page__content .d2-link-row a.d2-primary{color:#2b587a}
@@ -168,8 +176,9 @@ redirect_from:
     .page__content .d2-next{display:none}
     .page__content .d2-two,.page__content .d2-two-jmp,.page__content .d2-two-sw{grid-template-columns:minmax(0,1fr);gap:1.6rem}
     .page__content .d2-hero-grid,.page__content .d2-two > *{min-width:0}
-    .page__content .d2-hero-grid{gap:1.4rem;grid-template-columns:1fr}
-    .page__content .d2-photo{max-width:180px;order:-1}
+    .page__content .d2-hero-grid{gap:0;grid-template-columns:1fr;grid-template-areas:"photo" "kicker" "bio" "profiles"}
+    .page__content .d2-photo{max-width:180px;aspect-ratio:5 / 6;margin-bottom:1.8rem}
+    .page__content .d2-photo-frame{inset:0}
     .page__content .d2-foot{position:static;margin:2rem -1.2rem -2.5rem}
   }
 </style>
@@ -178,8 +187,8 @@ redirect_from:
 
   <section class="d2-band" id="top" aria-labelledby="home-title">
     <div class="d2-inner d2-hero-grid">
-      <div>
-        <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
+      <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
+      <div class="d2-hero-bio">
         <h1 id="home-title">Juan C. Yamin</h1>
         <p class="d2-intro">I am a Ph.D. candidate in the Department of Economics at Brown University, with primary interests in applied econometrics.</p>
         <p class="d2-intro">I develop methods for using data to improve economic decisions. My work brings together statistical decision theory, causal inference, and experimental design.</p>
@@ -192,12 +201,12 @@ redirect_from:
           <a class="d2-primary d2-internal" href="https://arxiv.org/abs/2506.18188">Job Market Paper</a>
           <a class="d2-primary d2-internal" href="mailto:juan_yamin_silva@brown.edu">Email</a>
         </nav>
-        <nav class="d2-profile-row" aria-label="Profile links">
-          <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ">Google Scholar</a>
-          <a href="https://github.com/juancyamin">GitHub</a>
-          <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
-        </nav>
       </div>
+      <nav class="d2-profile-row" aria-label="Profile links">
+        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ">Google Scholar</a>
+        <a href="https://github.com/juancyamin">GitHub</a>
+        <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
+      </nav>
       <figure class="d2-photo">
         <div class="d2-photo-frame"><img src="/images/juan-yamin-2026.png" alt="Juan C. Yamin" width="1086" height="1448"></div>
         <figcaption>Photo by Carolina Flórez</figcaption>
