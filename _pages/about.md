@@ -55,15 +55,16 @@ redirect_from:
   .page__content .d2 p.d2-standfirst{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.06rem,1.6vw,1.2rem);font-weight:600;line-height:1.45;margin:0 0 .7rem}
 
   /* hero */
-  .page__content .d2-hero-grid{align-items:center;display:grid;gap:2.5rem;grid-template-columns:minmax(0,1fr) minmax(190px,220px)}
+  .page__content .d2-hero-grid{align-items:center;display:grid;gap:3rem;grid-template-columns:minmax(0,1fr) minmax(230px,320px)}
   .page__content .d2 p.d2-intro{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.08rem,1.7vw,1.28rem);line-height:1.5;max-width:640px;margin:0 0 .8rem}
   .page__content .d2 p.d2-committee{color:#5d6975;font-size:.95rem;line-height:1.5;margin:.5rem 0 .4rem}
   .page__content .d2 p.d2-committee a{color:#444e59;border-bottom:1px solid #c7d0d9}
   .page__content .d2 p.d2-committee a:hover{color:#2b587a;border-color:currentColor}
   .page__content .d2-photo{margin:0;width:100%}
-  .page__content .d2-photo-frame{aspect-ratio:1;overflow:hidden}
+  .page__content .d2-photo-frame{aspect-ratio:5 / 6;overflow:hidden}
   /* Frame the original portrait around the head and shoulders. */
   .page__content .d2-photo img{display:block;height:100%;width:100%;object-fit:cover;object-position:50% 16%;transform:scale(1.55)}
+  .page__content .d2-photo figcaption{width:100%;margin:.35rem 0 0;color:#747b82;font-size:10px;line-height:1.4;text-align:center}
   .page__content .d2-link-row{align-items:center;display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;margin-top:1.1rem}
   .page__content .d2-link-row a{align-items:center;border-bottom:1px solid currentColor;color:#202833;display:inline-flex;font-size:.95rem;font-weight:700;line-height:1.35;min-height:2.35rem;padding:.38rem 0 .2rem}
   .page__content .d2-link-row a.d2-primary{color:#2b587a}
@@ -168,7 +169,7 @@ redirect_from:
     .page__content .d2-two,.page__content .d2-two-jmp,.page__content .d2-two-sw{grid-template-columns:minmax(0,1fr);gap:1.6rem}
     .page__content .d2-hero-grid,.page__content .d2-two > *{min-width:0}
     .page__content .d2-hero-grid{gap:1.4rem;grid-template-columns:1fr}
-    .page__content .d2-photo{max-width:150px;order:-1}
+    .page__content .d2-photo{max-width:180px;order:-1}
     .page__content .d2-foot{position:static;margin:2rem -1.2rem -2.5rem}
   }
 </style>
@@ -199,6 +200,7 @@ redirect_from:
       </div>
       <figure class="d2-photo">
         <div class="d2-photo-frame"><img src="/images/juan-yamin-2026.png" alt="Juan C. Yamin" width="1086" height="1448"></div>
+        <figcaption>Photo by Carolina Flórez</figcaption>
       </figure>
     </div>
     <a class="d2-next" href="#job-market-paper"><span>Job Market Paper</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
