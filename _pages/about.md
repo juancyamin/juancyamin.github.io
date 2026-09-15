@@ -60,7 +60,11 @@ redirect_from:
   .page__content .d2 p.d2-committee{color:#5d6975;font-size:.95rem;line-height:1.5;margin:.5rem 0 .4rem}
   .page__content .d2 p.d2-committee a{color:#444e59;border-bottom:1px solid #c7d0d9}
   .page__content .d2 p.d2-committee a:hover{color:#2b587a;border-color:currentColor}
-  .page__content .d2-photo{margin:0;width:100%} .page__content .d2-photo img{display:block;height:auto;width:100%}
+  .page__content .d2-photo{margin:0;width:100%}
+  .page__content .d2-photo-frame{aspect-ratio:1;overflow:hidden}
+  /* Frame the original portrait around the head and shoulders. */
+  .page__content .d2-photo img{display:block;height:100%;width:100%;object-fit:cover;object-position:50% 16%;transform:scale(1.55)}
+  .page__content .d2-photo figcaption{width:100%;margin:.35rem 0 0;color:#747b82;font-size:10px;line-height:1.4;text-align:center}
   .page__content .d2-link-row{align-items:center;display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;margin-top:1.1rem}
   .page__content .d2-link-row a{align-items:center;border-bottom:1px solid currentColor;color:#202833;display:inline-flex;font-size:.95rem;font-weight:700;line-height:1.35;min-height:2.35rem;padding:.38rem 0 .2rem}
   .page__content .d2-link-row a.d2-primary{color:#2b587a}
@@ -194,7 +198,10 @@ redirect_from:
           <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
         </nav>
       </div>
-      <figure class="d2-photo"><img src="/images/profile.jpg" alt="Juan C. Yamin"></figure>
+      <figure class="d2-photo">
+        <div class="d2-photo-frame"><img src="/images/juan-yamin-2026.png" alt="Juan C. Yamin" width="1086" height="1448"></div>
+        <figcaption>Photo by Carolina Flórez</figcaption>
+      </figure>
     </div>
     <a class="d2-next" href="#job-market-paper"><span>Job Market Paper</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
   </section>
