@@ -198,7 +198,7 @@ redirect_from:
           <a href="https://economics.brown.edu/people/jonathan-roth">Jonathan Roth</a></p>
         <nav class="d2-link-row" aria-label="Main links">
           <a class="d2-primary d2-internal" href="/files/Juan_Yamin_CV.pdf">CV</a>
-          <a class="d2-primary d2-internal" href="https://arxiv.org/abs/2506.18188">Job Market Paper</a>
+          <a class="d2-primary d2-internal" href="/files/poverty-targeting-with-imperfect-information.pdf">Job Market Paper</a>
           <a class="d2-primary d2-internal" href="mailto:juan_yamin_silva@brown.edu">Email</a>
         </nav>
       </div>
@@ -219,7 +219,7 @@ redirect_from:
     <div class="d2-inner">
       <header class="d2-jmp-head">
         <p class="d2-label">Job Market Paper</p>
-        <h2 id="jmp-title"><a href="https://arxiv.org/abs/2506.18188">Poverty Targeting with Imperfect Information</a></h2>
+        <h2 id="jmp-title"><a href="/files/poverty-targeting-with-imperfect-information.pdf">Poverty Targeting with Imperfect Information</a></h2>
         <p class="d2-standfirst">Better targeting needs better decisions, not just better income predictions.</p>
       </header>
       <div class="d2-abstract">
@@ -232,7 +232,7 @@ redirect_from:
           <div><span class="d2-stat-n">6.7%</span><p>less spending to achieve the same average poverty-gap reduction</p></div>
         </div>
         <nav class="d2-link-row d2-link-center" aria-label="Job market paper links">
-          <a class="d2-primary" href="https://arxiv.org/abs/2506.18188">Paper (arXiv)</a>
+          <a class="d2-primary" href="/files/poverty-targeting-with-imperfect-information.pdf">Paper</a>
         </nav>
       </div>
     </div>
@@ -249,10 +249,10 @@ redirect_from:
       </div>
       <div class="d2-research-list">
         <article class="d2-entry">
-          <h3><a href="/research/#when-and-how-to-pilot">When and How to Pilot</a></h3>
+          <h3><a href="/files/when-and-how-to-pilot.pdf">When and How to Pilot</a></h3>
           <p>A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
           <nav class="d2-link-row" aria-label="Pilot paper links">
-            <a class="d2-primary" href="https://arxiv.org/abs/2607.16982">Paper (arXiv)</a>
+            <a class="d2-primary" href="/files/when-and-how-to-pilot.pdf">Paper</a>
             <a href="#software">Software</a>
           </nav>
         </article>

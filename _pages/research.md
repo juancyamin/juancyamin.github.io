@@ -471,7 +471,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   <section class="r2-section">
     <p class="r2-label">Job Market Paper</p>
     <article class="r2-paper" id="poverty-targeting">
-      <h2 class="r2-paper-title"><a href="https://arxiv.org/abs/2506.18188">Poverty Targeting with Imperfect Information</a></h2>
+      <h2 class="r2-paper-title"><a href="/files/poverty-targeting-with-imperfect-information.pdf">Poverty Targeting with Imperfect Information</a></h2>
       <p class="r2-question">Is it enough to target the households that look poorest?</p>
       <p class="r2-answer">Some households look especially poor because their incomes are underestimated. I develop a targeting method that accounts for this uncertainty. In simulations, it achieves the same poverty reduction as standard targeting with 6.7 percent less spending.</p>
       <nav class="r2-links" aria-label="Poverty Targeting with Imperfect Information links">
@@ -487,7 +487,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
   <section class="r2-section">
     <p class="r2-label">Working Papers</p>
     <article class="r2-paper" id="when-and-how-to-pilot">
-      <h2 class="r2-paper-title"><a href="https://arxiv.org/abs/2607.16982">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h2>
+      <h2 class="r2-paper-title"><a href="/files/when-and-how-to-pilot.pdf">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h2>
       <p class="r2-question">How much should a small pilot change the experiment that follows?</p>
       <p class="r2-answer">A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
       <nav class="r2-links" aria-label="When and How to Pilot: Design Rules for Two-Wave Experiments links">

@@ -149,7 +149,7 @@ description: "Open-source R and Python software by Juan C. Yamin for Conditional
       <div class="s2-link-row" role="group" aria-label="cmrdesign resources">
         <a href="https://juancyamin.github.io/cmrdesign/" target="_blank" rel="noopener">Documentation</a>
         <a href="https://github.com/juancyamin/cmrdesign" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://arxiv.org/abs/2607.16982" target="_blank" rel="noopener">Paper</a>
+        <a href="/files/when-and-how-to-pilot.pdf" target="_blank" rel="noopener">Paper</a>
         <details class="s2-citation" id="citation-title">
           <summary>Citation</summary>
           <pre><code>@misc{yamin2026pilot,
