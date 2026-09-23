@@ -220,7 +220,7 @@ redirect_from:
       <header class="d2-jmp-head">
         <p class="d2-label">Job Market Paper</p>
         <h2 id="jmp-title"><a href="/files/poverty-targeting-with-imperfect-information.pdf">Poverty Targeting with Imperfect Information</a></h2>
-        <p class="d2-standfirst">Better targeting needs better decisions, not just better income predictions.</p>
+        <p class="d2-standfirst">Is it enough to target the households that look poorest?</p>
       </header>
       <div class="d2-abstract">
         <p class="d2-abstract-body">How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate this as a statistical decision problem in which a policymaker chooses nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. I show that the standard plug-in rule, which treats predictions as exact, is inadmissible. I then develop a nonparametric empirical Bayes allocation rule that replaces the estimated gaps with posterior mean poverty gaps. Its Bayes regret is bounded by the mean squared difference between its posterior mean gaps and the oracle's, so the budget and nonnegativity constraints do not slow its convergence to the oracle. The approach extends, with weaker guarantees, to a planner who cares only about how far households remain below the poverty line after transfers and to programs that pay a fixed set of benefit amounts.</p>
