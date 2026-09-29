@@ -1,9 +1,9 @@
-% Academic CV approved for website publication by Juan on 2026-09-14.
+% Academic CV approved by Juan for website publication on 2026-09-28.
 % Public PDF: https://juancyamin.github.io/files/Juan_Yamin_CV.pdf
 \documentclass[11pt,letterpaper]{article}
 
 % Update this date whenever the CV is revised.
-\newcommand{\cvdate}{2026-09-22}
+\newcommand{\cvdate}{2026-09-28}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -75,11 +75,12 @@
   {\fontsize{21}{23}\selectfont\bfseries Juan C. Yamin}\par
   \vspace{0.14em}
   Department of Economics, Brown University\par
+  Office: 70 Waterman Street, Room 204\par
   \cvlink{mailto:juan_yamin_silva@brown.edu}{juan\_yamin\_silva@brown.edu}
   \;\textbar\;
   \cvlink{https://juancyamin.github.io/}{juancyamin.github.io}
   \;\textbar\;
-  \cvlink{https://github.com/juancyamin}{github.com/juancyamin}\par
+  \cvlink{tel:+14012435519}{+1 (401) 243-5519}\par
   \vspace{0.17em}
   \textbf{2026--27 Economics Job Market Candidate}
 \end{center}
@@ -87,14 +88,23 @@
 
 \begin{tabularx}{\textwidth}{@{}>{\bfseries}p{1.62in}X@{}}
 Fields: & Econometrics, Development Economics \\
-Research interests: & Statistical decision theory, empirical Bayes, experimental design, causal inference \\
+Research interests: & Statistical decision theory, experimental design, causal inference \\
 \end{tabularx}\par
+\vspace{0.30em}
+{\fontsize{10}{11.8}\selectfont
+\begin{tabularx}{\textwidth}{@{}p{1.62in}X@{}}
+Placement Director: & Toru Kitagawa
+\;\textbar\;\cvlink{mailto:toru_kitagawa@brown.edu}{toru\_kitagawa@brown.edu} \\
+Placement Manager: & Angelica Spertini
+\;\textbar\;\cvlink{mailto:angelica_spertini@brown.edu}{angelica\_spertini@brown.edu}
+\;\textbar\;401-863-2465
+\end{tabularx}\par}
 
 \section{Dissertation Committee and References}
 {\fontsize{10}{11.8}\selectfont
 \begin{tabularx}{\textwidth}{@{}X@{\hspace{0.15in}}X@{\hspace{0.15in}}X@{}}
-\textbf{\cvlink{https://economics.brown.edu/people/toru-kitagawa}{Toru Kitagawa}} &
-\textbf{\cvlink{https://soonwookwon.github.io/}{Soonwoo Kwon}} &
+\textbf{\cvlink{https://economics.brown.edu/people/toru-kitagawa}{Toru Kitagawa} (Chair)} &
+\textbf{\cvlink{https://economics.brown.edu/people/soonwoo-kwon}{Soonwoo Kwon}} &
 \textbf{\cvlink{https://economics.brown.edu/people/jonathan-roth}{Jonathan Roth}} \\
 Professor of Economics & Assistant Professor of Economics & Professor of Economics \\
 Brown University & Brown University & Brown University \\
@@ -114,56 +124,25 @@ Brown University & Brown University & Brown University \\
 
 \section{Job Market Paper}
 \papertitle{https://juancyamin.github.io/files/poverty-targeting-with-imperfect-information.pdf}{Poverty Targeting with Imperfect Information}
-Targeted antipoverty programs in developing countries must rely on estimated
-rather than observed income, which leads to substantial targeting errors. I
-formulate the allocation of a fixed transfer budget based on those estimates as
-a statistical decision problem and show that the standard plug-in rule is
-inadmissible. I then develop a nonparametric empirical Bayes rule whose Bayes
-regret is bounded by the estimation error of the posterior mean poverty gaps
-and therefore inherits their rate of convergence. In simulations using household
-surveys from nine African countries, the rule reaches about 1.8 times as many
-poor people as the plug-in rule and matches its poverty-gap reduction with
-6.7 percent less spending.
+I study how antipoverty programs should allocate transfers when income is known only through noisy predictions. I show that the standard plug-in rule is inadmissible. I then develop a nonparametric empirical Bayes rule whose Bayes regret is bounded by the mean squared error in estimating oracle posterior mean poverty gaps. In simulations using surveys from nine African countries, the rule reaches about 1.8 times as many poor people as plug-in OLS with the same budget and achieves the same average poverty-gap reduction with 6.7 percent less spending.
 \paperend
 
 \section{Other Working Papers}
 \papertitle{https://juancyamin.github.io/files/when-and-how-to-pilot.pdf}{When and How to Pilot: Design Rules for Two-Wave Experiments}
-% Keep this shorter abstract compact without changing its wording or type size.
-\looseness=-1
-A pilot before the main wave yields variance estimates that can guide how to
-split the main sample between treatment and control.
-Balanced assignment ignores this evidence. Feasible Neyman allocation uses it,
-but with a small pilot it overreacts to noise and can do worse than balance. I
-propose a Conditional Minimax Regret (CMR) rule that minimizes worst-case regret
-over a finite-sample confidence set for the two variances. CMR retains balance's
-worst-case protection with high probability,
-converges to the Neyman allocation as the pilot grows, and attains the
-minimax-regret rate. In simulations
-calibrated to four field experiments, CMR avoids feasible Neyman's severe
-small-pilot losses while matching its large-pilot gains.
+I propose a Conditional Minimax Regret (CMR) rule for treatment assignment in two-wave experiments. CMR minimizes worst-case regret over a finite-sample confidence set for treatment and control variances. It retains the worst-case protection of balanced assignment with high probability, converges to the Neyman allocation as the pilot grows, and attains the minimax-regret rate up to constants. In simulations calibrated to four field experiments, it avoids the severe small-pilot losses of feasible Neyman allocation while matching its large-pilot gains.
 \paperend
 
 \needspace{5\baselineskip}
 \textbf{Two-Way Effects Models: A Nonparametric Empirical Bayes Approach}\par
 with Cole Davis \hfill \textit{Draft available upon request}\par\vspace{0.13em}
-We develop a nonparametric empirical Bayes framework for models with unit and
-cluster effects. The framework allows unit effects to depend on latent cluster
-effects, relaxing independence restrictions in shrinkage estimation.
+We develop nonparametric empirical Bayes shrinkage estimators for AKM worker and firm effects. We also estimate how the mean and dispersion of worker effects vary with firm wage premia, accounting for correlated estimation errors.
 \paperend
 
 \section{Publications}
 \papertitle{https://juancyamin.github.io/files/subnational-alignment-corruption.pdf}{Birds of a Feather Collude Together: Subnational Alignment and Corruption}
 with Leopoldo Fergusson, Arturo Harker, and Carlos Molina\par
 \textit{Forthcoming in the American Political Science Review}\par\vspace{0.13em}
-Using close elections in Colombia, we study how partisan alignment between
-municipal mayors and departmental governors affects corruption. Alignment
-increases the fabrication of ``ghost'' students, which inflates education
-transfers to municipalities, by 0.3 standard deviations, without improving
-genuine enrollment or student performance. It also raises discretionary hiring,
-patronage-based outsourcing, electoral fraud risk, and cross-level appointments
-of politicians' relatives. Aligned politicians nonetheless enjoy better future
-electoral prospects.
-
+Using a regression discontinuity design in Colombia, we find that partisan alignment between mayors and governors increases the share of ``ghost'' students by about 0.3 standard deviations, inflating education transfers without improving genuine enrollment or student performance. Alignment also increases patronage and electoral fraud risk, while aligned politicians enjoy better future electoral prospects.
 \newpage
 
 \section{Software}
@@ -182,28 +161,26 @@ stratified experiments.
 \section{Research and Industry Experience}
 \experience{Brown University, Department of Economics}{June 2023--Jan. 2026}
   {Research Assistant to Soonwoo Kwon, Providence, RI}
-  {Conducted simulation analyses and empirical applications for research on
-   shrinkage estimation of fixed effects, inference in regression discontinuity
-   designs under monotonicity, and bias-aware inference in regularized regression
-   models.}
+  {Conducted simulations and empirical applications on fixed-effect shrinkage,
+   regression discontinuity inference under monotonicity, and bias-aware inference
+   in regularized regression.}
 \experience{Amazon, Delivery Experience}{May--Aug. 2025}
   {Economist Intern, Bellevue, WA}
-  {Owned a research project evaluating a nationwide U.S. delivery-speed program.
-   Formulated the causal question, acquired data using SQL, and implemented
+  {Led a research project evaluating a nationwide U.S. delivery-speed program.
+   Acquired data using SQL and implemented
    difference-in-differences and shift-share IV designs in Python to
-   estimate direct and geographic spillover effects and quantify the program's
-   total effect on customer delivery experience. Presented findings and
-   recommendations to senior economists and program decision-makers.}
+   estimate direct and geographic spillover effects on customer delivery
+   experience. Presented findings to senior economists and program decision-makers.}
 \experience{Universidad de los Andes, Department of Economics}{Aug. 2017--July 2021}
   {Research Assistant to Leopoldo Fergusson and James A. Robinson, Bogot\'a, Colombia}
-  {Built and linked administrative, archival, and web-scraped datasets for research
-   on conflict, corruption, and state capacity. Implemented instrumental-variables
-   and regression-discontinuity designs, examined mechanisms and heterogeneous
-   effects, and conducted robustness and replication checks. Contributed empirical
-   analysis and writing to Acemoglu, Fergusson, and Johnson's study of population
-   growth and conflict, published in the \textit{Review of Economic Studies}.}
+  {Conducted empirical analysis for Acemoglu, Fergusson, and Johnson's study of
+   population growth and conflict, published in the \textit{Review of Economic Studies}.
+   Built and linked administrative, archival, and web-scraped datasets across
+   projects on conflict, corruption, and state capacity. Applied instrumental-variables
+   and regression-discontinuity designs and estimated panel-data models with
+   two-way fixed effects.}
 
-\section{Selected Presentations}
+\section{Conference Presentations}
 \presentation{Midwest Econometrics Group Annual Meeting, Cincinnati}{2026}
   {Poverty Targeting with Imperfect Information \textnormal{(accepted for presentation)}}
 \presentation{World Congress of the Econometric Society, Seoul}{2025}
@@ -212,7 +189,7 @@ stratified experiments.
   {When and How to Pilot: Design Rules for Two-Wave Experiments}
 
 \section{Awards and Fellowships}
-\datedline{Merit Dissertation Fellowship, Department of Economics, Brown University}{2026}
+\datedline{Merit Dissertation Fellowship, Department of Economics, Brown University}{Fall 2026}
 \datedline{International Travel Fund, Graduate School, Brown University}{2025}
 \datedline{Conference Travel Fund, Graduate School, Brown University}{2025}
 
@@ -233,7 +210,7 @@ stratified experiments.
 
 \section{Technical Skills and Languages}
 \begin{tabularx}{\textwidth}{@{}>{\bfseries}p{0.85in}X@{}}
-Software: & R, Python, Stata, MATLAB, SQL, Git, LaTeX \\
+Tools: & R, Python, Stata, MATLAB, SQL, Git, LaTeX \\
 Languages: & Spanish (native), English (fluent), French (fluent)
 \end{tabularx}\par
 
