@@ -541,6 +541,16 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
       <div class="r2-presentation-row">
         <p class="r2-year">2026</p>
         <div>
+          <p class="r2-venue">Conference on Digital Experimentation (CODE@MIT), Cambridge</p>
+          <p class="r2-talk">
+            When and How to Pilot: Design Rules for Two-Wave Experiments<br>
+            <span class="r2-presentation-note">Accepted for presentation &middot; November 13&ndash;14, 2026</span>
+          </p>
+        </div>
+      </div>
+      <div class="r2-presentation-row">
+        <p class="r2-year">2026</p>
+        <div>
           <p class="r2-venue">Midwest Econometrics Group Annual Meeting, Cincinnati</p>
           <p class="r2-talk">
             Poverty Targeting with Imperfect Information<br>
