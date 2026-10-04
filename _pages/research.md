@@ -497,7 +497,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
           </p></div>
         </details>
         <a href="https://arxiv.org/abs/2607.16982">arXiv</a>
-        <a href="/files/when-and-how-to-pilot-code-2026-extended-abstract.pdf">CODE 2026 Extended Abstract</a>
+        <a href="/files/when-and-how-to-pilot-code-2026-extended-abstract.pdf">CODE@MIT Abstract</a>
         <a href="/software/">Software</a>
       </nav>
     </article>

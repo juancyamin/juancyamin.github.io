@@ -253,7 +253,6 @@ redirect_from:
           <p>A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
           <nav class="d2-link-row" aria-label="Pilot paper links">
             <a class="d2-primary" href="/files/when-and-how-to-pilot.pdf">Paper</a>
-            <a href="/files/when-and-how-to-pilot-code-2026-extended-abstract.pdf">CODE 2026 Extended Abstract</a>
             <a href="#software">Software</a>
           </nav>
         </article>
