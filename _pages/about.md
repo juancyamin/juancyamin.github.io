@@ -223,14 +223,9 @@ redirect_from:
         <p class="d2-standfirst">Is it enough to target the households that look poorest?</p>
       </header>
       <div class="d2-abstract">
-        <p class="d2-abstract-body">How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate this as a statistical decision problem in which a policymaker chooses nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. I show that the standard plug-in rule, which treats predictions as exact, is inadmissible. I then develop a nonparametric empirical Bayes allocation rule that replaces the estimated gaps with posterior mean poverty gaps. The rule's Bayes regret vanishes at least as fast as the mean squared error in estimating posterior mean poverty gaps, despite the budget and nonnegativity constraints. The approach extends, with weaker guarantees, to a policymaker who cares only about how far households remain below the poverty line after transfers and to programs that pay a fixed set of benefit amounts.</p>
+        <p class="d2-abstract-body">How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate this as a statistical decision problem in which a policymaker chooses nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. I show that the standard plug-in rule, which treats predictions as exact, is inadmissible. I then develop a nonparametric empirical Bayes allocation rule that replaces the estimated gaps with posterior mean poverty gaps. The rule's Bayes regret vanishes at least as fast as the mean squared error in estimating posterior mean poverty gaps, despite the budget and nonnegativity constraints. The approach extends, with weaker guarantees, to a policymaker who cares only about how far households remain below the poverty line after transfers and to programs that pay a fixed set of benefit amounts. In simulations using household surveys from nine African countries, the empirical Bayes rule reaches about 1.8 times as many poor people as plug-in OLS with the same budget. It achieves the same average poverty gap reduction with 6.1% less spending or a 42% smaller training sample.</p>
       </div>
       <div class="d2-results">
-        <p class="d2-lead">In simulations using household surveys from nine African countries, relative to plug-in OLS targeting:</p>
-        <div class="d2-stats">
-          <div><span class="d2-stat-n">1.8&times;</span><p>as many poor people reached, for the same budget</p></div>
-          <div><span class="d2-stat-n">6.7%</span><p>less spending to achieve the same average poverty-gap reduction</p></div>
-        </div>
         <nav class="d2-link-row d2-link-center" aria-label="Job market paper links">
           <a class="d2-primary" href="/files/poverty-targeting-with-imperfect-information.pdf">Paper</a>
         </nav>
