@@ -87,6 +87,9 @@ redirect_from:
   .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.65rem}
   .page__content .d2-abstract{max-width:980px;margin:0 auto}
   .page__content .d2-abstract p.d2-abstract-body{text-align:left;margin:0;color:#444e59}
+  @media (min-width:781px){
+    .page__content .d2-abstract p.d2-abstract-body{text-align:justify;text-align-last:left}
+  }
   .page__content .d2-band-jmp > .d2-inner{max-width:1080px}
   .page__content .d2 .d2-jmp-head .d2-standfirst{font-size:clamp(1rem,1.6vw,1.15rem);margin:0 auto .4rem;max-width:none}
   .page__content .d2-colhead{color:#2b587a;font-size:.71rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
