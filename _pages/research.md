@@ -556,8 +556,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
         <div>
           <p class="r2-venue">Midwest Econometrics Group Annual Meeting, Cincinnati</p>
           <p class="r2-talk">
-            Poverty Targeting with Imperfect Information<br>
-            <span class="r2-presentation-note">Accepted for presentation &middot; October 9&ndash;10, 2026</span>
+            Poverty Targeting with Imperfect Information
           </p>
         </div>
       </div>
