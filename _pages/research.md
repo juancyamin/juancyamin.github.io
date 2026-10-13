@@ -472,6 +472,7 @@ description: "Research by Juan C. Yamin on econometric methods for decisions mad
     <p class="r2-label">Job Market Paper</p>
     <article class="r2-paper" id="poverty-targeting">
       <h2 class="r2-paper-title"><a href="/files/poverty-targeting-with-imperfect-information.pdf">Poverty Targeting with Imperfect Information</a></h2>
+      <p class="r2-meta">Best Student Paper Award, MEG 2026</p>
       <p class="r2-question">Is it enough to target the households that look poorest?</p>
       <p class="r2-answer">Some households look especially poor because their incomes are underestimated. I develop a targeting method that accounts for this uncertainty. In simulations, it achieves the same poverty reduction as standard targeting with 6.1 percent less spending.</p>
       <nav class="r2-links" aria-label="Poverty Targeting with Imperfect Information links">
