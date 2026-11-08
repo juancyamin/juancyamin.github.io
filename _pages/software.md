@@ -14,13 +14,7 @@ description: "cmrdesign software for pilot-informed experimental design, with R 
       <a href="/software/" aria-current="page">Software</a>
       <a href="/teaching/">Teaching</a>
     </nav>
-  </header><nav class="contact" aria-label="CV and contact links">
-        <a href="https://juancyamin.github.io/files/Juan_Yamin_CV.pdf" target="_blank" rel="noopener">CV</a>
-        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://github.com/juancyamin" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/juan-c-yamin/" target="_blank" rel="noopener">LinkedIn</a>
-      </nav><main id="main-content"><h1 class="page-title">Software</h1><section class="content-grid"><div class="section-label"><h2>R and Python</h2></div><div class="content-column"><div id="software-examples" data-language="r">
+  </header><main id="main-content"><h1 class="page-title">Software</h1><section class="content-grid"><div class="section-label"><h2>R and Python</h2></div><div class="content-column"><div id="software-examples" data-language="r">
 
   <div class="s3-main">
 

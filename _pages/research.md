@@ -14,13 +14,7 @@ description: "Research papers by Juan C. Yamin, with abstracts, papers and prese
       <a href="/software/">Software</a>
       <a href="/teaching/">Teaching</a>
     </nav>
-  </header><nav class="contact" aria-label="CV and contact links">
-        <a href="https://juancyamin.github.io/files/Juan_Yamin_CV.pdf" target="_blank" rel="noopener">CV</a>
-        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://github.com/juancyamin" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/juan-c-yamin/" target="_blank" rel="noopener">LinkedIn</a>
-      </nav><main id="main-content"><h1 class="page-title">Research</h1><section class="content-grid"><div class="section-label"><h2>Working papers</h2></div><div class="content-column"><article class="research-paper" id="poverty-targeting">
+  </header><main id="main-content"><h1 class="page-title">Research</h1><section class="content-grid"><div class="section-label"><h2>Working papers</h2></div><div class="content-column"><article class="research-paper" id="poverty-targeting">
       <h3 class="paper-title"><a href="https://juancyamin.github.io/files/poverty-targeting-with-imperfect-information.pdf" target="_blank" rel="noopener">Poverty Targeting with Imperfect Information</a></h3>
       <p class="metadata">Best Student Paper Award, MEG 2026</p>
       <p class="question">Is it enough to target the households that look poorest?</p>

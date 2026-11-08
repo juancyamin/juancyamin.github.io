@@ -4,7 +4,7 @@
     --blue:#2b587a; --blue-hover:#173b56; --rule:#d6dce2;
     --serif:Georgia,'Times New Roman',serif;
     --sans:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
-    --portrait-width:164px; --paper-gap:28px;
+    --portrait-width:188px; --paper-gap:28px;
     color-scheme:light; color:var(--ink); background:var(--paper);
     font:16px/1.6 var(--sans); padding:38px 44px 28px; box-sizing:border-box;
   }
@@ -19,16 +19,16 @@
   .site .pages {display:flex;gap:25px;flex-wrap:wrap;font-size:15px}
   .site .introduction {display:grid;grid-template-columns:minmax(0,1fr) var(--portrait-width);gap:44px;padding:29px 0 30px;align-items:start}
   .site .bio {grid-column:1;grid-row:1;min-width:0}
-  .site .research-intro {font:400 20px/1.52 var(--serif);max-width:55ch;color:var(--ink)}
-  .site .appointment {font-size:15px;line-height:1.6;color:var(--body);margin-top:17px;max-width:66ch}
-  .site .contact {display:flex;align-items:baseline;flex-wrap:wrap;column-gap:21px;row-gap:7px;margin-top:19px;font-size:14px}
+  .site .research-intro {font:400 22px/1.52 var(--serif);max-width:55ch;color:var(--ink)}
+  .site .appointment {font-size:17px;line-height:1.6;color:var(--body);margin-top:17px;max-width:66ch}
+  .site .contact {display:flex;align-items:baseline;flex-wrap:wrap;column-gap:21px;row-gap:7px;margin-top:19px;font-size:16px}
   .site .contact a {font-weight:600;white-space:nowrap;padding:3px 0}
   .site figure {grid-column:2;grid-row:1;width:var(--portrait-width)}
   .site .portrait {width:100%;aspect-ratio:5/6;background-image:var(--photo);background-size:428.5714% auto;background-position:91.30435% 50%}
-  .site figcaption {font:11px/1.4 var(--sans);color:var(--muted);margin-top:6px}
-  .site .research {display:grid;grid-template-columns:138px minmax(0,1fr);gap:34px;border-top:1px solid var(--rule);padding-top:25px}
-  .site .research-label h2 {font:500 15px/1.4 var(--sans);color:var(--ink)}
-  .site .research-label a {display:inline-block;font-size:13px;margin-top:10px}
+  .site figcaption {font:10px/1.4 var(--sans);color:var(--muted);margin-top:6px;text-align:center}
+  .site .research {display:grid;grid-template-columns:168px minmax(0,1fr);gap:34px;border-top:1px solid var(--rule);padding-top:25px}
+  .site .research-label h2 {font:500 18px/1.4 var(--sans);color:var(--ink)}
+  .site .research-label a {display:inline-block;font-size:15px;margin-top:10px}
   .site article {padding-bottom:var(--paper-gap);margin-bottom:var(--paper-gap);border-bottom:1px solid var(--rule)}
   .site article:last-child {border-bottom:0;margin-bottom:0;padding-bottom:0}
   .site h3 {font:400 24px/1.3 var(--serif);letter-spacing:-.25px}
@@ -39,12 +39,12 @@
   .site .paper-links {display:flex;flex-wrap:wrap;gap:20px;font-size:14px;margin-top:12px}
   .site .paper-links a {padding:3px 0}
   @media(max-width:760px) {
-    .site {padding:28px;--portrait-width:132px}
+    .site {padding:28px;--portrait-width:150px}
     .site h1 {font-size:36px}
     .site .pages {gap:20px;font-size:14px}
     .site .introduction {gap:28px}
-    .site .research-intro {font-size:18px}
-    .site .research {grid-template-columns:110px minmax(0,1fr);gap:25px}
+    .site .research-intro {font-size:20px}
+    .site .research {grid-template-columns:140px minmax(0,1fr);gap:25px}
     .site .contact {column-gap:18px}
     .site h3 {font-size:23px}
   }
@@ -52,10 +52,10 @@
     .site {padding:23px 20px}
     .site .mast {gap:14px;padding-bottom:20px}
     .site .introduction {display:flow-root;padding-top:23px}
-    .site figure {float:right;width:92px;margin:2px 0 14px 19px}
-    .site .research-intro {font-size:18px}
+    .site figure {float:right;width:108px;margin:2px 0 14px 19px}
+    .site .research-intro {font-size:20px}
     .site .appointment {clear:both;padding-top:15px;margin-top:0}
-    .site .contact {font-size:14px;column-gap:19px;row-gap:4px;margin-top:15px}
+    .site .contact {font-size:15px;column-gap:19px;row-gap:4px;margin-top:15px}
     .site .research {display:block;padding-top:20px}
     .site .research-label {display:flex;justify-content:space-between;align-items:baseline;gap:15px;margin-bottom:23px}
     .site .research-label a {margin-top:0}
@@ -154,7 +154,6 @@ body {margin:0;background:#f8f9fa}
 .skip-link {position:absolute;left:16px;top:-60px;z-index:50;background:#fff;color:#173b56;padding:10px 14px}
 .skip-link:focus {top:8px}
 .site .page-title {font:400 31px/1.25 var(--serif);letter-spacing:-.45px;margin:29px 0 27px}
-.site.inner-page>.contact {border-bottom:1px solid var(--rule);padding:0 0 16px;margin-top:13px}
 .site .content-grid {display:grid;grid-template-columns:138px minmax(0,1fr);gap:34px;margin-bottom:34px;padding-bottom:34px;border-bottom:1px solid var(--rule)}
 .site .content-grid:last-child {margin-bottom:0;padding-bottom:0;border-bottom:0}
 .site .section-label h2 {font:500 15px/1.45 var(--sans);margin:0}
