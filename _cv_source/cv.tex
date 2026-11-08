@@ -1,9 +1,9 @@
-% Academic CV revision approved by Juan for website publication on 2026-10-02.
+% Post-market academic CV approved by Juan for website publication on 2026-11-08.
 % Public PDF: https://juancyamin.github.io/files/Juan_Yamin_CV.pdf
 \documentclass[11pt,letterpaper]{article}
 
 % Update this date whenever the CV is revised.
-\newcommand{\cvdate}{2026-10-13}
+\newcommand{\cvdate}{2026-11-08}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -14,12 +14,15 @@
 \usepackage{titlesec,needspace}
 \usepackage{xcolor,hyperref,fancyhdr}
 
-\definecolor{linkblue}{HTML}{1F4E79}
+\definecolor{linkblue}{HTML}{2B587A}
+\definecolor{headingink}{HTML}{202833}
+\definecolor{rulegray}{HTML}{D6DCE2}
+\definecolor{mutedink}{HTML}{5D6975}
 \hypersetup{
   colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,
   pdfauthor={Juan C. Yamin},
   pdftitle={Academic Curriculum Vitae -- Juan C. Yamin},
-  pdfsubject={Economics Job Market, 2026--27}
+  pdfsubject={Academic Curriculum Vitae}
 }
 \urlstyle{same}
 \setlength{\parindent}{0pt}
@@ -32,9 +35,9 @@
 \clubpenalty=10000
 
 \titleformat{\section}
-  {\needspace{4\baselineskip}\fontsize{12.5}{14}\selectfont\bfseries\scshape}
-  {}{0pt}{}[\vspace{-0.3em}\titlerule]
-\titlespacing*{\section}{0pt}{0.95em}{0.45em}
+  {\needspace{4\baselineskip}\fontsize{12.5}{14}\selectfont\bfseries\scshape\color{headingink}}
+  {}{0pt}{}[\vspace{-0.2em}{\color{rulegray}\titlerule}]
+\titlespacing*{\section}{0pt}{1.1em}{0.5em}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -53,7 +56,7 @@
   \end{tabularx}\par
 }
 \newcommand{\papertitle}[2]{%
-  \needspace{5\baselineskip}%
+  \needspace{3\baselineskip}%
   \textbf{\cvlink{#1}{#2}}\par\vspace{0.13em}%
 }
 \newcommand{\paperend}{\par\vspace{0.45em}}
@@ -64,15 +67,17 @@
   #4\par\vspace{0.40em}%
 }
 \newcommand{\presentation}[3]{%
-  \datedline{#1}{#2}%
-  {\itshape #3}\par\vspace{0.23em}%
+  \needspace{4\baselineskip}%
+  \datedline{\textbf{#1}}{#2}%
+  {\leftskip=0.18in\itshape #3\par}%
+  \vspace{0.65em}%
 }
 
 \begin{document}
-\fontsize{11}{13.1}\selectfont
+\fontsize{11}{13.7}\selectfont
 
 \begin{center}
-  {\fontsize{21}{23}\selectfont\bfseries Juan C. Yamin}\par
+  {\fontsize{24}{27}\selectfont\bfseries Juan C. Yamin}\par
   \vspace{0.14em}
   Department of Economics, Brown University\par
   Office: 70 Waterman Street, Room 204\par
@@ -81,8 +86,6 @@
   \cvlink{https://juancyamin.github.io/}{juancyamin.github.io}
   \;\textbar\;
   \cvlink{tel:+14012435519}{+1 (401) 243-5519}\par
-  \vspace{0.17em}
-  \textbf{2026--27 Economics Job Market Candidate}
 \end{center}
 \vspace{-0.20em}
 
@@ -90,44 +93,32 @@
 Fields: & Econometrics, Development \\
 Research interests: & Statistical decision theory, experimental design, causal inference \\
 \end{tabularx}\par
-\vspace{0.30em}
-{\fontsize{10}{11.8}\selectfont
-\begin{tabularx}{\textwidth}{@{}p{1.62in}X@{}}
-Placement Director: & Toru Kitagawa
-\;\textbar\;\cvlink{mailto:toru_kitagawa@brown.edu}{toru\_kitagawa@brown.edu} \\
-Placement Manager: & Angelica Spertini
-\;\textbar\;\cvlink{mailto:angelica_spertini@brown.edu}{angelica\_spertini@brown.edu}
-\;\textbar\;401-863-2465
-\end{tabularx}\par}
 
-\section{Dissertation Committee and References}
-{\fontsize{10}{11.8}\selectfont
-\begin{tabularx}{\textwidth}{@{}X@{\hspace{0.15in}}X@{\hspace{0.15in}}X@{}}
-\textbf{\cvlink{https://economics.brown.edu/people/toru-kitagawa}{Toru Kitagawa}} &
-\textbf{\cvlink{https://economics.brown.edu/people/soonwoo-kwon}{Soonwoo Kwon}} &
-\textbf{\cvlink{https://economics.brown.edu/people/jonathan-roth}{Jonathan Roth}} \\
-Professor of Economics & Assistant Professor of Economics & Professor of Economics \\
-Brown University & Brown University & Brown University \\
-\cvlink{mailto:toru_kitagawa@brown.edu}{toru\_kitagawa@brown.edu} &
-\cvlink{mailto:soonwoo_kwon@brown.edu}{soonwoo\_kwon@brown.edu} &
-\cvlink{mailto:jonathan_roth@brown.edu}{jonathan\_roth@brown.edu}
-\end{tabularx}\par}
+\section{Academic Appointments}
+\datedline{\textbf{University of Oxford and Nuffield College}}{Sept. 2027--Aug. 2030}
+Postdoctoral Research Fellow (incoming)\par
 
 \section{Education}
 \datedline{\textbf{Brown University}, Providence, RI}{}
-\datedline{Ph.D. in Economics}{Expected May 2027}
+\datedline{Ph.D. in Economics}{May 2027}
+{\leftskip=0.18in\fontsize{10}{12}\selectfont\color{mutedink}Dissertation committee: Toru Kitagawa, Soonwoo Kwon, Jonathan Roth\par}
+\vspace{0.20em}
 \datedline{M.A. in Economics}{May 2022}
 \vspace{0.25em}
 \datedline{\textbf{Universidad de los Andes}, Bogot\'a, Colombia}{}
 \datedline{M.Sc. in Economics}{March 2019}
 \datedline{B.Sc. in Economics}{October 2017}
 
-\section{Job Market Paper}
+\section{Publications}
+\papertitle{https://juancyamin.github.io/files/subnational-alignment-corruption.pdf}{Birds of a Feather Collude Together: Subnational Alignment and Corruption}
+with Leopoldo Fergusson, Arturo Harker, and Carlos Molina\par
+\textit{Forthcoming in the American Political Science Review}\par\vspace{0.13em}
+
+\section{Working Papers}
 \papertitle{https://juancyamin.github.io/files/poverty-targeting-with-imperfect-information.pdf}{Poverty Targeting with Imperfect Information}
-How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate this as a statistical decision problem in which a policymaker chooses nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. I show that the standard plug-in rule, which treats predictions as exact, is inadmissible. I then develop a nonparametric empirical Bayes allocation rule that replaces the estimated gaps with posterior mean poverty gaps. The rule's Bayes regret vanishes at least as fast as the mean squared error in estimating posterior mean poverty gaps, despite the budget and nonnegativity constraints. The approach extends, with weaker guarantees, to a policymaker who cares only about how far households remain below the poverty line after transfers and to programs that pay a fixed set of benefit amounts. In simulations using household surveys from nine African countries, the empirical Bayes rule reaches about 1.8 times as many poor people as plug-in OLS with the same budget, and it achieves the same average poverty gap reduction with 6.1\% less spending or a 42\% smaller training sample.
+\textit{Best Student Paper Award, Midwest Econometrics Group, 2026}\par
 \paperend
 
-\section{Other Working Papers}
 \papertitle{https://juancyamin.github.io/files/when-and-how-to-pilot.pdf}{When and How to Pilot: Design Rules for Two-Wave Experiments}
 \paperend
 
@@ -135,12 +126,6 @@ How should antipoverty programs allocate transfers when household income is know
 \textbf{Two-Way Effects Models: A Nonparametric Empirical Bayes Approach}\par
 with Cole Davis \hfill \textit{Draft available upon request}\par\vspace{0.13em}
 \paperend
-
-\section{Publications}
-\papertitle{https://juancyamin.github.io/files/subnational-alignment-corruption.pdf}{Birds of a Feather Collude Together: Subnational Alignment and Corruption}
-with Leopoldo Fergusson, Arturo Harker, and Carlos Molina\par
-\textit{Forthcoming in the American Political Science Review}\par\vspace{0.13em}
-\newpage
 
 \section{Software}
 \textbf{cmrdesign (R and Python)}\hfill
@@ -154,6 +139,14 @@ with Leopoldo Fergusson, Arturo Harker, and Carlos Molina\par
 Uses pilot data to choose main-wave treatment and control sample shares and
 report a finite-sample regret certificate. Supports two-arm, multi-arm, and
 stratified experiments.
+
+\section{Awards and Fellowships}
+\datedline{Best Student Paper Award, Midwest Econometrics Group}{2026}
+\datedline{Merit Dissertation Fellowship, Department of Economics, Brown University}{Fall 2026}
+\datedline{International Travel Fund, Graduate School, Brown University}{2025}
+\datedline{Conference Travel Fund, Graduate School, Brown University}{2025}
+
+\newpage
 
 \section{Research and Industry Experience}
 \experience{Brown University, Department of Economics}{June 2023--Jan. 2026}
@@ -171,7 +164,7 @@ stratified experiments.
 
 \section{Conference Presentations}
 \presentation{Conference on Digital Experimentation (CODE@MIT), Cambridge}{2026}
-  {When and How to Pilot: Design Rules for Two-Wave Experiments \textnormal{(accepted for presentation)}}
+  {When and How to Pilot: Design Rules for Two-Wave Experiments\par{\normalfont\fontsize{10}{12}\selectfont\color{mutedink}Accepted for presentation}}
 \presentation{Midwest Econometrics Group Annual Meeting, Cincinnati}{2026}
   {Poverty Targeting with Imperfect Information}
 \presentation{World Congress of the Econometric Society, Seoul}{2025}
@@ -179,15 +172,9 @@ stratified experiments.
 \presentation{Advances with Field Experiments, Chicago}{2025}
   {When and How to Pilot: Design Rules for Two-Wave Experiments}
 
-\section{Awards and Fellowships}
-\datedline{Best Student Paper Award, Midwest Econometrics Group}{2026}
-\datedline{Merit Dissertation Fellowship, Department of Economics, Brown University}{Fall 2026}
-\datedline{International Travel Fund, Graduate School, Brown University}{2025}
-\datedline{Conference Travel Fund, Graduate School, Brown University}{2025}
-
 \section{Teaching Experience}
 \textbf{Brown University}, Teaching Assistant\par\vspace{0.10em}
-\datedline{\textit{Applied Econometrics II} (Ph.D.), Peter Hull}{Spring 2026}
+\datedline{\textit{Applied Econometrics II} (Ph.D.), Peter Hull}{Spring 2026 and 2027}
 \datedline{\textit{Applied Econometrics I} (Ph.D.), Toru Kitagawa}{Fall 2024}
 \datedline{\textit{Using Big Data to Solve Economic and Social Problems}
   (undergraduate), John N. Friedman}{Fall 2022 and 2023}
