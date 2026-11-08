@@ -16,7 +16,7 @@
   .site a:focus-visible {outline:2px solid var(--blue);outline-offset:5px}
   .site .mast {display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:20px;padding-bottom:23px;border-bottom:1px solid var(--rule)}
   .site h1 {font:400 42px/1.14 var(--serif);letter-spacing:-1.1px}
-  .site .pages {display:flex;gap:25px;flex-wrap:wrap;font-size:15px}
+  .site .pages {display:flex;gap:25px;flex-wrap:wrap;font-size:18px}
   .site .introduction {display:grid;grid-template-columns:minmax(0,1fr) var(--portrait-width);gap:44px;padding:29px 0 30px;align-items:start}
   .site .bio {grid-column:1;grid-row:1;min-width:0}
   .site .research-intro {font:400 22px/1.52 var(--serif);max-width:55ch;color:var(--ink)}
@@ -41,7 +41,7 @@
   @media(max-width:760px) {
     .site {padding:28px;--portrait-width:150px}
     .site h1 {font-size:36px}
-    .site .pages {gap:20px;font-size:14px}
+    .site .pages {gap:20px;font-size:16px}
     .site .introduction {gap:28px}
     .site .research-intro {font-size:20px}
     .site .research {grid-template-columns:140px minmax(0,1fr);gap:25px}
