@@ -1,306 +1,77 @@
 ---
-layout: splash
+layout: editorial
 permalink: /
 title: "Juan C. Yamin"
-description: "Econometrician and 2026-27 Economics Job Market Candidate"
+description: "Research by Juan C. Yamin in econometrics, experimental design, and development economics."
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<style>
-  :root, html[data-theme="dark"] {
-    --global-base-color:#f8f9fa; --global-bg-color:#f8f9fa; --global-footer-bg-color:#e4e9ee;
-    --global-link-color:#2b587a; --global-link-color-hover:#173b56; --global-link-color-visited:#2b587a;
-    --global-masthead-link-color:#202833; --global-masthead-link-color-hover:#2b587a;
-    --global-text-color:#202833; --global-text-color-light:#5d6975; --global-border-color:#d6dce2; color-scheme:light;
-    --mast:63px;
-  }
-  html,body{margin:0;padding:0;background:#f8f9fa}
-  html{scroll-snap-type:y mandatory;scroll-padding-top:var(--mast);scroll-behavior:smooth}
-  .masthead{position:sticky;top:0;z-index:30;background:#f8f9fa;height:var(--mast);box-sizing:border-box}
-  .greedy-nav,#site-nav{background:transparent}
-  #main{padding:0;margin:0;max-width:none}
-  #main article,.page__content{margin:0;padding:0}
-  .page__footer{display:none}
-
-  .page__content .d2{color:#202833;margin:0;max-width:none;text-align:left}
-  .page__content .d2 a{color:#2b587a;text-decoration:none}
-  .page__content .d2 a:hover{color:#173b56}
-  .page__content .d2 p{color:#444e59;font-size:.97rem;line-height:1.6;margin:0 0 .85rem}
-
-  /* Fill the screen, but grow with the content; reserve room for the next-block cue. */
-  .page__content .d2-band{position:relative;box-sizing:border-box;min-height:calc(100vh - var(--mast));overflow:visible;
-    scroll-snap-align:start;scroll-snap-stop:always;display:flex;flex-direction:column;justify-content:center;
-    margin:0;padding:1.4rem 1.5rem 5rem}
-  .page__content .d2-band-tint{background:#eef1f4}
-  .page__content .d2-band > .d2-inner{width:100%;max-width:980px;margin:0 auto}
-  .page__content .d2-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3.5rem;align-items:start}
-  .page__content .d2-two-jmp{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}
-  .page__content .d2-two-sw{grid-template-columns:minmax(0,4fr) minmax(0,5fr);gap:2.6rem}
-
-  /* next-block cue (hero and every block but the last) */
-  .page__content .d2-next{position:absolute;left:50%;bottom:.9rem;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.25rem;
-    color:#2b587a;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
-  .page__content .d2-next svg{width:22px;height:22px;stroke:#2b587a;fill:none;stroke-width:2;display:block;animation:d2bob 2.2s ease-in-out infinite}
-  .page__content .d2-next:hover{color:#173b56}
-  @keyframes d2bob{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
-
-  /* labels, headings */
-  .page__content .d2 p.d2-kicker,.page__content .d2 p.d2-label{color:#2b587a;font-size:.82rem;font-weight:700;letter-spacing:.1em;line-height:1.3;margin:0 0 .7rem;text-transform:uppercase}
-  .page__content .d2 h1{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(3rem,6vw,3.9rem);font-weight:500;letter-spacing:0;line-height:1;margin:0 0 1.3rem}
-  .page__content .d2 h2{border:0;color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,3.2vw,2.3rem);font-weight:500;letter-spacing:0;line-height:1.12;margin:0 0 .8rem;padding:0}
-  .page__content .d2 h2 a,.page__content .d2-entry h3 a{color:#202833}
-  .page__content .d2 h2 a:hover,.page__content .d2-entry h3 a:hover{color:#2b587a}
-  .page__content .d2 p.d2-standfirst{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.06rem,1.6vw,1.2rem);font-weight:600;line-height:1.45;margin:0 0 .7rem}
-
-  /* hero */
-  .page__content .d2-hero-grid{display:grid;column-gap:3rem;grid-template-columns:minmax(0,1fr) minmax(230px,320px);
-    grid-template-areas:"kicker ." "bio photo" "profiles ."}
-  .page__content .d2-hero-grid > .d2-kicker{grid-area:kicker}
-  .page__content .d2-hero-bio{grid-area:bio;min-width:0}
-  .page__content .d2-hero-grid > .d2-profile-row{grid-area:profiles}
-  .page__content .d2 p.d2-intro{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.08rem,1.7vw,1.28rem);line-height:1.5;max-width:640px;margin:0 0 .8rem}
-  .page__content .d2 p.d2-committee{color:#5d6975;font-size:.95rem;line-height:1.5;margin:.5rem 0 .4rem}
-  .page__content .d2 p.d2-committee a{color:#444e59;border-bottom:1px solid #c7d0d9}
-  .page__content .d2 p.d2-committee a:hover{color:#2b587a;border-color:currentColor}
-  .page__content .d2-photo{grid-area:photo;position:relative;display:block;margin:0;width:100%;min-height:0}
-  /* Share the biography row so the portrait ends at the main-link underlines. */
-  .page__content .d2-photo-frame{position:absolute;inset:.45rem 0 0;overflow:hidden;border-radius:12px}
-  /* Frame the original portrait around the head and shoulders. */
-  .page__content .d2-photo img{display:block;height:100%;width:100%;object-fit:cover;object-position:50% 16%;transform:scale(1.55)}
-  .page__content .d2-photo figcaption{position:absolute;top:100%;left:0;width:100%;margin:.35rem 0 0;color:#747b82;font-size:8px;line-height:1.4;text-align:center}
-  @media (min-width:1100px) and (min-height:601px){
-    .page__content .d2-photo{width:calc(100% + 20px);transform:translateX(24px)}
-  }
-  .page__content .d2-link-row{align-items:center;display:flex;flex-wrap:wrap;gap:.2rem 1.25rem;margin-top:1.1rem}
-  .page__content .d2-link-row a{align-items:center;border-bottom:1px solid currentColor;color:#202833;display:inline-flex;font-size:.95rem;font-weight:700;line-height:1.35;min-height:2.35rem;padding:.38rem 0 .2rem}
-  .page__content .d2-link-row a.d2-primary{color:#2b587a}
-  .page__content .d2-link-row a.d2-primary.d2-internal:after{content:" \2192"}
-  .page__content .d2-profile-row{align-items:center;display:flex;flex-wrap:wrap;gap:.1rem 1.1rem;margin-top:.35rem}
-  .page__content .d2-profile-row a{align-items:center;border-bottom:1px solid currentColor;color:#202833;display:inline-flex;font-size:.9rem;font-weight:600;line-height:1.35;min-height:2.25rem;padding:.32rem 0 .18rem}
-
-  /* JMP block: separate the heading, abstract, and results with room to breathe. */
-  .page__content .d2 .d2-band-jmp{padding-bottom:4.25rem}
-  .page__content .d2-jmp-head{text-align:center;max-width:1080px;margin:0 auto 1.2rem}
-  .page__content .d2 .d2-jmp-head h2{font-size:clamp(1.55rem,3vw,2.15rem);margin-bottom:.65rem}
-  .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.65rem}
-  .page__content .d2-abstract{max-width:980px;margin:0 auto}
-  .page__content .d2-abstract p.d2-abstract-body{text-align:left;margin:0;color:#444e59}
-  @media (min-width:781px){
-    .page__content .d2-abstract p.d2-abstract-body{text-align:justify;text-align-last:left}
-  }
-  .page__content .d2-band-jmp > .d2-inner{max-width:1080px}
-  .page__content .d2 .d2-jmp-head .d2-standfirst{font-size:clamp(1rem,1.6vw,1.15rem);margin:0 auto .4rem;max-width:none}
-  .page__content .d2-colhead{color:#2b587a;font-size:.71rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-    margin:0 0 .45rem;padding-bottom:.35rem;border-bottom:1px solid #d6dce2}
-  .page__content .d2-results{text-align:center;max-width:920px;margin:.8rem auto 0}
-  .page__content .d2 p.d2-lead{color:#444e59;font-size:.9rem;margin:0 auto .5rem;max-width:920px}
-  .page__content .d2-stats{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;border-top:2px solid #2b587a;padding-top:.7rem;margin:0}
-  .page__content .d2-stat-n{display:block;font-family:Georgia,"Times New Roman",serif;font-size:2.4rem;line-height:1;color:#2b587a;margin-bottom:.3rem}
-  .page__content .d2-stats p{font-size:.88rem;line-height:1.45;color:#444e59;margin:0 auto;max-width:30ch}
-  .page__content .d2-band-jmp .d2-stats p{margin-bottom:0}
-  .page__content .d2-link-center{justify-content:center;margin-top:.65rem}
-  .page__content .d2-link-center a{min-height:1.9rem;padding:.25rem 0 .15rem}
-
-  /* Other Research: stacked papers with a shared reading width. */
-  .page__content #other-research > .d2-inner{max-width:840px}
-  .page__content #other-research .d2-section-head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.65rem}
-  .page__content #other-research .d2-section-head h2{margin-bottom:0}
-  .page__content #other-research .d2-section-head > .d2-link-row{margin:0;flex-shrink:0}
-  .page__content #other-research .d2-section-head .d2-link-row a{min-height:0}
-  .page__content #other-research .d2-entry{display:block}
-  .page__content #other-research .d2-entry + .d2-entry{margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #d6dce2}
-  .page__content #other-research .d2-entry h3{color:#202833;font-family:Georgia,"Times New Roman",serif;font-size:1.28rem;font-weight:600;line-height:1.25;margin:0 0 .3rem}
-  .page__content #other-research .d2-entry p.d2-meta{color:#5d6975;font-size:.9rem;line-height:1.5;margin:0 0 .35rem}
-  .page__content #other-research .d2-entry > p{margin-bottom:.35rem}
-  .page__content #other-research .d2-entry .d2-link-row{margin-top:0}
-  .page__content #other-research .d2-entry .d2-link-row a{font-size:.9rem;min-height:2.1rem}
-  @media (max-width:780px){
-    .page__content #other-research .d2-section-head{align-items:flex-start;flex-direction:column}
-    .page__content #other-research .d2-entry + .d2-entry{margin-top:1.6rem;padding-top:1.6rem}
-  }
-
-  /* Software: light code panel, matches the page palette */
-  .page__content .d2-codebox{background:#f8f9fa;border:1px solid #d6dce2;border-radius:6px;overflow:hidden;margin:0 0 1rem}
-  .page__content .d2 p.d2-code-head{background:#e8edf2;border-bottom:1px solid #d6dce2;color:#5d6975;font-size:.68rem;font-weight:700;
-    letter-spacing:.12em;text-transform:uppercase;margin:0;padding:.45rem .95rem}
-  .page__content .d2-code{background:transparent;color:#202833;font:.85rem/1.7 Menlo,Consolas,"Liberation Mono",monospace;
-    padding:.85rem .95rem;margin:0;overflow-x:auto;white-space:pre}
-  .page__content .d2-code .c{color:#5d6975}
-  .page__content .d2-code .s{color:#2b587a}
-  .page__content .d2-foot{position:absolute;left:0;right:0;bottom:0;padding:.7rem 1.5rem;background:#e4e9ee;color:#5d6975;font-size:.78rem}
-  .page__content .d2-foot .d2-inner{max-width:980px;margin:0 auto}
-
-  /* Short laptop windows: tighten the content while preserving the cue's clearance. */
-  @media (min-width:781px) and (min-height:601px) and (max-height:760px){
-    .page__content .d2-band{padding:1rem 1.5rem 5rem}
-    .page__content .d2 p{font-size:.89rem;line-height:1.45;margin-bottom:.5rem}
-    .page__content .d2-two{gap:2.6rem}
-    .page__content .d2 p.d2-standfirst{font-size:1rem;margin-bottom:.45rem}
-    .page__content .d2 h2{font-size:1.75rem;margin-bottom:.5rem}
-    .page__content .d2-jmp-head{margin-bottom:1.2rem}
-    .page__content .d2-results{margin-top:.8rem}
-    .page__content .d2 p.d2-lead{font-size:.84rem}
-    .page__content .d2-stat-n{font-size:1.85rem;margin-bottom:.2rem}
-    .page__content .d2-stats{padding-top:.65rem}
-    .page__content .d2-link-center{margin-top:.65rem}
-    .page__content .d2-stats p{font-size:.84rem}
-    .page__content .d2-colhead{margin-bottom:.45rem;padding-bottom:.3rem}
-    .page__content .d2-code{font-size:.78rem;line-height:1.55}
-  }
-
-  /* Keep the research blocks compact in shorter desktop windows. */
-  @media (min-width:781px) and (min-height:601px) and (max-height:680px){
-    .page__content #other-research{padding-top:.65rem;padding-bottom:4.5rem}
-    .page__content #other-research .d2-section-head{margin-bottom:1.1rem}
-    .page__content #other-research .d2-entry + .d2-entry{margin-top:1rem;padding-top:1rem}
-    .page__content #other-research .d2-entry .d2-link-row a{min-height:1.9rem}
-    .page__content .d2 .d2-band-jmp{padding-top:.55rem;padding-bottom:4.2rem}
-    .page__content .d2-jmp-head{margin-bottom:.65rem}
-    .page__content .d2 .d2-jmp-head h2{margin-bottom:.3rem}
-    .page__content .d2 .d2-jmp-head p.d2-label{margin-bottom:.25rem}
-    .page__content .d2 .d2-jmp-head .d2-standfirst{margin-bottom:.2rem}
-    .page__content .d2-abstract p.d2-abstract-body{line-height:1.4}
-    .page__content .d2-results{margin-top:.25rem}
-    .page__content .d2 p.d2-lead{margin-bottom:.25rem}
-    .page__content .d2-stats{padding-top:.3rem}
-    .page__content .d2-stat-n{margin-bottom:.1rem}
-    .page__content .d2-stats p{line-height:1.35}
-    .page__content .d2-link-center{margin-top:.15rem}
-    .page__content .d2-link-center a{min-height:1.7rem}
-  }
-
-  /* phones and short windows: ordinary scrolling, single column */
-  @media (max-width:780px), (max-height:600px){
-    html{scroll-snap-type:none}
-    .page__content .d2-band{height:auto;min-height:0;overflow:visible;padding:2.5rem 1.2rem}
-    .page__content .d2 .d2-band-jmp{padding-bottom:2.5rem}
-    .page__content .d2-next{display:none}
-    .page__content .d2-two,.page__content .d2-two-jmp,.page__content .d2-two-sw{grid-template-columns:minmax(0,1fr);gap:1.6rem}
-    .page__content .d2-hero-grid,.page__content .d2-two > *{min-width:0}
-    .page__content .d2-hero-grid{gap:0;grid-template-columns:1fr;grid-template-areas:"photo" "kicker" "bio" "profiles"}
-    .page__content .d2-photo{max-width:180px;aspect-ratio:5 / 6;margin-bottom:1.8rem}
-    .page__content .d2-photo-frame{inset:0}
-    .page__content .d2-foot{position:static;margin:2rem -1.2rem -2.5rem}
-  }
-</style>
-
-<main class="d2" id="home">
-
-  <section class="d2-band" id="top" aria-labelledby="home-title">
-    <div class="d2-inner d2-hero-grid">
-      <p class="d2-kicker">2026&ndash;27 Economics Job Market Candidate</p>
-      <div class="d2-hero-bio">
-        <h1 id="home-title">Juan C. Yamin</h1>
-        <p class="d2-intro">I am a Ph.D. candidate in the Department of Economics at Brown University, with primary interests in applied econometrics and development.</p>
-        <p class="d2-intro">I develop methods that help policymakers and researchers use data to make better decisions. My work brings together statistical decision theory, causal inference, and experimental design.</p>
-        <p class="d2-committee">Dissertation committee:
-          <a href="https://economics.brown.edu/people/toru-kitagawa">Toru Kitagawa</a>,
-          <a href="https://soonwookwon.github.io/">Soonwoo Kwon</a>, and
-          <a href="https://economics.brown.edu/people/jonathan-roth">Jonathan Roth</a></p>
-        <nav class="d2-link-row" aria-label="Main links">
-          <a class="d2-primary d2-internal" href="/files/Juan_Yamin_CV.pdf">CV</a>
-          <a class="d2-primary d2-internal" href="/files/poverty-targeting-with-imperfect-information.pdf">Job Market Paper</a>
-          <a class="d2-primary d2-internal" href="mailto:juan_yamin_silva@brown.edu">Email</a>
-        </nav>
-      </div>
-      <nav class="d2-profile-row" aria-label="Profile links">
-        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ">Google Scholar</a>
-        <a href="https://github.com/juancyamin">GitHub</a>
-        <a href="https://www.linkedin.com/in/juan-c-yamin/">LinkedIn</a>
+<div class="editorial-document">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<main class="site home" id="main-content">
+  <header class="mast">
+    <h1><a href="/">Juan C. Yamin</a></h1>
+    <nav class="pages" aria-label="Main navigation">
+      <a href="/research/">Research</a>
+      <a href="/software/">Software</a>
+      <a href="/teaching/">Teaching</a>
+    </nav>
+  </header>
+  <section class="introduction" aria-label="About Juan">
+    <figure>
+      <div class="portrait" role="img" aria-label="Portrait of Juan C. Yamin"></div>
+      <figcaption>Photo by Carolina Flórez</figcaption>
+    </figure>
+    <div class="bio">
+      <p class="research-intro">I develop methods that help policymakers and researchers use data to make better decisions. My work brings together statistical decision theory, causal inference, and experimental design.</p>
+      <p class="appointment">I am a Ph.D. candidate in economics at Brown University. In September 2027, I will join the University of Oxford and Nuffield College as a Postdoctoral Research Fellow.</p>
+      <nav class="contact" aria-label="CV and contact links">
+        <a href="https://juancyamin.github.io/files/Juan_Yamin_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/juancyamin" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/juan-c-yamin/" target="_blank" rel="noopener">LinkedIn</a>
       </nav>
-      <figure class="d2-photo">
-        <div class="d2-photo-frame"><img src="/images/juan-yamin-2026.png" alt="Juan C. Yamin" width="1086" height="1448"></div>
-        <figcaption>Photo by Carolina Flórez</figcaption>
-      </figure>
     </div>
-    <a class="d2-next" href="#job-market-paper"><span>Job Market Paper</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
   </section>
-
-  <section class="d2-band d2-band-tint d2-band-jmp" id="job-market-paper" aria-labelledby="jmp-title">
-    <div class="d2-inner">
-      <header class="d2-jmp-head">
-        <p class="d2-label">Job Market Paper</p>
-        <h2 id="jmp-title"><a href="/files/poverty-targeting-with-imperfect-information.pdf">Poverty Targeting with Imperfect Information</a></h2>
-        <p class="d2-standfirst">Is it enough to target the households that look poorest?</p>
-      </header>
-      <div class="d2-abstract">
-        <p class="d2-abstract-body">How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate this as a statistical decision problem in which a policymaker chooses nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. I show that the standard plug-in rule, which treats predictions as exact, is inadmissible. I then develop a nonparametric empirical Bayes allocation rule that replaces the estimated gaps with posterior mean poverty gaps. The rule's Bayes regret vanishes at least as fast as the mean squared error in estimating posterior mean poverty gaps, despite the budget and nonnegativity constraints. The approach extends, with weaker guarantees, to a policymaker who cares only about how far households remain below the poverty line after transfers and to programs that pay a fixed set of benefit amounts. In simulations using household surveys from nine African countries, the empirical Bayes rule reaches about 1.8 times as many poor people as plug-in OLS with the same budget, and it achieves the same average poverty gap reduction with 6.1% less spending or a 42% smaller training sample.</p>
-      </div>
-      <div class="d2-results">
-        <nav class="d2-link-row d2-link-center" aria-label="Job market paper links">
-          <a class="d2-primary" href="/files/poverty-targeting-with-imperfect-information.pdf">Paper</a>
+  <section class="research" aria-labelledby="selected-research-title">
+    <div class="research-label">
+      <h2 id="selected-research-title">Selected research</h2>
+      <a href="/research/">All research</a>
+    </div>
+    <div class="paper-list">
+      <article>
+        <h3><a href="https://juancyamin.github.io/files/poverty-targeting-with-imperfect-information.pdf" target="_blank" rel="noopener">Poverty Targeting with Imperfect Information</a></h3>
+        <p class="metadata">Best Student Paper Award, MEG 2026</p>
+        <p class="question">Is it enough to target the households that look poorest?</p>
+        <p class="answer">Some households look especially poor because their incomes are underestimated. I develop a targeting method that accounts for this uncertainty. In simulations, it achieves the same poverty reduction as standard targeting with 6.1 percent less spending.</p>
+        <nav class="paper-links" aria-label="Poverty targeting paper links">
+          <a href="https://juancyamin.github.io/files/poverty-targeting-with-imperfect-information.pdf" target="_blank" rel="noopener">Paper</a>
+          <a href="https://arxiv.org/abs/2506.18188" target="_blank" rel="noopener">arXiv</a>
         </nav>
-      </div>
-    </div>
-    <a class="d2-next" href="#other-research"><span>Other Research</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
-  </section>
-
-  <section class="d2-band" id="other-research" aria-labelledby="other-title">
-    <div class="d2-inner">
-      <div class="d2-section-head">
-        <h2 id="other-title">Other Research</h2>
-        <nav class="d2-link-row" aria-label="Research links">
-          <a class="d2-primary d2-internal" href="/research/">All research</a>
+      </article>
+      <article>
+        <h3><a href="https://juancyamin.github.io/files/when-and-how-to-pilot.pdf" target="_blank" rel="noopener">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h3>
+        <p class="question">How much should a small pilot change the experiment that follows?</p>
+        <p class="answer">A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
+        <nav class="paper-links" aria-label="Pilot paper links">
+          <a href="https://juancyamin.github.io/files/when-and-how-to-pilot.pdf" target="_blank" rel="noopener">Paper</a>
+          <a href="https://arxiv.org/abs/2607.16982" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://juancyamin.github.io/cmrdesign/" target="_blank" rel="noopener">Software</a>
         </nav>
-      </div>
-      <div class="d2-research-list">
-        <article class="d2-entry">
-          <h3><a href="/files/when-and-how-to-pilot.pdf">When and How to Pilot</a></h3>
-          <p>A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
-          <nav class="d2-link-row" aria-label="Pilot paper links">
-            <a class="d2-primary" href="/files/when-and-how-to-pilot.pdf">Paper</a>
-            <a href="#software">Software</a>
-          </nav>
-        </article>
-        <article class="d2-entry">
-          <h3><a href="/research/#birds-of-a-feather">Birds of a Feather Collude Together</a></h3>
-          <p class="d2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina<br>Forthcoming, <em>American Political Science Review</em></p>
-          <p>Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of &ldquo;ghost&rdquo; students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
-          <nav class="d2-link-row" aria-label="Corruption paper links">
-            <a class="d2-primary" href="/files/subnational-alignment-corruption.pdf">Paper (PDF)</a>
-          </nav>
-        </article>
-      </div>
-    </div>
-    <a class="d2-next" href="#software"><span>Software</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9l8 8 8-8"/></svg></a>
-  </section>
-
-  <section class="d2-band d2-band-tint" id="software" aria-labelledby="software-title">
-    <div class="d2-inner d2-two d2-two-sw">
-      <div>
-        <p class="d2-label">Software</p>
-        <h2 id="software-title">cmrdesign</h2>
-        <p>cmrdesign is an R and Python package that implements the design rules from <em>When and How to Pilot</em>. Given pilot outcomes and treatment assignments, it recommends how to split the main experiment between treatment and control. It also reports a finite-sample bound on how much precision that split can lose relative to the best allocation.</p>
-        <nav class="d2-link-row" aria-label="Software links">
-          <a class="d2-primary d2-internal" href="/software/">Software</a>
-          <a href="https://juancyamin.github.io/cmrdesign/">Documentation</a>
-          <a href="https://github.com/juancyamin/cmrdesign">GitHub</a>
+      </article>
+      <article>
+        <h3><a href="https://juancyamin.github.io/files/subnational-alignment-corruption.pdf" target="_blank" rel="noopener">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h3>
+        <p class="metadata">With Leopoldo Fergusson, Arturo Harker, and Carlos Molina<br>Forthcoming, <em>American Political Science Review</em></p>
+        <p class="question">Does partisan alignment across levels of government facilitate corruption?</p>
+        <p class="answer">Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of “ghost” students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
+        <nav class="paper-links" aria-label="Corruption paper links">
+          <a href="https://juancyamin.github.io/files/subnational-alignment-corruption.pdf" target="_blank" rel="noopener">Paper</a>
         </nav>
-      </div>
-      <div>
-        <div class="d2-codebox">
-        <p class="d2-code-head">R</p>
-<pre class="d2-code">install.packages(<span class="s">"cmrdesign"</span>)
-library(cmrdesign)
-fit &lt;- cmr_two_arm(y, d, alpha = 0.05,
-                   method = <span class="s">"auto"</span>)
-fit$pi     <span class="c"># share of the main wave to treat</span>
-fit$U_CMR  <span class="c"># bound on precision lost vs. best split</span></pre>
-        </div>
-        <div class="d2-codebox">
-        <p class="d2-code-head">Python</p>
-<pre class="d2-code">pip install cmrdesign
-import cmrdesign as cmr
-fit = cmr.cmr_two_arm(y, d, alpha=0.05,
-                      method=<span class="s">"auto"</span>)
-fit.pi     <span class="c"># share of the main wave to treat</span>
-fit.U_CMR  <span class="c"># bound on precision lost vs. best split</span></pre>
-        </div>
-      </div>
+      </article>
     </div>
-    <div class="d2-foot"><div class="d2-inner">&copy; 2026 Juan C. Yamin</div></div>
   </section>
-
 </main>
+</div>

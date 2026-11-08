@@ -1,579 +1,112 @@
 ---
-layout: splash
+layout: editorial
 permalink: /research/
 title: "Research"
-description: "Research by Juan C. Yamin on econometric methods for decisions made with noisy data, and on the political economy of development."
+description: "Research papers by Juan C. Yamin, with abstracts, papers and presentation information."
 ---
 
-<style>
-  :root,
-  html[data-theme="dark"] {
-    --global-base-color: #f8f9fa;
-    --global-bg-color: #f8f9fa;
-    --global-footer-bg-color: #eef1f4;
-    --global-link-color: #2b587a;
-    --global-link-color-hover: #173b56;
-    --global-link-color-visited: #2b587a;
-    --global-masthead-link-color: #202833;
-    --global-masthead-link-color-hover: #2b587a;
-    --global-text-color: #202833;
-    --global-text-color-light: #5d6975;
-    --global-border-color: #d6dce2;
-    color-scheme: light;
-  }
-
-  body {
-    background: #f8f9fa;
-  }
-
-  .masthead {
-    background: rgba(248, 249, 250, 0.96);
-  }
-
-  .greedy-nav,
-  #site-nav {
-    background: transparent;
-  }
-
-  .page__content .r2 {
-    color: #202833;
-    margin: -0.5rem auto 0;
-    max-width: 640px;
-    text-align: left;
-  }
-
-  .page__content .r2 * {
-    box-sizing: border-box;
-  }
-
-  .page__content .r2 a {
-    color: #202833;
-    text-decoration: none;
-  }
-
-  .page__content .r2 a:hover {
-    color: #173b56;
-    text-decoration: none;
-  }
-
-  .page__content .r2 p {
-    color: #444e59;
-    font-size: 17px;
-    line-height: 1.65;
-    margin: 0 0 1rem;
-  }
-
-  .page__content .r2-header {
-    border-bottom: 1px solid #d6dce2;
-    padding: 1.6rem 0 1.1rem;
-  }
-
-  .page__content .r2 .r2-label {
-    color: #2b587a;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    line-height: 1.3;
-    margin: 0 0 1.45rem;
-    text-transform: uppercase;
-  }
-
-  .page__content .r2 h1,
-  .page__content .r2 h2,
-  .page__content .r2 h3 {
-    border: 0;
-    color: #202833;
-    font-family: Georgia, "Times New Roman", serif;
-    font-weight: 500;
-    letter-spacing: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  .page__content .r2 h1 {
-    font-size: 44px;
-    line-height: 1;
-    margin: 0 0 1.15rem;
-  }
-
-  .page__content .r2 p.r2-intro {
-    color: #444e59;
-    font-size: 18px;
-    line-height: 1.7;
-    max-width: 640px;
-  }
-
-  .page__content .r2-section {
-    border-bottom: 1px solid #d6dce2;
-    padding: 1.1rem 0;
-  }
-
-  .page__content .r2-section-featured {
-    border-top: 2px solid #2b587a;
-    margin-top: 0.75rem;
-    padding-top: 1.1rem;
-  }
-
-  .page__content .r2-section-head {
-    margin: 0;
-    max-width: 640px;
-  }
-
-  .page__content .r2-paper {
-    margin: 0;
-    padding: 2.2rem 0 0;
-  }
-
-  .page__content .r2-paper:first-of-type {
-    padding-top: 0;
-  }
-
-  .page__content .r2-paper + .r2-paper {
-    border-top: 1px solid #d6dce2;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-  }
-
-  .page__content .r2-paper-title {
-    font-size: 30px;
-    line-height: 1.16;
-    margin: 0 0 0.75rem;
-    max-width: 640px;
-  }
-
-  .page__content .r2-paper-featured .r2-paper-title {
-    font-size: 31px;
-    max-width: 640px;
-  }
-
-  .page__content .r2 p.r2-status {
-    color: #2b587a;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 0.015em;
-    line-height: 1.4;
-    margin: 0 0 0.35rem;
-  }
-
-  .page__content .r2 p.r2-status em {
-    font-style: italic;
-  }
-
-  .page__content .r2 p.r2-coauthors {
-    color: #5d6975;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 1.45;
-    margin: -0.1rem 0 0.35rem;
-  }
-
-  .page__content .r2 p.r2-question {
-    color: #202833;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 20px;
-    font-style: italic;
-    line-height: 1.45;
-    margin: 0.6rem 0 0.7rem;
-    max-width: 640px;
-  }
-
-  .page__content .r2-summary {
-    max-width: 640px;
-  }
-
-  .page__content .r2-summary p {
-    color: #444e59;
-    font-size: 17px;
-    line-height: 1.65;
-  }
-
-  .page__content .r2-links {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.15rem 1.15rem;
-    margin: 0.8rem 0 0.2rem;
-  }
-
-  .page__content .r2-links a {
-    align-items: center;
-    border-bottom: 1px solid currentColor;
-    color: #202833;
-    display: inline-flex;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.35;
-    min-height: 44px;
-    padding: 0.38rem 0 0.22rem;
-  }
-
-  .page__content .r2-links a.r2-primary {
-    color: #2b587a;
-  }
-
-  .page__content .r2-links a.r2-internal {
-    color: #2b587a;
-  }
-
-  .page__content .r2-links a.r2-primary:after {
-    content: " \2192";
-  }
-
-  .page__content .r2-abstract {
-    margin: 0.35rem 0 0;
-    max-width: 640px;
-  }
-
-  .page__content .r2-abstract summary {
-    align-items: center;
-    border-bottom: 1px solid currentColor;
-    color: #2b587a;
-    cursor: pointer;
-    display: inline-flex;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.35;
-    list-style: none;
-    min-height: 44px;
-    padding: 0.38rem 0 0.22rem;
-  }
-
-  .page__content .r2-abstract summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .page__content .r2-abstract summary:after {
-    content: " +";
-    margin-left: 0.15rem;
-  }
-
-  .page__content .r2-abstract[open] summary:after {
-    content: " -";
-  }
-
-  .page__content .r2-abstract summary:focus {
-    outline: 2px solid rgba(43, 88, 122, 0.35);
-    outline-offset: 4px;
-  }
-
-  .page__content .r2-abstract-body {
-    border-left: 2px solid #d6dce2;
-    margin: 0.85rem 0 0.3rem;
-    padding-left: 1rem;
-  }
-
-  .page__content .r2-abstract-body p {
-    color: #444e59;
-    font-size: 16px;
-    line-height: 1.65;
-  }
-
-  .page__content .r2-presentations {
-    margin: 1.35rem 0 0;
-    max-width: 640px;
-  }
-
-  .page__content .r2-presentation-row {
-    border-top: 1px solid #d6dce2;
-    display: grid;
-    gap: 1.1rem;
-    grid-template-columns: 4.5rem minmax(0, 1fr);
-    padding: 1.1rem 0;
-  }
-
-  .page__content .r2 p.r2-year {
-    color: #2b587a;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.45;
-    margin: 0;
-  }
-
-  .page__content .r2 p.r2-venue {
-    color: #444e59;
-    font-size: 17px;
-    font-weight: 650;
-    line-height: 1.5;
-    margin: 0 0 0.15rem;
-  }
-
-  .page__content .r2 p.r2-talk {
-    color: #5d6975;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-  }
-
-  .page__content .r2 .r2-presentation-note {
-    color: #2b587a;
-    font-style: italic;
-  }
-
-  @media (max-width: 780px) {
-    .page__content .r2-header {
-      padding: 2.75rem 0 2.3rem;
-    }
-
-    .page__content .r2-section {
-      padding: 2.45rem 0;
-    }
-
-    .page__content .r2-section-featured {
-      margin-top: 1.75rem;
-      padding-top: 2.25rem;
-    }
-
-    .page__content .r2-paper + .r2-paper {
-      margin-top: 2.25rem;
-      padding-top: 2.25rem;
-    }
-  }
-
-  @media (max-width: 520px) {
-    .page__content .r2 {
-      margin-top: 0;
-    }
-
-    .page__content .r2 h1 {
-      font-size: 38px;
-    }
-
-    .page__content .r2 .r2-label {
-      font-size: 14px;
-    }
-
-    .page__content .r2 p.r2-intro {
-      font-size: 16px;
-    }
-
-    .page__content .r2-paper-title {
-      font-size: 25px;
-    }
-
-    .page__content .r2-paper-featured .r2-paper-title {
-      font-size: 26px;
-    }
-
-    .page__content .r2 p.r2-question {
-      font-size: 17px;
-    }
-
-    .page__content .r2 p,
-    .page__content .r2-summary p {
-      font-size: 16px;
-    }
-
-    .page__content .r2 p.r2-status,
-    .page__content .r2 p.r2-coauthors,
-    .page__content .r2-abstract-body p,
-    .page__content .r2 p.r2-year,
-    .page__content .r2 p.r2-talk {
-      font-size: 15px;
-    }
-
-    .page__content .r2 p.r2-venue,
-    .page__content .r2-links a,
-    .page__content .r2-abstract summary {
-      font-size: 16px;
-    }
-
-    .page__content .r2-links {
-      gap: 0.6rem 1rem;
-    }
-
-    .page__content .r2-presentation-row {
-      gap: 0.1rem;
-      grid-template-columns: 1fr;
-    }
-  }
-
-  .page__content .r2-links .r2-abstract { margin: 0; max-width: none; }
-  .page__content .r2-links .r2-abstract[open] { flex: 1 0 100%; }
-
-  /* --- plain typographic list: no buttons ---------------------------------- */
-  .page__content .r2 { max-width: 1060px; }
-  /* Section labels move into a left rail, mirroring the year rail the presentations section
-     already uses. This fills the page width while the text column stays at a readable measure —
-     a wider paragraph cannot: 1280px of 17px text is ~130 characters per line. */
-  .page__content .r2-section { display: grid; grid-template-columns: 300px minmax(0, 1fr);
-    gap: 0 4rem; }
-  /* optical alignment: sit the 15px label on the same baseline as the 22px title */
-  .page__content .r2 .r2-label { grid-column: 1; grid-row: 1; text-align: right; margin: 0.06rem 0 0; }
-  .page__content .r2-section > .r2-paper,
-  .page__content .r2-section > .r2-presentations { grid-column: 2; }
-  @media (max-width: 1000px) {
-    .page__content .r2-section { display: block; }
-    .page__content .r2 .r2-label { text-align: left; margin: 1.1rem 0 0.5rem; }
-    .page__content .r2-header { padding-left: 0; }
-  }
-  .page__content .r2 { margin-top: -1.2rem; }
-  .page__content .r2-header { border-bottom: 0; padding: 0.35rem 0 1.65rem 0; }
-  @media (min-width: 1001px) { .page__content .r2-header { padding-left: calc(300px + 4rem); } }
-  .page__content .r2 h1 { font-size: 33px; margin-bottom: 0.28rem; }
-  .page__content .r2 p.r2-intro { font-size: 17px; max-width: none; margin-bottom: 0; }
-  .page__content .r2-section:first-of-type .r2-label { margin-top: 0.5rem; }
-  .page__content .r2 p.r2-answer { color: #444e59; font-size: 17px; line-height: 1.6;
-    margin: 0.28rem 0 0; max-width: none; }
-  .page__content .r2-section { border-bottom: 0; padding: 0; }
-  .page__content .r2 .r2-label { font-size: 15px; font-weight: 700; letter-spacing: 0.09em;
-    margin: 0.35rem 0 0.6rem; }
-  .page__content .r2-paper { margin: 0 0 2.4rem; max-width: none; }
-  .page__content .r2-paper + .r2-paper { border-top: 0; margin-top: 0; padding-top: 0; }
-  .page__content .r2-paper-title { font-size: 22px; font-weight: 500; line-height: 1.25;
-    margin: 0 0 0.15rem; max-width: none; }
-  .page__content .r2-paper-title a { color: #202833; border-bottom: 1px solid #c7d0d9; }
-  .page__content .r2-paper-title a:hover { color: #2b587a; border-bottom-color: currentColor; }
-  .page__content .r2 p.r2-meta { color: #5d6975; font-size: 15.5px; line-height: 1.45;
-    margin: 0 0 0.15rem; max-width: none; }
-  /* reading text is capped at ~78 characters; only titles use the full 860px */
-  .page__content .r2 p.r2-question { font-size: 17.5px; line-height: 1.5; color: #444e59;
-    margin: 0.7rem 0 0; max-width: none; }
-  /* links become small bracketed plain text, not buttons */
-  .page__content .r2-links { gap: 0 1rem; margin: 0.3rem 0 0; }
-  .page__content .r2-links a,
-  .page__content .r2-abstract summary { border-bottom: 0; color: #2b587a; font-size: 15px;
-    font-weight: 400; line-height: 1.5; min-height: 0; padding: 0; }
-  .page__content .r2-links a:hover,
-  .page__content .r2-abstract summary:hover { color: #173b56; text-decoration: underline; }
-  .page__content .r2-links a::before,
-  .page__content .r2-abstract summary::before { content: none; }
-  .page__content .r2-links a::after,
-  .page__content .r2-links a.r2-primary::after,
-  .page__content .r2-abstract summary::after,
-  .page__content .r2-abstract[open] summary::after { content: none; }
-  .page__content .r2-abstract { margin: 0; max-width: none; }
-  .page__content .r2-abstract[open] { flex: 1 0 100%; }
-  .page__content .r2-abstract-body { max-width: none; padding-top: 0.35rem; }
-  .page__content .r2-abstract-body p { font-size: 15.5px; line-height: 1.62; }
-  .page__content .r2-presentations { max-width: none; margin-top: 0.4rem; }
-  .page__content .r2-presentation-row { gap: 1.1rem; padding: 0.75rem 0; }
-  .page__content .r2 p.r2-year { font-size: 13px; font-weight: 700; letter-spacing: 0.04em; }
-  .page__content .r2 p.r2-venue { font-size: 16px; font-weight: 600; color: #202833;
-    line-height: 1.45; margin: 0 0 0.1rem; }
-  .page__content .r2 p.r2-talk { font-size: 15px; color: #5d6975; line-height: 1.45; }
-  .page__content .r2-presentation-note { font-size: 14px; }
-  @media (max-width: 900px) {
-    .page__content .r2-paper-title { font-size: 21px; }
-  }
-  /* LAST in the cascade on purpose: an earlier `margin` shorthand on .r2-label kept overriding
-     margin-top, so the 15px rail label sat 9px below the 22px title baseline. */
-  @media (min-width: 1001px) {
-    .page__content .r2 .r2-label,
-    .page__content .r2 .r2-section:first-of-type .r2-label { margin-top: 0.06rem; margin-bottom: 0; }
-  }
-</style>
-
-<main class="r2" id="research">
-<header class="r2-header" aria-labelledby="research-title">
-    <h1 id="research-title">Research</h1>
-  </header>
-  <section class="r2-section">
-    <p class="r2-label">Job Market Paper</p>
-    <article class="r2-paper" id="poverty-targeting">
-      <h2 class="r2-paper-title"><a href="/files/poverty-targeting-with-imperfect-information.pdf">Poverty Targeting with Imperfect Information</a></h2>
-      <p class="r2-meta">Best Student Paper Award, MEG 2026</p>
-      <p class="r2-question">Is it enough to target the households that look poorest?</p>
-      <p class="r2-answer">Some households look especially poor because their incomes are underestimated. I develop a targeting method that accounts for this uncertainty. In simulations, it achieves the same poverty reduction as standard targeting with 6.1 percent less spending.</p>
-      <nav class="r2-links" aria-label="Poverty Targeting with Imperfect Information links">
-        <details class="r2-abstract"><summary>Abstract</summary>
-          <div class="r2-abstract-body"><p>
+<div class="editorial-document">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<div class="site inner-page"><header class="mast">
+    <p class="name"><a href="/">Juan C. Yamin</a></p>
+    <nav class="pages" aria-label="Main navigation">
+      <a href="/research/" aria-current="page">Research</a>
+      <a href="/software/">Software</a>
+      <a href="/teaching/">Teaching</a>
+    </nav>
+  </header><nav class="contact" aria-label="CV and contact links">
+        <a href="https://juancyamin.github.io/files/Juan_Yamin_CV.pdf" target="_blank" rel="noopener">CV</a>
+        <a href="mailto:juan_yamin_silva@brown.edu">Email</a>
+        <a href="https://scholar.google.com/citations?user=KWtxYJgAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="https://github.com/juancyamin" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/juan-c-yamin/" target="_blank" rel="noopener">LinkedIn</a>
+      </nav><main id="main-content"><h1 class="page-title">Research</h1><section class="content-grid"><div class="section-label"><h2>Working papers</h2></div><div class="content-column"><article class="research-paper" id="poverty-targeting">
+      <h3 class="paper-title"><a href="https://juancyamin.github.io/files/poverty-targeting-with-imperfect-information.pdf" target="_blank" rel="noopener">Poverty Targeting with Imperfect Information</a></h3>
+      <p class="metadata">Best Student Paper Award, MEG 2026</p>
+      <p class="question">Is it enough to target the households that look poorest?</p>
+      <p class="answer">Some households look especially poor because their incomes are underestimated. I develop a targeting method that accounts for this uncertainty. In simulations, it achieves the same poverty reduction as standard targeting with 6.1 percent less spending.</p>
+      <nav class="paper-links" aria-label="Poverty Targeting with Imperfect Information links"><a href="https://juancyamin.github.io/files/poverty-targeting-with-imperfect-information.pdf" target="_blank" rel="noopener">Paper</a>
+        <details class="abstract"><summary>Abstract</summary>
+          <div class="abstract-body"><p>
             How should antipoverty programs allocate transfers when household income is known only through noisy predictions? I formulate this as a statistical decision problem in which a policymaker chooses nonnegative transfers within a fixed budget to minimize squared deviations of post-transfer income from the poverty line. I show that the standard plug-in rule, which treats predictions as exact, is inadmissible. I then develop a nonparametric empirical Bayes allocation rule that replaces the estimated gaps with posterior mean poverty gaps. The rule's Bayes regret vanishes at least as fast as the mean squared error in estimating posterior mean poverty gaps, despite the budget and nonnegativity constraints. The approach extends, with weaker guarantees, to a policymaker who cares only about how far households remain below the poverty line after transfers and to programs that pay a fixed set of benefit amounts. In simulations using household surveys from nine African countries, the empirical Bayes rule reaches about 1.8 times as many poor people as plug-in OLS with the same budget, and it achieves the same average poverty gap reduction with 6.1% less spending or a 42% smaller training sample.
           </p></div>
         </details>
-        <a href="https://arxiv.org/abs/2506.18188">arXiv</a>
+        <a href="https://arxiv.org/abs/2506.18188" target="_blank" rel="noopener">arXiv</a>
       </nav>
-    </article>
-  </section>
-  <section class="r2-section">
-    <p class="r2-label">Working Papers</p>
-    <article class="r2-paper" id="when-and-how-to-pilot">
-      <h2 class="r2-paper-title"><a href="/files/when-and-how-to-pilot.pdf">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h2>
-      <p class="r2-question">How much should a small pilot change the experiment that follows?</p>
-      <p class="r2-answer">A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
-      <nav class="r2-links" aria-label="When and How to Pilot: Design Rules for Two-Wave Experiments links">
-        <details class="r2-abstract"><summary>Abstract</summary>
-          <div class="r2-abstract-body"><p>
-            Experimenters often run pilots, but how much a small pilot should shape the main-wave design has no settled answer. This paper shows how noisy pilot evidence should guide treatment assignment probabilities in two-wave experiments. Two canonical rules mark the extremes. Balanced assignment guards against worst cases but ignores evidence that one arm is noisier. Feasible Neyman allocation adapts, but with a finite pilot it can overreact to noise, producing arbitrarily large precision losses. I propose a Conditional Minimax Regret (CMR) rule that minimizes worst-case regret over a finite-sample confidence set for the treatment and control variances. CMR retains balance&rsquo;s worst-case protection with high probability, converges to the Neyman allocation as the pilot grows, and attains the minimax-regret rate up to constants. It extends to multi-arm and stratified designs, and simulations calibrated to four field experiments show it avoids feasible Neyman&rsquo;s severe small-pilot losses while matching its large-pilot gains.
+    </article><article class="research-paper" id="when-and-how-to-pilot">
+      <h3 class="paper-title"><a href="https://juancyamin.github.io/files/when-and-how-to-pilot.pdf" target="_blank" rel="noopener">When and How to Pilot: Design Rules for Two-Wave Experiments</a></h3>
+      <p class="question">How much should a small pilot change the experiment that follows?</p>
+      <p class="answer">A pilot can help researchers choose a more efficient split between treatment and control, but a small pilot can also mislead. I develop a method that guards against overreacting to limited evidence and approaches the optimal split as the pilot grows.</p>
+      <nav class="paper-links" aria-label="When and How to Pilot: Design Rules for Two-Wave Experiments links"><a href="https://juancyamin.github.io/files/when-and-how-to-pilot.pdf" target="_blank" rel="noopener">Paper</a>
+        <details class="abstract"><summary>Abstract</summary>
+          <div class="abstract-body"><p>
+            Experimenters often run pilots, but how much a small pilot should shape the main-wave design has no settled answer. This paper shows how noisy pilot evidence should guide treatment assignment probabilities in two-wave experiments. Two canonical rules mark the extremes. Balanced assignment guards against worst cases but ignores evidence that one arm is noisier. Feasible Neyman allocation adapts, but with a finite pilot it can overreact to noise, producing arbitrarily large precision losses. I propose a Conditional Minimax Regret (CMR) rule that minimizes worst-case regret over a finite-sample confidence set for the treatment and control variances. CMR retains balance’s worst-case protection with high probability, converges to the Neyman allocation as the pilot grows, and attains the minimax-regret rate up to constants. It extends to multi-arm and stratified designs, and simulations calibrated to four field experiments show it avoids feasible Neyman’s severe small-pilot losses while matching its large-pilot gains.
           </p></div>
         </details>
-        <a href="https://arxiv.org/abs/2607.16982">arXiv</a>
-        <a href="/files/when-and-how-to-pilot-code-2026-extended-abstract.pdf">CODE@MIT Abstract</a>
+        <a href="https://arxiv.org/abs/2607.16982" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://juancyamin.github.io/files/when-and-how-to-pilot-code-2026-extended-abstract.pdf" target="_blank" rel="noopener">CODE@MIT Abstract</a>
         <a href="/software/">Software</a>
       </nav>
-    </article>
-    <article class="r2-paper" id="two-way-effects">
-      <h2 class="r2-paper-title">Two-Way Effects Models: A Nonparametric Empirical Bayes Approach</h2>
-      <p class="r2-meta">with Cole Davis</p>
-      <p class="r2-question">How should we estimate worker and firm effects when the two are sorted?</p>
-      <p class="r2-answer">Wage decompositions split pay into worker and firm components, and existing methods assume the two are unrelated. We develop a method that lets the distribution of worker effects depend on the firm, so estimates reflect the sorting that occurs.</p>
-      <nav class="r2-links" aria-label="Two-Way Effects Models: A Nonparametric Empirical Bayes Approach links">
-        <details class="r2-abstract"><summary>Abstract</summary>
-          <div class="r2-abstract-body"><p>
+    </article><article class="research-paper" id="two-way-effects">
+      <h3 class="paper-title">Two-Way Effects Models: A Nonparametric Empirical Bayes Approach</h3>
+      <p class="metadata">with Cole Davis</p>
+      <p class="question">How should we estimate worker and firm effects when the two are sorted?</p>
+      <p class="answer">Wage decompositions split pay into worker and firm components, but workers are not randomly assigned to firms. We develop a method that lets the distribution of worker effects depend on the firm, allowing estimates to reflect this sorting.</p>
+      <nav class="paper-links" aria-label="Two-Way Effects Models: A Nonparametric Empirical Bayes Approach links">
+        <details class="abstract"><summary>Abstract</summary>
+          <div class="abstract-body"><p>
             Researchers use AKM models to decompose wages into worker effects and firm wage premia. The resulting fixed-effect estimates are often noisy because firm effects are identified by worker mobility, and conventional empirical Bayes approaches rely on parametric prior assumptions. We develop a nonparametric empirical Bayes framework in which the distribution of worker effects varies with latent firm effects. This allows worker and firm effects to be sorted, and it induces dependence among workers attached to the same reference firm. We propose a feasible estimation procedure, characterize the resulting shrinkage rules, and define an oracle benchmark that respects the hierarchical structure of AKM effects. Simulations show mean squared error close to an oracle benchmark and improvements over i.i.d.-based methods.
           </p></div>
         </details>
         <a href="mailto:juan_yamin_silva@brown.edu?subject=Two-Way%20Effects%20draft">Draft on request</a>
       </nav>
-    </article>
-  </section>
-  <section class="r2-section">
-    <p class="r2-label">Publications</p>
-    <article class="r2-paper" id="birds-of-a-feather">
-      <h2 class="r2-paper-title"><a href="/files/subnational-alignment-corruption.pdf">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h2>
-      <p class="r2-meta">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina</p>
-      <p class="r2-meta">Forthcoming, <em>American Political Science Review</em></p>
-      <p class="r2-question">Does partisan alignment across levels of government facilitate corruption?</p>
-      <p class="r2-answer">Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of &ldquo;ghost&rdquo; students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
-      <nav class="r2-links" aria-label="Birds of a Feather Collude Together: Subnational Alignment and Corruption links">
-        <details class="r2-abstract"><summary>Abstract</summary>
-          <div class="r2-abstract-body"><p>
-            We examine how subnational partisan alignment influences corruption in clientelistic environments, focusing on the fabrication of &ldquo;ghost&rdquo; students to inflate education transfers to local governments in Colombia. Using a Regression Discontinuity Design, we find that partisan alignment between municipal mayors and departmental governors increases ghost students by 0.3 standard deviations, without improving genuine enrollment or student performance. Alignment also leads to more discretionary hiring, patronage-based outsourcing, and increased electoral fraud risk. The effects are strongest in municipalities with weaker institutions and entrenched clientelism. Alignment also raises the likelihood that mayors&rsquo; relatives are appointed to departmental posts and governors&rsquo; relatives to municipal posts, consistent with reciprocal patronage. These findings support the view that resource diversion benefits politicians with few benefits for local constituencies. Aligned politicians also experience better future electoral prospects, suggesting a breakdown in accountability. Our results highlight how clientelistic networks distort public service delivery, reinforcing the persistence of political corruption.
+    </article></div></section><section class="content-grid"><div class="section-label"><h2>Publications</h2></div><div class="content-column"><article class="research-paper" id="birds-of-a-feather">
+      <h3 class="paper-title"><a href="https://juancyamin.github.io/files/subnational-alignment-corruption.pdf" target="_blank" rel="noopener">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h3>
+      <p class="metadata">with Leopoldo Fergusson, Arturo Harker, and Carlos Molina</p>
+      <p class="metadata">Forthcoming, <em>American Political Science Review</em></p>
+      <p class="question">Does partisan alignment across levels of government facilitate corruption?</p>
+      <p class="answer">Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of “ghost” students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
+      <nav class="paper-links" aria-label="Birds of a Feather Collude Together: Subnational Alignment and Corruption links">
+        <details class="abstract"><summary>Abstract</summary>
+          <div class="abstract-body"><p>
+            We examine how subnational partisan alignment influences corruption in clientelistic environments, focusing on the fabrication of “ghost” students to inflate education transfers to local governments in Colombia. Using a Regression Discontinuity Design, we find that partisan alignment between municipal mayors and departmental governors increases ghost students by 0.3 standard deviations, without improving genuine enrollment or student performance. Alignment also leads to more discretionary hiring, patronage-based outsourcing, and increased electoral fraud risk. The effects are strongest in municipalities with weaker institutions and entrenched clientelism. Alignment also raises the likelihood that mayors’ relatives are appointed to departmental posts and governors’ relatives to municipal posts, consistent with reciprocal patronage. These findings support the view that resource diversion benefits politicians with few benefits for local constituencies. Aligned politicians also experience better future electoral prospects, suggesting a breakdown in accountability. Our results highlight how clientelistic networks distort public service delivery, reinforcing the persistence of political corruption.
           </p></div>
         </details>
-        <a href="/files/subnational-alignment-corruption.pdf">PDF</a>
+        <a href="https://juancyamin.github.io/files/subnational-alignment-corruption.pdf" target="_blank" rel="noopener">PDF</a>
       </nav>
-    </article>
-  </section>
-<section class="r2-section" aria-labelledby="presentations-title">
-    <div class="r2-section-head">
-      <p class="r2-label" id="presentations-title">Selected Presentations</p>
-    </div>
-
-    <div class="r2-presentations">
-      <div class="r2-presentation-row">
-        <p class="r2-year">2026</p>
+    </article></div></section><section class="content-grid"><div class="section-label"><h2>Selected presentations</h2></div><div class="content-column"><div class="presentations">
+      <div class="talk">
+        <p class="talk-year">2026</p>
         <div>
-          <p class="r2-venue">Conference on Digital Experimentation (CODE@MIT), Cambridge</p>
-          <p class="r2-talk">
+          <p class="talk-venue">Conference on Digital Experimentation (CODE@MIT), Cambridge</p>
+          <p class="talk-paper">
             When and How to Pilot: Design Rules for Two-Wave Experiments<br>
-            <span class="r2-presentation-note">Accepted for presentation &middot; November 13&ndash;14, 2026</span>
+            <span class="metadata">Accepted for presentation · November 13–14, 2026</span>
           </p>
         </div>
       </div>
-      <div class="r2-presentation-row">
-        <p class="r2-year">2026</p>
+      <div class="talk">
+        <p class="talk-year">2026</p>
         <div>
-          <p class="r2-venue">Midwest Econometrics Group Annual Meeting, Cincinnati</p>
-          <p class="r2-talk">
+          <p class="talk-venue">Midwest Econometrics Group Annual Meeting, Cincinnati</p>
+          <p class="talk-paper">
             Poverty Targeting with Imperfect Information
           </p>
         </div>
       </div>
-      <div class="r2-presentation-row">
-        <p class="r2-year">2025</p>
+      <div class="talk">
+        <p class="talk-year">2025</p>
         <div>
-          <p class="r2-venue">World Congress of the Econometric Society, Seoul</p>
-          <p class="r2-talk">Poverty Targeting with Imperfect Information</p>
+          <p class="talk-venue">World Congress of the Econometric Society, Seoul</p>
+          <p class="talk-paper">Poverty Targeting with Imperfect Information</p>
         </div>
       </div>
-      <div class="r2-presentation-row">
-        <p class="r2-year">2025</p>
+      <div class="talk">
+        <p class="talk-year">2025</p>
         <div>
-          <p class="r2-venue">Advances with Field Experiments (AFE), Chicago</p>
-          <p class="r2-talk">When and How to Pilot: Design Rules for Two-Wave Experiments</p>
+          <p class="talk-venue">Advances with Field Experiments (AFE), Chicago</p>
+          <p class="talk-paper">When and How to Pilot: Design Rules for Two-Wave Experiments</p>
         </div>
       </div>
-    </div>
-  </section>
-</main>
+    </div></div></section></main></div>
+</div>
