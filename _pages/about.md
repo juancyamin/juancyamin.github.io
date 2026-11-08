@@ -63,7 +63,7 @@ redirect_from:
         </nav>
       </article>
       <article>
-        <h3><a href="https://juancyamin.github.io/files/subnational-alignment-corruption.pdf" target="_blank" rel="noopener">Birds of a Feather Collude Together: Subnational Alignment and Corruption</a></h3>
+        <h3><a href="https://juancyamin.github.io/files/subnational-alignment-corruption.pdf" target="_blank" rel="noopener">Birds of a Feather Collude Together</a></h3>
         <p class="metadata">With Leopoldo Fergusson, Arturo Harker, and Carlos Molina<br>Forthcoming, <em>American Political Science Review</em></p>
         <p class="question">Does partisan alignment across levels of government facilitate corruption?</p>
         <p class="answer">Using close elections in Colombia, we find that partisan alignment between mayors and governors increases the fabrication of “ghost” students to obtain education transfers. Actual enrollment and student performance do not improve.</p>
